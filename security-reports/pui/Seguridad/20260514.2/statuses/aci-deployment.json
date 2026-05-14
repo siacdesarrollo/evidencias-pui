@@ -1,0 +1,13 @@
+{
+  "tool": "ACI-Deployment",
+  "executedAt": "2026-05-14T23:19:52.1107597+00:00",
+  "operationalFailure": true,
+  "blockingFindings": false,
+  "outcome": "operational_failure",
+  "resourceGroupName": "SecurityTestsPui-Pro",
+  "containerGroupName": "pui-zap-security",
+  "image": "siacacr-h6c7ekdph3h2fhgb.azurecr.io/security/zaproxy:2.17.0",
+  "zapBaseUrl": null,
+  "error": "You cannot call a method on a null-valued expression.",
+  "message": "Falló el despliegue de ZAP en ACI."
+}

@@ -1,0 +1,22 @@
+{
+  "tool": "SAST",
+  "executedAt": "2026-05-14T23:06:31.4469926+00:00",
+  "operationalFailure": false,
+  "blockingFindings": true,
+  "outcome": "blocking_findings",
+  "reportFolder": "D:\\a\\1\\s\\reportes-seguridad\\SAST\\20260514_230632",
+  "evidenceFiles": [
+    "D:\\a\\1\\s\\reportes-seguridad\\SAST\\20260514_230632\\layer1_build.txt",
+    "D:\\a\\1\\s\\reportes-seguridad\\SAST\\20260514_230632\\layer1_build.sarif",
+    "D:\\a\\1\\s\\reportes-seguridad\\SAST\\20260514_230632\\layer2_codeql.sarif"
+  ],
+  "findings": {
+    "exitCode": 1,
+    "layer1SarifResults": 20,
+    "layer2SarifResults": 5,
+    "explicitBuildErrors": 0,
+    "codeQlDatabaseRoot": "D:\\a\\1\\security-runtime\\codeql-db",
+    "missingEvidence": []
+  },
+  "message": "SAST encontró hallazgos bloqueantes."
+}

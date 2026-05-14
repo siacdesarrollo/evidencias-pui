@@ -1,0 +1,10 @@
+{
+  "tool": "DAST",
+  "executedAt": "2026-05-14T23:19:59.8570012+00:00",
+  "operationalFailure": false,
+  "blockingFindings": false,
+  "outcome": "dependency_failed",
+  "dependency": "aci-deployment.json",
+  "message": "DAST no pudo ejecutarse porque falta el estado válido del despliegue ACI/ZAP.",
+  "error": "No existe información válida del despliegue de ZAP en ACI."
+}

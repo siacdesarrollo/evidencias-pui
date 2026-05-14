@@ -1,0 +1,10 @@
+  Determining projects to restore...
+  All projects are up-to-date for restore.
+  SIAC.WebApi.Common -> D:\a\1\s\src\SIAC.WebApi.Common\bin\Debug\net10.0\SIAC.WebApi.Common.dll
+  SIAC.PUI -> D:\a\1\s\src\SIAC.PUI\bin\Debug\net10.0\SIAC.PUI.dll
+
+Build succeeded.
+    0 Warning(s)
+    0 Error(s)
+
+Time Elapsed 00:00:12.71
