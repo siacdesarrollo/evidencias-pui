@@ -1,0 +1,15 @@
+{
+  "tool": "DAST",
+  "executedAt": "2026-05-15T17:38:18.0830534+00:00",
+  "operationalFailure": false,
+  "blockingFindings": false,
+  "outcome": "dependency_failed",
+  "dependency": "aci-ready.json",
+  "readinessOutcome": "not_started",
+  "readinessStatusFile": "D:\\a\\1\\a\\security-status\\aci-ready.json",
+  "message": "DAST remoto no se ejecutó porque readiness de ZAP terminó con outcome 'not_started'.",
+  "error": "El paso de readiness no dejó a ZAP listo; se omite DAST remoto para evitar una ejecución engañosa posterior.",
+  "failureReasons": [
+    "zap_readiness_not_successful"
+  ]
+}
