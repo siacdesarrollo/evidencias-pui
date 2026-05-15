@@ -1,0 +1,33 @@
+{
+  "tool": "ZAP-ImagePublish",
+  "executedAt": "2026-05-15T02:14:19.4073196+00:00",
+  "operationalFailure": true,
+  "blockingFindings": false,
+  "outcome": "operational_failure",
+  "acrName": "siacacr",
+  "sourceImage": "ghcr.io/zaproxy/zaproxy:2.17.0",
+  "targetImage": "security/zaproxy:2.17.0",
+  "failureReasons": [
+    "acr_import_invalid_json"
+  ],
+  "azCli": {
+    "executable": "az",
+    "command": "az acr import --name siacacr --source ghcr.io/zaproxy/zaproxy:2.17.0 --image security/zaproxy:2.17.0 --force --only-show-errors --output json",
+    "outputFormat": "json",
+    "executableFound": true,
+    "executablePath": "C:\\Program Files\\Microsoft SDKs\\Azure\\CLI2\\wbin\\az.cmd",
+    "success": true,
+    "structuredSuccess": false,
+    "exitCode": 0,
+    "stdout": "",
+    "stderr": "",
+    "json": null,
+    "parseSucceeded": false,
+    "responsePresent": false,
+    "failureCategory": "missing_json_output",
+    "parseError": ""
+  },
+  "result": "failed",
+  "error": "az acr import devolvió una respuesta no interpretable.; failureCategory=missing_json_output; exitCode=0; command=az acr import --name siacacr --source ghcr.io/zaproxy/zaproxy:2.17.0 --image security/zaproxy:2.17.0 --force --only-show-errors --output json",
+  "message": "Falló la importación de la imagen oficial de ZAP a ACR."
+}

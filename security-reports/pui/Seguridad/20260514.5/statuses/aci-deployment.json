@@ -1,0 +1,33 @@
+{
+  "tool": "ACI-Deployment",
+  "executedAt": "2026-05-15T02:14:42.1676851+00:00",
+  "operationalFailure": true,
+  "blockingFindings": false,
+  "outcome": "operational_failure",
+  "resourceGroupName": "SecurityTestsPui-Pro",
+  "containerGroupName": "pui-zap-security",
+  "image": "siacacr-h6c7ekdph3h2fhgb.azurecr.io/security/zaproxy:2.17.0",
+  "zapBaseUrl": null,
+  "failureReasons": [
+    "aci_container_show_failed"
+  ],
+  "aciShowBeforeCreate": {
+    "executable": "az",
+    "command": "az container show --resource-group SecurityTestsPui-Pro --name pui-zap-security --only-show-errors --output none",
+    "outputFormat": "none",
+    "executableFound": true,
+    "executablePath": "C:\\Program Files\\Microsoft SDKs\\Azure\\CLI2\\wbin\\az.cmd",
+    "success": false,
+    "structuredSuccess": false,
+    "exitCode": 1,
+    "stdout": "",
+    "stderr": "ERROR: (AuthorizationFailed) The client '9a4e0f1a-b36a-4358-b608-d15aba38e3ef' with object id 'fb138165-542a-4717-913e-6c90fa3eae3e' does not have authorization to perform action 'Microsoft.ContainerInstance/containerGroups/read' over scope '/subscriptions/ce46d502-a4e7-49cc-885f-4ca618e51016/resourceGroups/SecurityTestsPui-Pro/providers/Microsoft.ContainerInstance/containerGroups/pui-zap-security' or the scope is invalid. If access was recently granted, please refresh your credentials.\r\nCode: AuthorizationFailed\r\nMessage: The client '9a4e0f1a-b36a-4358-b608-d15aba38e3ef' with object id 'fb138165-542a-4717-913e-6c90fa3eae3e' does not have authorization to perform action 'Microsoft.ContainerInstance/containerGroups/read' over scope '/subscriptions/ce46d502-a4e7-49cc-885f-4ca618e51016/resourceGroups/SecurityTestsPui-Pro/providers/Microsoft.ContainerInstance/containerGroups/pui-zap-security' or the scope is invalid. If access was recently granted, please refresh your credentials.",
+    "json": null,
+    "parseSucceeded": false,
+    "responsePresent": false,
+    "failureCategory": "exit_code_nonzero",
+    "parseError": ""
+  },
+  "error": "No se pudo consultar el estado del container group previo.; failureCategory=exit_code_nonzero; exitCode=1; command=az container show --resource-group SecurityTestsPui-Pro --name pui-zap-security --only-show-errors --output none; stderr=ERROR: (AuthorizationFailed) The client '9a4e0f1a-b36a-4358-b608-d15aba38e3ef' with object id 'fb138165-542a-4717-913e-6c90fa3eae3e' does not have authorization to perform action 'Microsoft.ContainerInstance/containerGroups/read' over scope '/subscriptions/ce46d502-a4e7-49cc-885f-4ca618e51016/resourceGroups/SecurityTestsPui-Pro/providers/Microsoft.ContainerInstance/containerGroups/pui-zap-security' or the scope is invalid. If access was recently granted, please refresh your credentials. Code: AuthorizationFailed Message: The client '9a4e0f1a-b36a-4358-b608-d15aba38e3ef' with object id 'fb13...",
+  "message": "Falló el despliegue de ZAP en ACI."
+}

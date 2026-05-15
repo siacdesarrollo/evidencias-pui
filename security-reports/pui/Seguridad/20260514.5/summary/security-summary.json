@@ -1,0 +1,314 @@
+{
+  "generatedAt": "2026-05-15T02:15:01.9872305+00:00",
+  "statusCount": 8,
+  "blockingFindings": true,
+  "operationalFailureCount": 5,
+  "operationalFailure": true,
+  "dependencyFailureCount": 2,
+  "dependencyFailure": true,
+  "skipped": false,
+  "statusFiles": [
+    "aci-cleanup.json",
+    "aci-deployment.json",
+    "aci-ready.json",
+    "dast-status.json",
+    "install-tools.json",
+    "sast-status.json",
+    "sca-status.json",
+    "zap-image-publish.json"
+  ],
+  "statuses": [
+    {
+      "tool": "ACI-Cleanup",
+      "executedAt": "2026-05-15T02:14:56.4243495+00:00",
+      "blockingFindings": false,
+      "operationalFailure": true,
+      "outcome": "operational_failure",
+      "resourceGroupName": "SecurityTestsPui-Pro",
+      "containerGroupName": "pui-zap-security",
+      "result": "failed",
+      "aciShow": {
+        "executable": "az",
+        "command": "az container show --resource-group SecurityTestsPui-Pro --name pui-zap-security --only-show-errors --output none",
+        "outputFormat": "none",
+        "executableFound": true,
+        "executablePath": "C:\\Program Files\\Microsoft SDKs\\Azure\\CLI2\\wbin\\az.cmd",
+        "success": false,
+        "structuredSuccess": false,
+        "exitCode": 1,
+        "stdout": "",
+        "stderr": "ERROR: (AuthorizationFailed) The client '9a4e0f1a-b36a-4358-b608-d15aba38e3ef' with object id 'fb138165-542a-4717-913e-6c90fa3eae3e' does not have authorization to perform action 'Microsoft.ContainerInstance/containerGroups/read' over scope '/subscriptions/ce46d502-a4e7-49cc-885f-4ca618e51016/resourceGroups/SecurityTestsPui-Pro/providers/Microsoft.ContainerInstance/containerGroups/pui-zap-security' or the scope is invalid. If access was recently granted, please refresh your credentials.\r\nCode: AuthorizationFailed\r\nMessage: The client '9a4e0f1a-b36a-4358-b608-d15aba38e3ef' with object id 'fb138165-542a-4717-913e-6c90fa3eae3e' does not have authorization to perform action 'Microsoft.ContainerInstance/containerGroups/read' over scope '/subscriptions/ce46d502-a4e7-49cc-885f-4ca618e51016/resourceGroups/SecurityTestsPui-Pro/providers/Microsoft.ContainerInstance/containerGroups/pui-zap-security' or the scope is invalid. If access was recently granted, please refresh your credentials.",
+        "json": null,
+        "parseSucceeded": false,
+        "responsePresent": false,
+        "failureCategory": "exit_code_nonzero",
+        "parseError": ""
+      },
+      "error": "No se pudo consultar el container group de ZAP antes de eliminarlo.; failureCategory=exit_code_nonzero; exitCode=1; command=az container show --resource-group SecurityTestsPui-Pro --name pui-zap-security --only-show-errors --output none; stderr=ERROR: (AuthorizationFailed) The client '9a4e0f1a-b36a-4358-b608-d15aba38e3ef' with object id 'fb138165-542a-4717-913e-6c90fa3eae3e' does not have authorization to perform action 'Microsoft.ContainerInstance/containerGroups/read' over scope '/subscriptions/ce46d502-a4e7-49cc-885f-4ca618e51016/resourceGroups/SecurityTestsPui-Pro/providers/Microsoft.ContainerInstance/containerGroups/pui-zap-security' or the scope is invalid. If access was recently granted, please refresh your credentials. Code: AuthorizationFailed Message: The client '9a4e0f1a-b36a-4358-b608-d15aba38e3ef' with object id 'fb13...",
+      "message": "Falló la limpieza del ACI de ZAP."
+    },
+    {
+      "tool": "ACI-Deployment",
+      "executedAt": "2026-05-15T02:14:42.1676851+00:00",
+      "operationalFailure": true,
+      "blockingFindings": false,
+      "outcome": "operational_failure",
+      "resourceGroupName": "SecurityTestsPui-Pro",
+      "containerGroupName": "pui-zap-security",
+      "image": "siacacr-h6c7ekdph3h2fhgb.azurecr.io/security/zaproxy:2.17.0",
+      "zapBaseUrl": null,
+      "failureReasons": [
+        "aci_container_show_failed"
+      ],
+      "aciShowBeforeCreate": {
+        "executable": "az",
+        "command": "az container show --resource-group SecurityTestsPui-Pro --name pui-zap-security --only-show-errors --output none",
+        "outputFormat": "none",
+        "executableFound": true,
+        "executablePath": "C:\\Program Files\\Microsoft SDKs\\Azure\\CLI2\\wbin\\az.cmd",
+        "success": false,
+        "structuredSuccess": false,
+        "exitCode": 1,
+        "stdout": "",
+        "stderr": "ERROR: (AuthorizationFailed) The client '9a4e0f1a-b36a-4358-b608-d15aba38e3ef' with object id 'fb138165-542a-4717-913e-6c90fa3eae3e' does not have authorization to perform action 'Microsoft.ContainerInstance/containerGroups/read' over scope '/subscriptions/ce46d502-a4e7-49cc-885f-4ca618e51016/resourceGroups/SecurityTestsPui-Pro/providers/Microsoft.ContainerInstance/containerGroups/pui-zap-security' or the scope is invalid. If access was recently granted, please refresh your credentials.\r\nCode: AuthorizationFailed\r\nMessage: The client '9a4e0f1a-b36a-4358-b608-d15aba38e3ef' with object id 'fb138165-542a-4717-913e-6c90fa3eae3e' does not have authorization to perform action 'Microsoft.ContainerInstance/containerGroups/read' over scope '/subscriptions/ce46d502-a4e7-49cc-885f-4ca618e51016/resourceGroups/SecurityTestsPui-Pro/providers/Microsoft.ContainerInstance/containerGroups/pui-zap-security' or the scope is invalid. If access was recently granted, please refresh your credentials.",
+        "json": null,
+        "parseSucceeded": false,
+        "responsePresent": false,
+        "failureCategory": "exit_code_nonzero",
+        "parseError": ""
+      },
+      "error": "No se pudo consultar el estado del container group previo.; failureCategory=exit_code_nonzero; exitCode=1; command=az container show --resource-group SecurityTestsPui-Pro --name pui-zap-security --only-show-errors --output none; stderr=ERROR: (AuthorizationFailed) The client '9a4e0f1a-b36a-4358-b608-d15aba38e3ef' with object id 'fb138165-542a-4717-913e-6c90fa3eae3e' does not have authorization to perform action 'Microsoft.ContainerInstance/containerGroups/read' over scope '/subscriptions/ce46d502-a4e7-49cc-885f-4ca618e51016/resourceGroups/SecurityTestsPui-Pro/providers/Microsoft.ContainerInstance/containerGroups/pui-zap-security' or the scope is invalid. If access was recently granted, please refresh your credentials. Code: AuthorizationFailed Message: The client '9a4e0f1a-b36a-4358-b608-d15aba38e3ef' with object id 'fb13...",
+      "message": "Falló el despliegue de ZAP en ACI."
+    },
+    {
+      "tool": "ACI-ReadyCheck",
+      "executedAt": "2026-05-15T02:14:46.8874347+00:00",
+      "operationalFailure": false,
+      "blockingFindings": false,
+      "outcome": "dependency_failed",
+      "dependency": "aci-deployment.json",
+      "message": "Readiness no pudo ejecutarse porque falta el estado válido del despliegue ACI.",
+      "error": "No existe información válida del despliegue ACI para esperar ZAP."
+    },
+    {
+      "tool": "DAST",
+      "executedAt": "2026-05-15T02:14:49.8610397+00:00",
+      "operationalFailure": false,
+      "blockingFindings": false,
+      "outcome": "dependency_failed",
+      "dependency": "aci-deployment.json",
+      "message": "DAST no pudo ejecutarse porque falta el estado válido del despliegue ACI/ZAP.",
+      "error": "No existe información válida del despliegue de ZAP en ACI."
+    },
+    {
+      "tool": "InstallTools",
+      "executedAt": "2026-05-15T02:09:20.3709273+00:00",
+      "operationalFailure": false,
+      "blockingFindings": false,
+      "outcome": "success",
+      "tools": {
+        "codeql": {
+          "path": "D:\\a\\_temp\\security-tools\\codeql\\codeql\\codeql.exe",
+          "version": "CodeQL command-line toolchain release 2.25.4."
+        },
+        "trivy": {
+          "path": "D:\\a\\_temp\\security-tools\\trivy\\trivy.exe",
+          "version": "Version: 0.70.0"
+        }
+      },
+      "message": "Trivy y CodeQL quedaron disponibles para el pipeline."
+    },
+    {
+      "tool": "SAST",
+      "executedAt": "2026-05-15T02:10:52.5689348+00:00",
+      "operationalFailure": true,
+      "blockingFindings": true,
+      "outcome": "operational_failure",
+      "reportFolder": "D:\\a\\1\\s\\reportes-seguridad\\SAST\\20260515_021053",
+      "evidenceFiles": [
+        "D:\\a\\1\\s\\reportes-seguridad\\SAST\\20260515_021053\\layer1_build.txt",
+        "D:\\a\\1\\s\\reportes-seguridad\\SAST\\20260515_021053\\layer1_build.sarif",
+        "D:\\a\\1\\s\\reportes-seguridad\\SAST\\20260515_021053\\layer2_codeql_create.txt",
+        "D:\\a\\1\\s\\reportes-seguridad\\SAST\\20260515_021053\\layer2_codeql_analyze.txt",
+        "D:\\a\\1\\s\\reportes-seguridad\\SAST\\20260515_021053\\SAST_status.json"
+      ],
+      "reportPaths": {
+        "runFolder": "D:\\a\\1\\s\\reportes-seguridad\\SAST\\20260515_021053",
+        "layer1Build": "D:\\a\\1\\s\\reportes-seguridad\\SAST\\20260515_021053\\layer1_build.txt",
+        "layer1Sarif": "D:\\a\\1\\s\\reportes-seguridad\\SAST\\20260515_021053\\layer1_build.sarif",
+        "codeqlCreateLog": "D:\\a\\1\\s\\reportes-seguridad\\SAST\\20260515_021053\\layer2_codeql_create.txt",
+        "codeqlAnalyzeLog": "D:\\a\\1\\s\\reportes-seguridad\\SAST\\20260515_021053\\layer2_codeql_analyze.txt",
+        "layer2Sarif": "D:\\a\\1\\s\\reportes-seguridad\\SAST\\20260515_021053\\layer2_codeql.sarif",
+        "scriptStatus": "D:\\a\\1\\s\\reportes-seguridad\\SAST\\20260515_021053\\SAST_status.json",
+        "codeQlDatabaseRoot": "D:\\a\\1\\security-runtime\\codeql-db"
+      },
+      "findings": {
+        "exitCode": 1,
+        "layer1SarifResults": 20,
+        "layer2SarifResults": 0,
+        "explicitBuildErrors": 0,
+        "codeQlDatabaseRoot": "D:\\a\\1\\security-runtime\\codeql-db",
+        "scriptStatusFile": "D:\\a\\1\\s\\reportes-seguridad\\SAST\\20260515_021053\\SAST_status.json"
+      },
+      "missingEvidence": [
+        "layer2_codeql.sarif"
+      ],
+      "failureReasons": "codeql_analyze_incomplete",
+      "toolAvailability": {
+        "codeql": true
+      },
+      "stepExitCodes": {
+        "layer1Build": 0,
+        "codeqlDatabaseCreate": 0,
+        "codeqlAnalyze": 99
+      },
+      "message": "SAST terminó con fallos operativos o evidencia incompleta.",
+      "error": "SAST no completó correctamente.; failureReasons=codeql_analyze_incomplete; missingEvidence=layer2_codeql.sarif; stepExitCodes=codeqlAnalyze=99"
+    },
+    {
+      "tool": "SCA",
+      "executedAt": "2026-05-15T02:09:43.7622436+00:00",
+      "operationalFailure": true,
+      "blockingFindings": false,
+      "outcome": "operational_failure",
+      "reportFolder": "D:\\a\\1\\s\\reportes-seguridad\\SCA\\20260515_020944",
+      "evidenceFiles": [
+        "D:\\a\\1\\s\\reportes-seguridad\\SCA\\20260515_020944\\SCA_nuget_audit.txt",
+        "D:\\a\\1\\s\\reportes-seguridad\\SCA\\20260515_020944\\SCA_dotnet_vulnerable.txt",
+        "D:\\a\\1\\s\\reportes-seguridad\\SCA\\20260515_020944\\SCA_trivy.txt",
+        "D:\\a\\1\\s\\reportes-seguridad\\SCA\\20260515_020944\\SCA_trivy.sarif",
+        "D:\\a\\1\\s\\reportes-seguridad\\SCA\\20260515_020944\\SCA_status.json"
+      ],
+      "reportPaths": {
+        "runFolder": "D:\\a\\1\\s\\reportes-seguridad\\SCA\\20260515_020944",
+        "nugetAudit": "D:\\a\\1\\s\\reportes-seguridad\\SCA\\20260515_020944\\SCA_nuget_audit.txt",
+        "dotnetList": "D:\\a\\1\\s\\reportes-seguridad\\SCA\\20260515_020944\\SCA_dotnet_vulnerable.txt",
+        "trivyTable": "D:\\a\\1\\s\\reportes-seguridad\\SCA\\20260515_020944\\SCA_trivy.txt",
+        "trivySarif": "D:\\a\\1\\s\\reportes-seguridad\\SCA\\20260515_020944\\SCA_trivy.sarif",
+        "scriptStatus": "D:\\a\\1\\s\\reportes-seguridad\\SCA\\20260515_020944\\SCA_status.json"
+      },
+      "findings": {
+        "exitCode": [
+          "Configuración cargada:",
+          "  Proyecto : D:\\a\\1\\s\\src\\SIAC.PUI",
+          "  .csproj  : D:\\a\\1\\s\\src\\SIAC.PUI\\SIAC.PUI.csproj",
+          "  Reportes : D:\\a\\1\\s\\reportes-seguridad",
+          "  URL Local: https://localhost:59633",
+          "",
+          "=== SCA - Análisis de Dependencias ===",
+          "",
+          "[1/4] NuGet Audit via dotnet restore...",
+          "  Determining projects to restore...",
+          "  Restored D:\\a\\1\\s\\src\\SIAC.WebApi.Common\\SIAC.WebApi.Common.csproj (in 5.53 sec).",
+          "  Restored D:\\a\\1\\s\\src\\SIAC.PUI\\SIAC.PUI.csproj (in 8.82 sec).",
+          "  NuGet Audit completado sin errores",
+          "  Reporte: D:\\a\\1\\s\\reportes-seguridad\\SCA\\20260515_020944\\SCA_nuget_audit.txt",
+          "",
+          "[2/4] dotnet build -c Release (genera deps.json para Trivy)...",
+          "  SIAC.WebApi.Common -> D:\\a\\1\\s\\src\\SIAC.WebApi.Common\\bin\\Release\\net10.0\\SIAC.WebApi.Common.dll",
+          "  SIAC.PUI -> D:\\a\\1\\s\\src\\SIAC.PUI\\bin\\Release\\net10.0\\SIAC.PUI.dll",
+          "",
+          "Build succeeded.",
+          "    0 Warning(s)",
+          "    0 Error(s)",
+          "",
+          "Time Elapsed 00:00:29.60",
+          "  Build completado — deps.json generado",
+          "  Reporte: D:\\a\\1\\s\\reportes-seguridad\\SCA\\20260515_020944\\SCA_build.txt",
+          "",
+          "[3/4] dotnet list package --vulnerable --include-transitive",
+          "  Determining projects to restore...",
+          "  All projects are up-to-date for restore.",
+          "",
+          "The following sources were used:",
+          "   https://api.nuget.org/v3/index.json",
+          "   C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\",
+          "",
+          "The given project `SIAC.PUI` has no vulnerable packages given the current sources.",
+          "  Reporte: D:\\a\\1\\s\\reportes-seguridad\\SCA\\20260515_020944\\SCA_dotnet_vulnerable.txt",
+          "",
+          "[4/4] Trivy - Scan de vulnerabilidades...",
+          "  Generando reporte tabla...",
+          "\u001b[31;1m2026-05-15T02:10:36Z\tINFO\t[vulndb] Need to update DB\u001b[0m",
+          "\u001b[31;1m2026-05-15T02:10:36Z\tINFO\t[vulndb] Downloading vulnerability DB...\u001b[0m",
+          "\u001b[31;1m2026-05-15T02:10:36Z\tINFO\t[vulndb] Downloading artifact...\trepo=\"mirror.gcr.io/aquasec/trivy-db:2\"\u001b[0m",
+          "\u001b[31;1m2026-05-15T02:10:49Z\tINFO\t[vulndb] Artifact successfully downloaded\trepo=\"mirror.gcr.io/aquasec/trivy-db:2\"\u001b[0m",
+          "\u001b[31;1m2026-05-15T02:10:49Z\tINFO\t[vuln] Vulnerability scanning is enabled\u001b[0m",
+          "\u001b[31;1m2026-05-15T02:10:49Z\tWARN\t[dotnet] Multiple root projects found in .deps.json\texisting_root=\"SIAC.PUI/1.0.0\" new_root=\"SIAC.WebApi.Common/1.0.0\"\u001b[0m",
+          "\u001b[31;1m2026-05-15T02:10:49Z\tINFO\tNumber of language-specific files\tnum=1\u001b[0m",
+          "\u001b[31;1m2026-05-15T02:10:49Z\tINFO\t[dotnet-core] Detecting vulnerabilities...\u001b[0m",
+          "",
+          "Report Summary",
+          "",
+          "┌────────────────────────────────────────┬─────────────┬─────────────────┐",
+          "│                 Target                 │    Type     │ Vulnerabilities │",
+          "├────────────────────────────────────────┼─────────────┼─────────────────┤",
+          "│ bin/Release/net10.0/SIAC.PUI.deps.json │ dotnet-core │        0        │",
+          "└────────────────────────────────────────┴─────────────┴─────────────────┘",
+          "Legend:",
+          "- '-': Not scanned",
+          "- '0': Clean (no security findings detected)",
+          "",
+          "  Generando reporte SARIF...",
+          "  Reporte tabla: D:\\a\\1\\s\\reportes-seguridad\\SCA\\20260515_020944\\SCA_trivy.txt",
+          "  Reporte SARIF: D:\\a\\1\\s\\reportes-seguridad\\SCA\\20260515_020944\\SCA_trivy.sarif",
+          "",
+          "Carpeta de ejecución: D:\\a\\1\\s\\reportes-seguridad\\SCA\\20260515_020944",
+          "=== SCA Completado ===",
+          0
+        ],
+        "nuGetAuditMatches": 0,
+        "dotnetListMatches": 0,
+        "trivySarifResults": 0,
+        "scriptStatusFile": "D:\\a\\1\\s\\reportes-seguridad\\SCA\\20260515_020944\\SCA_status.json"
+      },
+      "missingEvidence": [],
+      "failureReasons": null,
+      "toolAvailability": {
+        "trivy": true
+      },
+      "stepExitCodes": {
+        "restore": 0,
+        "build": 0,
+        "dotnetList": 0,
+        "trivyTable": 0,
+        "trivySarif": 0
+      },
+      "error": "The property 'Count' cannot be found on this object. Verify that the property exists.",
+      "message": "Falló la ejecución del wrapper canónico de SCA."
+    },
+    {
+      "tool": "ZAP-ImagePublish",
+      "executedAt": "2026-05-15T02:14:19.4073196+00:00",
+      "operationalFailure": true,
+      "blockingFindings": false,
+      "outcome": "operational_failure",
+      "acrName": "siacacr",
+      "sourceImage": "ghcr.io/zaproxy/zaproxy:2.17.0",
+      "targetImage": "security/zaproxy:2.17.0",
+      "failureReasons": [
+        "acr_import_invalid_json"
+      ],
+      "azCli": {
+        "executable": "az",
+        "command": "az acr import --name siacacr --source ghcr.io/zaproxy/zaproxy:2.17.0 --image security/zaproxy:2.17.0 --force --only-show-errors --output json",
+        "outputFormat": "json",
+        "executableFound": true,
+        "executablePath": "C:\\Program Files\\Microsoft SDKs\\Azure\\CLI2\\wbin\\az.cmd",
+        "success": true,
+        "structuredSuccess": false,
+        "exitCode": 0,
+        "stdout": "",
+        "stderr": "",
+        "json": null,
+        "parseSucceeded": false,
+        "responsePresent": false,
+        "failureCategory": "missing_json_output",
+        "parseError": ""
+      },
+      "result": "failed",
+      "error": "az acr import devolvió una respuesta no interpretable.; failureCategory=missing_json_output; exitCode=0; command=az acr import --name siacacr --source ghcr.io/zaproxy/zaproxy:2.17.0 --image security/zaproxy:2.17.0 --force --only-show-errors --output json",
+      "message": "Falló la importación de la imagen oficial de ZAP a ACR."
+    }
+  ]
+}
