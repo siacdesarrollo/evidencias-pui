@@ -1,0 +1,3 @@
+  Determining projects to restore...
+  Restored D:\a\1\s\src\SIAC.WebApi.Common\SIAC.WebApi.Common.csproj (in 5.57 sec).
+  Restored D:\a\1\s\src\SIAC.PUI\SIAC.PUI.csproj (in 7.2 sec).
