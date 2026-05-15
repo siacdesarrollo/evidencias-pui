@@ -1,0 +1,11 @@
+{
+  "tool": "ACI-ReadyCheck",
+  "executedAt": "2026-05-15T05:34:24.6561750+00:00",
+  "operationalFailure": true,
+  "blockingFindings": false,
+  "outcome": "operational_failure",
+  "zapBaseUrl": "http://",
+  "version": null,
+  "error": "ZAP no respondió en 300 segundos.",
+  "message": "ZAP no alcanzó estado ready dentro del timeout configurado."
+}

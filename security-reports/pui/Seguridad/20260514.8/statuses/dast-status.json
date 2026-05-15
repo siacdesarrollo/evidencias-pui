@@ -1,0 +1,17 @@
+{
+  "tool": "DAST",
+  "executedAt": "2026-05-15T05:39:34.7024002+00:00",
+  "operationalFailure": true,
+  "blockingFindings": false,
+  "outcome": "operational_failure",
+  "reportFolder": "D:\\a\\1\\s\\reportes-seguridad\\DAST\\20260515_053934",
+  "evidenceFiles": [
+    "D:\\a\\1\\s\\reportes-seguridad\\DAST\\20260515_053934\\DAST_summary.html",
+    "D:\\a\\1\\s\\reportes-seguridad\\DAST\\20260515_053934\\DAST_raw.html",
+    "D:\\a\\1\\s\\reportes-seguridad\\DAST\\20260515_053934\\DAST_report.json",
+    "D:\\a\\1\\s\\reportes-seguridad\\DAST\\20260515_053934\\DAST_metadata.json"
+  ],
+  "zapBaseUrl": "http://",
+  "error": "Cannot bind parameter 'Uri'. Cannot convert value \"http:///JSON/core/view/version/?apikey=***\" to type \"System.Uri\". Error: \"Invalid URI: The hostname could not be parsed.\"",
+  "message": "DAST remoto falló antes de completar la recolección de evidencia."
+}

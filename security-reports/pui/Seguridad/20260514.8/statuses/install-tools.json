@@ -1,0 +1,18 @@
+{
+  "tool": "InstallTools",
+  "executedAt": "2026-05-15T05:24:50.4143035+00:00",
+  "operationalFailure": false,
+  "blockingFindings": false,
+  "outcome": "success",
+  "tools": {
+    "trivy": {
+      "path": "D:\\a\\_temp\\security-tools\\trivy\\trivy.exe",
+      "version": "Version: 0.70.0"
+    },
+    "codeql": {
+      "path": "D:\\a\\_temp\\security-tools\\codeql\\codeql\\codeql.exe",
+      "version": "CodeQL command-line toolchain release 2.25.4."
+    }
+  },
+  "message": "Trivy y CodeQL quedaron disponibles para el pipeline."
+}
