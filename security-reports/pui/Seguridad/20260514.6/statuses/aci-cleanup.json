@@ -1,0 +1,28 @@
+{
+  "tool": "ACI-Cleanup",
+  "executedAt": "2026-05-15T03:29:38.7334483+00:00",
+  "blockingFindings": false,
+  "operationalFailure": false,
+  "outcome": "skipped",
+  "resourceGroupName": "PUI",
+  "containerGroupName": "pui-zap-security",
+  "result": "not_found",
+  "aciShow": {
+    "executable": "az",
+    "command": "az container show --resource-group PUI --name pui-zap-security --only-show-errors --output none",
+    "outputFormat": "none",
+    "executableFound": true,
+    "executablePath": "C:\\Program Files\\Microsoft SDKs\\Azure\\CLI2\\wbin\\az.cmd",
+    "success": false,
+    "structuredSuccess": false,
+    "exitCode": 3,
+    "stdout": "",
+    "stderr": "ERROR: (ResourceNotFound) The Resource 'Microsoft.ContainerInstance/containerGroups/pui-zap-security' under resource group 'PUI' was not found. For more details please go to https://aka.ms/ARMResourceNotFoundFix\r\nCode: ResourceNotFound\r\nMessage: The Resource 'Microsoft.ContainerInstance/containerGroups/pui-zap-security' under resource group 'PUI' was not found. For more details please go to https://aka.ms/ARMResourceNotFoundFix",
+    "json": null,
+    "parseSucceeded": false,
+    "responsePresent": false,
+    "failureCategory": "exit_code_nonzero",
+    "parseError": ""
+  },
+  "message": "No había un ACI previo que limpiar."
+}

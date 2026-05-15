@@ -1,0 +1,55 @@
+{
+  "tool": "SAST",
+  "executedAt": "2026-05-15T03:25:26.0512720+00:00",
+  "runFolder": "D:\\a\\1\\s\\reportes-seguridad\\SAST\\20260515_032526",
+  "exitCode": 1,
+  "outcome": "operational_failure",
+  "blockingFindings": true,
+  "operationalFailure": true,
+  "message": "SAST terminó con fallos operativos o evidencia incompleta.",
+  "toolAvailability": {
+    "codeql": true
+  },
+  "stepExitCodes": {
+    "layer1Build": 0,
+    "codeqlDatabaseCreate": 0,
+    "codeqlAnalyze": 99
+  },
+  "steps": {
+    "layer1Build": {
+      "exitCode": 0,
+      "reportFile": "D:\\a\\1\\s\\reportes-seguridad\\SAST\\20260515_032526\\layer1_build.txt",
+      "sarifFile": "D:\\a\\1\\s\\reportes-seguridad\\SAST\\20260515_032526\\layer1_build.sarif"
+    },
+    "codeqlDatabaseCreate": {
+      "exitCode": 0,
+      "reportFile": "D:\\a\\1\\s\\reportes-seguridad\\SAST\\20260515_032526\\layer2_codeql_create.txt"
+    },
+    "codeqlAnalyze": {
+      "exitCode": 99,
+      "reportFile": "D:\\a\\1\\s\\reportes-seguridad\\SAST\\20260515_032526\\layer2_codeql_analyze.txt",
+      "sarifFile": "D:\\a\\1\\s\\reportes-seguridad\\SAST\\20260515_032526\\layer2_codeql.sarif"
+    }
+  },
+  "findings": {
+    "layer1SarifResults": 20,
+    "layer2SarifResults": 0,
+    "explicitBuildErrors": 0
+  },
+  "reportPaths": {
+    "runFolder": "D:\\a\\1\\s\\reportes-seguridad\\SAST\\20260515_032526",
+    "layer1Build": "D:\\a\\1\\s\\reportes-seguridad\\SAST\\20260515_032526\\layer1_build.txt",
+    "layer1Sarif": "D:\\a\\1\\s\\reportes-seguridad\\SAST\\20260515_032526\\layer1_build.sarif",
+    "codeqlCreateLog": "D:\\a\\1\\s\\reportes-seguridad\\SAST\\20260515_032526\\layer2_codeql_create.txt",
+    "codeqlAnalyzeLog": "D:\\a\\1\\s\\reportes-seguridad\\SAST\\20260515_032526\\layer2_codeql_analyze.txt",
+    "layer2Sarif": "D:\\a\\1\\s\\reportes-seguridad\\SAST\\20260515_032526\\layer2_codeql.sarif",
+    "status": "D:\\a\\1\\s\\reportes-seguridad\\SAST\\20260515_032526\\SAST_status.json",
+    "codeQlDatabaseRoot": "D:\\a\\1\\security-runtime\\codeql-db"
+  },
+  "missingEvidence": [
+    "layer2_codeql.sarif"
+  ],
+  "failureReasons": [
+    "codeql_analyze_incomplete"
+  ]
+}
