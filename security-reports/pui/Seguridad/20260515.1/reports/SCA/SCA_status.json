@@ -1,0 +1,59 @@
+{
+  "tool": "SCA",
+  "executedAt": "2026-05-15T07:32:03.9050941+00:00",
+  "runFolder": "D:\\a\\1\\s\\reportes-seguridad\\SCA\\20260515_073203",
+  "exitCode": 0,
+  "outcome": "success",
+  "blockingFindings": false,
+  "operationalFailure": false,
+  "message": "SCA completó sin hallazgos bloqueantes.",
+  "error": "",
+  "toolAvailability": {
+    "trivy": true
+  },
+  "stepExitCodes": {
+    "restore": 0,
+    "build": 0,
+    "dotnetList": 0,
+    "trivyTable": 0,
+    "trivySarif": 0
+  },
+  "steps": {
+    "restore": {
+      "exitCode": 0,
+      "reportFile": "D:\\a\\1\\s\\reportes-seguridad\\SCA\\20260515_073203\\SCA_nuget_audit.txt"
+    },
+    "build": {
+      "exitCode": 0,
+      "reportFile": "D:\\a\\1\\s\\reportes-seguridad\\SCA\\20260515_073203\\SCA_build.txt"
+    },
+    "dotnetList": {
+      "exitCode": 0,
+      "reportFile": "D:\\a\\1\\s\\reportes-seguridad\\SCA\\20260515_073203\\SCA_dotnet_vulnerable.txt"
+    },
+    "trivyTable": {
+      "exitCode": 0,
+      "reportFile": "D:\\a\\1\\s\\reportes-seguridad\\SCA\\20260515_073203\\SCA_trivy.txt"
+    },
+    "trivySarif": {
+      "exitCode": 0,
+      "reportFile": "D:\\a\\1\\s\\reportes-seguridad\\SCA\\20260515_073203\\SCA_trivy.sarif"
+    }
+  },
+  "findings": {
+    "nuGetAuditMatches": 0,
+    "dotnetListMatches": 0,
+    "trivySarifResults": 0
+  },
+  "reportPaths": {
+    "runFolder": "D:\\a\\1\\s\\reportes-seguridad\\SCA\\20260515_073203",
+    "nugetAudit": "D:\\a\\1\\s\\reportes-seguridad\\SCA\\20260515_073203\\SCA_nuget_audit.txt",
+    "build": "D:\\a\\1\\s\\reportes-seguridad\\SCA\\20260515_073203\\SCA_build.txt",
+    "dotnetList": "D:\\a\\1\\s\\reportes-seguridad\\SCA\\20260515_073203\\SCA_dotnet_vulnerable.txt",
+    "trivyTable": "D:\\a\\1\\s\\reportes-seguridad\\SCA\\20260515_073203\\SCA_trivy.txt",
+    "trivySarif": "D:\\a\\1\\s\\reportes-seguridad\\SCA\\20260515_073203\\SCA_trivy.sarif",
+    "status": "D:\\a\\1\\s\\reportes-seguridad\\SCA\\20260515_073203\\SCA_status.json"
+  },
+  "missingEvidence": [],
+  "failureReasons": []
+}
