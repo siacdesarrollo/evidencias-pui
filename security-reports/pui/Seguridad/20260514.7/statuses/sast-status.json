@@ -1,0 +1,54 @@
+{
+  "tool": "SAST",
+  "executedAt": "2026-05-15T04:56:27.4619859+00:00",
+  "operationalFailure": true,
+  "blockingFindings": true,
+  "outcome": "operational_failure",
+  "reportFolder": "D:\\a\\1\\s\\reportes-seguridad\\SAST\\20260515_045628",
+  "evidenceFiles": [
+    "D:\\a\\1\\s\\reportes-seguridad\\SAST\\20260515_045628\\layer1_build.txt",
+    "D:\\a\\1\\s\\reportes-seguridad\\SAST\\20260515_045628\\layer1_build.sarif",
+    "D:\\a\\1\\s\\reportes-seguridad\\SAST\\20260515_045628\\layer2_codeql_create.txt",
+    "D:\\a\\1\\s\\reportes-seguridad\\SAST\\20260515_045628\\layer2_codeql_analyze.txt",
+    "D:\\a\\1\\s\\reportes-seguridad\\SAST\\20260515_045628\\SAST_status.json"
+  ],
+  "reportPaths": {
+    "runFolder": "D:\\a\\1\\s\\reportes-seguridad\\SAST\\20260515_045628",
+    "layer1Build": "D:\\a\\1\\s\\reportes-seguridad\\SAST\\20260515_045628\\layer1_build.txt",
+    "layer1Sarif": "D:\\a\\1\\s\\reportes-seguridad\\SAST\\20260515_045628\\layer1_build.sarif",
+    "codeqlCreateLog": "D:\\a\\1\\s\\reportes-seguridad\\SAST\\20260515_045628\\layer2_codeql_create.txt",
+    "codeqlAnalyzeLog": "D:\\a\\1\\s\\reportes-seguridad\\SAST\\20260515_045628\\layer2_codeql_analyze.txt",
+    "layer2Sarif": "D:\\a\\1\\s\\reportes-seguridad\\SAST\\20260515_045628\\layer2_codeql.sarif",
+    "scriptStatus": "D:\\a\\1\\s\\reportes-seguridad\\SAST\\20260515_045628\\SAST_status.json",
+    "codeQlDatabaseRoot": "D:\\a\\1\\security-runtime\\codeql-db"
+  },
+  "findings": {
+    "exitCode": 1,
+    "layer1SarifResults": 20,
+    "layer2SarifResults": 0,
+    "explicitBuildErrors": 0,
+    "codeQlDatabaseRoot": "D:\\a\\1\\security-runtime\\codeql-db",
+    "scriptStatusFile": "D:\\a\\1\\s\\reportes-seguridad\\SAST\\20260515_045628\\SAST_status.json"
+  },
+  "missingEvidence": [
+    "layer2_codeql.sarif"
+  ],
+  "failureReasons": [
+    "codeql_analyze_retry_incomplete",
+    "codeql_analyze_incomplete"
+  ],
+  "toolAvailability": {
+    "codeql": true
+  },
+  "stepExitCodes": {
+    "layer1Build": 0,
+    "codeqlDatabaseCreate": 0,
+    "codeqlAnalyze": 99,
+    "codeqlDatabaseCreateRetry": 0,
+    "codeqlAnalyzeRetry": 99
+  },
+  "scriptMessage": "SAST terminó con fallos operativos o evidencia incompleta.",
+  "scriptError": "SAST no completó correctamente.; failureReasons=codeql_analyze_retry_incomplete, codeql_analyze_incomplete; missingEvidence=layer2_codeql.sarif; stepExitCodes=codeqlAnalyze=99, codeqlAnalyzeRetry=99",
+  "message": "SAST terminó con fallos operativos o evidencia incompleta.",
+  "error": "SAST no completó correctamente.; failureReasons=codeql_analyze_retry_incomplete, codeql_analyze_incomplete; missingEvidence=layer2_codeql.sarif; stepExitCodes=codeqlAnalyze=99, codeqlAnalyzeRetry=99; scriptMessage=SAST terminó con fallos operativos o evidencia incompleta.; scriptError=SAST no completó correctamente.; failureReasons=codeql_analyze_retry_incomplete, codeql_analyze_incomplete; missingEvidence=layer2_codeql.sarif; stepExitCodes=codeqlAnalyze=99, codeqlAnalyzeRetry=99"
+}

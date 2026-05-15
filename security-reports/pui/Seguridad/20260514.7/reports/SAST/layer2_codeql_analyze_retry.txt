@@ -1,0 +1,200 @@
+{
+  "packs" : [
+    {
+      "name" : "codeql/csharp-queries",
+      "version" : "1.7.2",
+      "library" : false,
+      "result" : "IGNORED"
+    }
+  ],
+  "packDir" : "C:\\Users\\VssAdministrator\\.codeql\\packages"
+}
+Running queries.
+Resolving data extensions.
+Finished resolving data extensions.
+Loading data extensions.
+Finished loading data extensions.
+Not caching stages during query-loading, since max heap size is only 1348 MB.
+[1/171] Loaded C:\Users\VssAdministrator\.codeql\packages\codeql\csharp-queries\1.7.2\Input Validation\UseOfFileUpload.qlx.
+[2/171] Loaded C:\Users\VssAdministrator\.codeql\packages\codeql\csharp-queries\1.7.2\Security Features\CookieWithOverlyBroadDomain.qlx.
+[3/171] Loaded C:\Users\VssAdministrator\.codeql\packages\codeql\csharp-queries\1.7.2\Security Features\CookieWithOverlyBroadPath.qlx.
+[4/171] Loaded C:\Users\VssAdministrator\.codeql\packages\codeql\csharp-queries\1.7.2\Security Features\CWE-011\ASPNetDebug.qlx.
+[5/171] Loaded C:\Users\VssAdministrator\.codeql\packages\codeql\csharp-queries\1.7.2\Security Features\CWE-016\ASPNetPagesValidateRequest.qlx.
+[6/171] Loaded C:\Users\VssAdministrator\.codeql\packages\codeql\csharp-queries\1.7.2\Security Features\CWE-022\TaintedPath.qlx.
+[7/171] Loaded C:\Users\VssAdministrator\.codeql\packages\codeql\csharp-queries\1.7.2\Security Features\CWE-022\ZipSlip.qlx.
+[8/171] Loaded C:\Users\VssAdministrator\.codeql\packages\codeql\csharp-queries\1.7.2\Security Features\CWE-078\CommandInjection.qlx.
+[9/171] Loaded C:\Users\VssAdministrator\.codeql\packages\codeql\csharp-queries\1.7.2\Security Features\CWE-079\XSS.qlx.
+[10/171] Loaded C:\Users\VssAdministrator\.codeql\packages\codeql\csharp-queries\1.7.2\Security Features\CWE-089\SqlInjection.qlx.
+[11/171] Loaded C:\Users\VssAdministrator\.codeql\packages\codeql\csharp-queries\1.7.2\Security Features\CWE-090\LDAPInjection.qlx.
+[12/171] Loaded C:\Users\VssAdministrator\.codeql\packages\codeql\csharp-queries\1.7.2\Security Features\CWE-091\XMLInjection.qlx.
+[13/171] Loaded C:\Users\VssAdministrator\.codeql\packages\codeql\csharp-queries\1.7.2\Security Features\CWE-094\CodeInjection.qlx.
+[14/171] Loaded C:\Users\VssAdministrator\.codeql\packages\codeql\csharp-queries\1.7.2\Security Features\CWE-099\ResourceInjection.qlx.
+[15/171] Loaded C:\Users\VssAdministrator\.codeql\packages\codeql\csharp-queries\1.7.2\Security Features\CWE-1004\CookieWithoutHttpOnly.qlx.
+[16/171] Loaded C:\Users\VssAdministrator\.codeql\packages\codeql\csharp-queries\1.7.2\Security Features\CWE-112\MissingXMLValidation.qlx.
+[17/171] Loaded C:\Users\VssAdministrator\.codeql\packages\codeql\csharp-queries\1.7.2\Security Features\CWE-114\AssemblyPathInjection.qlx.
+[18/171] Loaded C:\Users\VssAdministrator\.codeql\packages\codeql\csharp-queries\1.7.2\Security Features\CWE-117\LogForging.qlx.
+[19/171] Loaded C:\Users\VssAdministrator\.codeql\packages\codeql\csharp-queries\1.7.2\Security Features\CWE-119\LocalUnvalidatedArithmetic.qlx.
+[20/171] Loaded C:\Users\VssAdministrator\.codeql\packages\codeql\csharp-queries\1.7.2\Security Features\CWE-134\UncontrolledFormatString.qlx.
+[21/171] Loaded C:\Users\VssAdministrator\.codeql\packages\codeql\csharp-queries\1.7.2\Security Features\CWE-201\ExposureInTransmittedData.qlx.
+[22/171] Loaded C:\Users\VssAdministrator\.codeql\packages\codeql\csharp-queries\1.7.2\Security Features\CWE-209\ExceptionInformationExposure.qlx.
+[23/171] Loaded C:\Users\VssAdministrator\.codeql\packages\codeql\csharp-queries\1.7.2\Security Features\CWE-248\MissingASPNETGlobalErrorHandler.qlx.
+[24/171] Loaded C:\Users\VssAdministrator\.codeql\packages\codeql\csharp-queries\1.7.2\Security Features\CWE-312\CleartextStorage.qlx.
+[25/171] Loaded C:\Users\VssAdministrator\.codeql\packages\codeql\csharp-queries\1.7.2\Security Features\CWE-352\MissingAntiForgeryTokenValidation.qlx.
+[26/171] Loaded C:\Users\VssAdministrator\.codeql\packages\codeql\csharp-queries\1.7.2\Security Features\CWE-359\ExposureOfPrivateInformation.qlx.
+[27/171] Loaded C:\Users\VssAdministrator\.codeql\packages\codeql\csharp-queries\1.7.2\Security Features\CWE-384\AbandonSession.qlx.
+[28/171] Loaded C:\Users\VssAdministrator\.codeql\packages\codeql\csharp-queries\1.7.2\Security Features\CWE-451\MissingXFrameOptions.qlx.
+[29/171] Loaded C:\Users\VssAdministrator\.codeql\packages\codeql\csharp-queries\1.7.2\Security Features\CWE-502\DeserializedDelegate.qlx.
+[30/171] Loaded C:\Users\VssAdministrator\.codeql\packages\codeql\csharp-queries\1.7.2\Security Features\CWE-502\UnsafeDeserializationUntrustedInput.qlx.
+[31/171] Loaded C:\Users\VssAdministrator\.codeql\packages\codeql\csharp-queries\1.7.2\Security Features\CWE-548\ASPNetDirectoryListing.qlx.
+[32/171] Loaded C:\Users\VssAdministrator\.codeql\packages\codeql\csharp-queries\1.7.2\Security Features\CWE-601\UrlRedirect.qlx.
+[33/171] Loaded C:\Users\VssAdministrator\.codeql\packages\codeql\csharp-queries\1.7.2\Security Features\CWE-611\UntrustedDataInsecureXml.qlx.
+[34/171] Loaded C:\Users\VssAdministrator\.codeql\packages\codeql\csharp-queries\1.7.2\Security Features\CWE-614\CookieWithoutSecure.qlx.
+[35/171] Loaded C:\Users\VssAdministrator\.codeql\packages\codeql\csharp-queries\1.7.2\Security Features\CWE-614\RequireSSL.qlx.
+[36/171] Loaded C:\Users\VssAdministrator\.codeql\packages\codeql\csharp-queries\1.7.2\Security Features\CWE-643\XPathInjection.qlx.
+[37/171] Loaded C:\Users\VssAdministrator\.codeql\packages\codeql\csharp-queries\1.7.2\Security Features\CWE-730\ReDoS.qlx.
+[38/171] Loaded C:\Users\VssAdministrator\.codeql\packages\codeql\csharp-queries\1.7.2\Security Features\CWE-730\RegexInjection.qlx.
+[39/171] Loaded C:\Users\VssAdministrator\.codeql\packages\codeql\csharp-queries\1.7.2\Security Features\CWE-807\ConditionalBypass.qlx.
+[40/171] Loaded C:\Users\VssAdministrator\.codeql\packages\codeql\csharp-queries\1.7.2\Security Features\Encryption using ECB.qlx.
+[41/171] Loaded C:\Users\VssAdministrator\.codeql\packages\codeql\csharp-queries\1.7.2\Security Features\HeaderCheckingDisabled.qlx.
+[42/171] Loaded C:\Users\VssAdministrator\.codeql\packages\codeql\csharp-queries\1.7.2\Security Features\InadequateRSAPadding.qlx.
+[43/171] Loaded C:\Users\VssAdministrator\.codeql\packages\codeql\csharp-queries\1.7.2\Security Features\InsecureRandomness.qlx.
+[44/171] Loaded C:\Users\VssAdministrator\.codeql\packages\codeql\csharp-queries\1.7.2\Security Features\InsufficientKeySize.qlx.
+[45/171] Loaded C:\Users\VssAdministrator\.codeql\packages\codeql\csharp-queries\1.7.2\Security Features\PersistentCookie.qlx.
+[46/171] Loaded C:\Users\VssAdministrator\.codeql\packages\codeql\csharp-queries\1.7.2\Security Features\WeakEncryption.qlx.
+[47/171] Loaded C:\Users\VssAdministrator\.codeql\packages\codeql\csharp-queries\1.7.2\Configuration\EmptyPasswordInConfigurationFile.qlx.
+[48/171] Loaded C:\Users\VssAdministrator\.codeql\packages\codeql\csharp-queries\1.7.2\Input Validation\ValueShadowing.qlx.
+[49/171] Loaded C:\Users\VssAdministrator\.codeql\packages\codeql\csharp-queries\1.7.2\Input Validation\ValueShadowingServerVariable.qlx.
+[50/171] Loaded C:\Users\VssAdministrator\.codeql\packages\codeql\csharp-queries\1.7.2\Likely Bugs\ThreadUnsafeICryptoTransform.qlx.
+[51/171] Loaded C:\Users\VssAdministrator\.codeql\packages\codeql\csharp-queries\1.7.2\Likely Bugs\ThreadUnsafeICryptoTransformLambda.qlx.
+[52/171] Loaded C:\Users\VssAdministrator\.codeql\packages\codeql\csharp-queries\1.7.2\Security Features\CWE-020\RuntimeChecksBypass.qlx.
+[53/171] Loaded C:\Users\VssAdministrator\.codeql\packages\codeql\csharp-queries\1.7.2\Security Features\CWE-285\MissingAccessControl.qlx.
+[54/171] Loaded C:\Users\VssAdministrator\.codeql\packages\codeql\csharp-queries\1.7.2\Security Features\CWE-327\InsecureSQLConnection.qlx.
+[55/171] Loaded C:\Users\VssAdministrator\.codeql\packages\codeql\csharp-queries\1.7.2\Security Features\CWE-639\InsecureDirectObjectReference.qlx.
+[56/171] Loaded C:\Users\VssAdministrator\.codeql\packages\codeql\csharp-queries\1.7.2\Diagnostics\CompilerError.qlx.
+[57/171] Loaded C:\Users\VssAdministrator\.codeql\packages\codeql\csharp-queries\1.7.2\Diagnostics\CompilerMessage.qlx.
+[58/171] Loaded C:\Users\VssAdministrator\.codeql\packages\codeql\csharp-queries\1.7.2\Diagnostics\DiagnosticExtractionErrors.qlx.
+[59/171] Loaded C:\Users\VssAdministrator\.codeql\packages\codeql\csharp-queries\1.7.2\Diagnostics\ExtractedFiles.qlx.
+[60/171] Loaded C:\Users\VssAdministrator\.codeql\packages\codeql\csharp-queries\1.7.2\Diagnostics\ExtractorError.qlx.
+[61/171] Loaded C:\Users\VssAdministrator\.codeql\packages\codeql\csharp-queries\1.7.2\Diagnostics\ExtractorMessage.qlx.
+[62/171] Loaded C:\Users\VssAdministrator\.codeql\packages\codeql\csharp-queries\1.7.2\Telemetry\DatabaseQualityDiagnostics.qlx.
+[63/171] Loaded C:\Users\VssAdministrator\.codeql\packages\codeql\csharp-queries\1.7.2\Metrics\Summaries\LinesOfCode.qlx.
+[64/171] Loaded C:\Users\VssAdministrator\.codeql\packages\codeql\csharp-queries\1.7.2\Telemetry\ExternalLibraryUsage.qlx.
+[65/171] Loaded C:\Users\VssAdministrator\.codeql\packages\codeql\csharp-queries\1.7.2\Telemetry\ExtractorInformation.qlx.
+[66/171] Loaded C:\Users\VssAdministrator\.codeql\packages\codeql\csharp-queries\1.7.2\Telemetry\SupportedExternalApis.qlx.
+[67/171] Loaded C:\Users\VssAdministrator\.codeql\packages\codeql\csharp-queries\1.7.2\Telemetry\SupportedExternalSinks.qlx.
+[68/171] Loaded C:\Users\VssAdministrator\.codeql\packages\codeql\csharp-queries\1.7.2\Telemetry\SupportedExternalSources.qlx.
+[69/171] Loaded C:\Users\VssAdministrator\.codeql\packages\codeql\csharp-queries\1.7.2\Telemetry\SupportedExternalTaint.qlx.
+[70/171] Loaded C:\Users\VssAdministrator\.codeql\packages\codeql\csharp-queries\1.7.2\Telemetry\UnsupportedExternalAPIs.qlx.
+[71/171] Loaded C:\Users\VssAdministrator\.codeql\packages\codeql\csharp-queries\1.7.2\API Abuse\CallToGCCollect.qlx.
+[72/171] Loaded C:\Users\VssAdministrator\.codeql\packages\codeql\csharp-queries\1.7.2\API Abuse\CallToObsoleteMethod.qlx.
+[73/171] Loaded C:\Users\VssAdministrator\.codeql\packages\codeql\csharp-queries\1.7.2\API Abuse\ClassDoesNotImplementEquals.qlx.
+[74/171] Loaded C:\Users\VssAdministrator\.codeql\packages\codeql\csharp-queries\1.7.2\API Abuse\ClassImplementsICloneable.qlx.
+[75/171] Loaded C:\Users\VssAdministrator\.codeql\packages\codeql\csharp-queries\1.7.2\API Abuse\DisposeNotCalledOnException.qlx.
+[76/171] Loaded C:\Users\VssAdministrator\.codeql\packages\codeql\csharp-queries\1.7.2\API Abuse\FormatInvalid.qlx.
+[77/171] Loaded C:\Users\VssAdministrator\.codeql\packages\codeql\csharp-queries\1.7.2\API Abuse\InconsistentEqualsGetHashCode.qlx.
+[78/171] Loaded C:\Users\VssAdministrator\.codeql\packages\codeql\csharp-queries\1.7.2\API Abuse\IncorrectCompareToSignature.qlx.
+[79/171] Loaded C:\Users\VssAdministrator\.codeql\packages\codeql\csharp-queries\1.7.2\API Abuse\IncorrectEqualsSignature.qlx.
+[80/171] Loaded C:\Users\VssAdministrator\.codeql\packages\codeql\csharp-queries\1.7.2\API Abuse\NoDisposeCallOnLocalIDisposable.qlx.
+[81/171] Loaded C:\Users\VssAdministrator\.codeql\packages\codeql\csharp-queries\1.7.2\API Abuse\NullArgumentToEquals.qlx.
+[82/171] Loaded C:\Users\VssAdministrator\.codeql\packages\codeql\csharp-queries\1.7.2\Architecture\Refactoring Opportunities\InappropriateIntimacy.qlx.
+[83/171] Loaded C:\Users\VssAdministrator\.codeql\packages\codeql\csharp-queries\1.7.2\ASP\BlockCodeResponseWrite.qlx.
+[84/171] Loaded C:\Users\VssAdministrator\.codeql\packages\codeql\csharp-queries\1.7.2\Bad Practices\CallsUnmanagedCode.qlx.
+[85/171] Loaded C:\Users\VssAdministrator\.codeql\packages\codeql\csharp-queries\1.7.2\Bad Practices\CatchOfNullReferenceException.qlx.
+[86/171] Loaded C:\Users\VssAdministrator\.codeql\packages\codeql\csharp-queries\1.7.2\Bad Practices\Control-Flow\ConstantCondition.qlx.
+[87/171] Loaded C:\Users\VssAdministrator\.codeql\packages\codeql\csharp-queries\1.7.2\Bad Practices\Declarations\LocalScopeVariableShadowsMember.qlx.
+[88/171] Loaded C:\Users\VssAdministrator\.codeql\packages\codeql\csharp-queries\1.7.2\Bad Practices\Declarations\TooManyRefParameters.qlx.
+[89/171] Loaded C:\Users\VssAdministrator\.codeql\packages\codeql\csharp-queries\1.7.2\Bad Practices\EmptyCatchBlock.qlx.
+[90/171] Loaded C:\Users\VssAdministrator\.codeql\packages\codeql\csharp-queries\1.7.2\Bad Practices\ErroneousClassCompare.qlx.
+[91/171] Loaded C:\Users\VssAdministrator\.codeql\packages\codeql\csharp-queries\1.7.2\Bad Practices\Implementation Hiding\AbstractToConcreteCollection.qlx.
+[92/171] Loaded C:\Users\VssAdministrator\.codeql\packages\codeql\csharp-queries\1.7.2\Bad Practices\Implementation Hiding\ExposeRepresentation.qlx.
+[93/171] Loaded C:\Users\VssAdministrator\.codeql\packages\codeql\csharp-queries\1.7.2\Bad Practices\Naming Conventions\FieldMasksSuperField.qlx.
+[94/171] Loaded C:\Users\VssAdministrator\.codeql\packages\codeql\csharp-queries\1.7.2\Bad Practices\Naming Conventions\SameNameAsSuper.qlx.
+[95/171] Loaded C:\Users\VssAdministrator\.codeql\packages\codeql\csharp-queries\1.7.2\Bad Practices\PathCombine.qlx.
+[96/171] Loaded C:\Users\VssAdministrator\.codeql\packages\codeql\csharp-queries\1.7.2\Bad Practices\UnmanagedCodeCheck.qlx.
+[97/171] Loaded C:\Users\VssAdministrator\.codeql\packages\codeql\csharp-queries\1.7.2\Bad Practices\VirtualCallInConstructorOrDestructor.qlx.
+[98/171] Loaded C:\Users\VssAdministrator\.codeql\packages\codeql\csharp-queries\1.7.2\Complexity\BlockWithTooManyStatements.qlx.
+[99/171] Loaded C:\Users\VssAdministrator\.codeql\packages\codeql\csharp-queries\1.7.2\Complexity\ComplexCondition.qlx.
+[100/171] Loaded C:\Users\VssAdministrator\.codeql\packages\codeql\csharp-queries\1.7.2\Concurrency\FutileSyncOnField.qlx.
+[101/171] Loaded C:\Users\VssAdministrator\.codeql\packages\codeql\csharp-queries\1.7.2\Concurrency\LockedWait.qlx.
+[102/171] Loaded C:\Users\VssAdministrator\.codeql\packages\codeql\csharp-queries\1.7.2\Concurrency\LockOrder.qlx.
+[103/171] Loaded C:\Users\VssAdministrator\.codeql\packages\codeql\csharp-queries\1.7.2\Concurrency\LockThis.qlx.
+[104/171] Loaded C:\Users\VssAdministrator\.codeql\packages\codeql\csharp-queries\1.7.2\Concurrency\SynchSetUnsynchGet.qlx.
+[105/171] Loaded C:\Users\VssAdministrator\.codeql\packages\codeql\csharp-queries\1.7.2\Concurrency\UnsafeLazyInitialization.qlx.
+[106/171] Loaded C:\Users\VssAdministrator\.codeql\packages\codeql\csharp-queries\1.7.2\Concurrency\UnsynchronizedStaticAccess.qlx.
+[107/171] Loaded C:\Users\VssAdministrator\.codeql\packages\codeql\csharp-queries\1.7.2\CSI\CompareIdenticalValues.qlx.
+[108/171] Loaded C:\Users\VssAdministrator\.codeql\packages\codeql\csharp-queries\1.7.2\CSI\NullAlways.qlx.
+[109/171] Loaded C:\Users\VssAdministrator\.codeql\packages\codeql\csharp-queries\1.7.2\CSI\NullMaybe.qlx.
+[110/171] Loaded C:\Users\VssAdministrator\.codeql\packages\codeql\csharp-queries\1.7.2\Dead Code\DeadStoreOfLocal.qlx.
+[111/171] Loaded C:\Users\VssAdministrator\.codeql\packages\codeql\csharp-queries\1.7.2\Documentation\XmldocMissingSummary.qlx.
+[112/171] Loaded C:\Users\VssAdministrator\.codeql\packages\codeql\csharp-queries\1.7.2\Language Abuse\CastThisToTypeParameter.qlx.
+[113/171] Loaded C:\Users\VssAdministrator\.codeql\packages\codeql\csharp-queries\1.7.2\Language Abuse\CatchOfGenericException.qlx.
+[114/171] Loaded C:\Users\VssAdministrator\.codeql\packages\codeql\csharp-queries\1.7.2\Language Abuse\ChainedIs.qlx.
+[115/171] Loaded C:\Users\VssAdministrator\.codeql\packages\codeql\csharp-queries\1.7.2\Language Abuse\DubiousDowncastOfThis.qlx.
+[116/171] Loaded C:\Users\VssAdministrator\.codeql\packages\codeql\csharp-queries\1.7.2\Language Abuse\DubiousTypeTestOfThis.qlx.
+[117/171] Loaded C:\Users\VssAdministrator\.codeql\packages\codeql\csharp-queries\1.7.2\Language Abuse\MissedReadonlyOpportunity.qlx.
+[118/171] Loaded C:\Users\VssAdministrator\.codeql\packages\codeql\csharp-queries\1.7.2\Language Abuse\MissedTernaryOpportunity.qlx.
+[119/171] Loaded C:\Users\VssAdministrator\.codeql\packages\codeql\csharp-queries\1.7.2\Language Abuse\MissedUsingOpportunity.qlx.
+[120/171] Loaded C:\Users\VssAdministrator\.codeql\packages\codeql\csharp-queries\1.7.2\Language Abuse\NestedIf.qlx.
+[121/171] Loaded C:\Users\VssAdministrator\.codeql\packages\codeql\csharp-queries\1.7.2\Language Abuse\RethrowException.qlx.
+[122/171] Loaded C:\Users\VssAdministrator\.codeql\packages\codeql\csharp-queries\1.7.2\Language Abuse\SimplifyBoolExpr.qlx.
+[123/171] Loaded C:\Users\VssAdministrator\.codeql\packages\codeql\csharp-queries\1.7.2\Language Abuse\UnusedPropertyValue.qlx.
+[124/171] Loaded C:\Users\VssAdministrator\.codeql\packages\codeql\csharp-queries\1.7.2\Language Abuse\UselessCastToSelf.qlx.
+[125/171] Loaded C:\Users\VssAdministrator\.codeql\packages\codeql\csharp-queries\1.7.2\Language Abuse\UselessNullCoalescingExpression.qlx.
+[126/171] Loaded C:\Users\VssAdministrator\.codeql\packages\codeql\csharp-queries\1.7.2\Language Abuse\UselessTypeTest.qlx.
+[127/171] Loaded C:\Users\VssAdministrator\.codeql\packages\codeql\csharp-queries\1.7.2\Language Abuse\UselessUpcast.qlx.
+[128/171] Loaded C:\Users\VssAdministrator\.codeql\packages\codeql\csharp-queries\1.7.2\Likely Bugs\Collections\ContainerLengthCmpOffByOne.qlx.
+[129/171] Loaded C:\Users\VssAdministrator\.codeql\packages\codeql\csharp-queries\1.7.2\Likely Bugs\Collections\ContainerSizeCmpZero.qlx.
+[130/171] Loaded C:\Users\VssAdministrator\.codeql\packages\codeql\csharp-queries\1.7.2\Likely Bugs\Collections\ReadOnlyContainer.qlx.
+[131/171] Loaded C:\Users\VssAdministrator\.codeql\packages\codeql\csharp-queries\1.7.2\Likely Bugs\Collections\WriteOnlyContainer.qlx.
+[132/171] Loaded C:\Users\VssAdministrator\.codeql\packages\codeql\csharp-queries\1.7.2\Likely Bugs\DangerousNonShortCircuitLogic.qlx.
+[133/171] Loaded C:\Users\VssAdministrator\.codeql\packages\codeql\csharp-queries\1.7.2\Likely Bugs\Dynamic\BadDynamicCall.qlx.
+[134/171] Loaded C:\Users\VssAdministrator\.codeql\packages\codeql\csharp-queries\1.7.2\Likely Bugs\EqualityCheckOnFloats.qlx.
+[135/171] Loaded C:\Users\VssAdministrator\.codeql\packages\codeql\csharp-queries\1.7.2\Likely Bugs\EqualsArray.qlx.
+[136/171] Loaded C:\Users\VssAdministrator\.codeql\packages\codeql\csharp-queries\1.7.2\Likely Bugs\EqualsUsesAs.qlx.
+[137/171] Loaded C:\Users\VssAdministrator\.codeql\packages\codeql\csharp-queries\1.7.2\Likely Bugs\EqualsUsesIs.qlx.
+[138/171] Loaded C:\Users\VssAdministrator\.codeql\packages\codeql\csharp-queries\1.7.2\Likely Bugs\HashedButNoHash.qlx.
+[139/171] Loaded C:\Users\VssAdministrator\.codeql\packages\codeql\csharp-queries\1.7.2\Likely Bugs\ImpossibleArrayCast.qlx.
+[140/171] Loaded C:\Users\VssAdministrator\.codeql\packages\codeql\csharp-queries\1.7.2\Likely Bugs\IncomparableEquals.qlx.
+[141/171] Loaded C:\Users\VssAdministrator\.codeql\packages\codeql\csharp-queries\1.7.2\Likely Bugs\InconsistentCompareTo.qlx.
+[142/171] Loaded C:\Users\VssAdministrator\.codeql\packages\codeql\csharp-queries\1.7.2\Likely Bugs\LeapYear\UnsafeYearConstruction.qlx.
+[143/171] Loaded C:\Users\VssAdministrator\.codeql\packages\codeql\csharp-queries\1.7.2\Likely Bugs\MishandlingJapaneseEra.qlx.
+[144/171] Loaded C:\Users\VssAdministrator\.codeql\packages\codeql\csharp-queries\1.7.2\Likely Bugs\NestedLoopsSameVariable.qlx.
+[145/171] Loaded C:\Users\VssAdministrator\.codeql\packages\codeql\csharp-queries\1.7.2\Likely Bugs\ObjectComparison.qlx.
+[146/171] Loaded C:\Users\VssAdministrator\.codeql\packages\codeql\csharp-queries\1.7.2\Likely Bugs\PossibleLossOfPrecision.qlx.
+[147/171] Loaded C:\Users\VssAdministrator\.codeql\packages\codeql\csharp-queries\1.7.2\Likely Bugs\RecursiveEquals.qlx.
+[148/171] Loaded C:\Users\VssAdministrator\.codeql\packages\codeql\csharp-queries\1.7.2\Likely Bugs\RecursiveOperatorEquals.qlx.
+[149/171] Loaded C:\Users\VssAdministrator\.codeql\packages\codeql\csharp-queries\1.7.2\Likely Bugs\ReferenceEqualsOnValueTypes.qlx.
+[150/171] Loaded C:\Users\VssAdministrator\.codeql\packages\codeql\csharp-queries\1.7.2\Likely Bugs\SelfAssignment.qlx.
+[151/171] Loaded C:\Users\VssAdministrator\.codeql\packages\codeql\csharp-queries\1.7.2\Likely Bugs\Statements\EmptyBlock.qlx.
+[152/171] Loaded C:\Users\VssAdministrator\.codeql\packages\codeql\csharp-queries\1.7.2\Likely Bugs\Statements\EmptyLockStatement.qlx.
+[153/171] Loaded C:\Users\VssAdministrator\.codeql\packages\codeql\csharp-queries\1.7.2\Likely Bugs\Statements\UseBraces.qlx.
+[154/171] Loaded C:\Users\VssAdministrator\.codeql\packages\codeql\csharp-queries\1.7.2\Likely Bugs\StaticFieldWrittenByInstance.qlx.
+[155/171] Loaded C:\Users\VssAdministrator\.codeql\packages\codeql\csharp-queries\1.7.2\Likely Bugs\StringBuilderCharInit.qlx.
+[156/171] Loaded C:\Users\VssAdministrator\.codeql\packages\codeql\csharp-queries\1.7.2\Likely Bugs\UncheckedCastInEquals.qlx.
+[157/171] Loaded C:\Users\VssAdministrator\.codeql\packages\codeql\csharp-queries\1.7.2\Linq\BadMultipleIteration.qlx.
+[158/171] Loaded C:\Users\VssAdministrator\.codeql\packages\codeql\csharp-queries\1.7.2\Linq\MissedAllOpportunity.qlx.
+[159/171] Loaded C:\Users\VssAdministrator\.codeql\packages\codeql\csharp-queries\1.7.2\Linq\MissedCastOpportunity.qlx.
+[160/171] Loaded C:\Users\VssAdministrator\.codeql\packages\codeql\csharp-queries\1.7.2\Linq\MissedOfTypeOpportunity.qlx.
+[161/171] Loaded C:\Users\VssAdministrator\.codeql\packages\codeql\csharp-queries\1.7.2\Linq\MissedSelectOpportunity.qlx.
+[162/171] Loaded C:\Users\VssAdministrator\.codeql\packages\codeql\csharp-queries\1.7.2\Linq\MissedWhereOpportunity.qlx.
+[163/171] Loaded C:\Users\VssAdministrator\.codeql\packages\codeql\csharp-queries\1.7.2\Linq\RedundantSelect.qlx.
+[164/171] Loaded C:\Users\VssAdministrator\.codeql\packages\codeql\csharp-queries\1.7.2\Performance\StringBuilderInLoop.qlx.
+[165/171] Loaded C:\Users\VssAdministrator\.codeql\packages\codeql\csharp-queries\1.7.2\Performance\StringConcatenationInLoop.qlx.
+[166/171] Loaded C:\Users\VssAdministrator\.codeql\packages\codeql\csharp-queries\1.7.2\Performance\UseTryGetValue.qlx.
+[167/171] Loaded C:\Users\VssAdministrator\.codeql\packages\codeql\csharp-queries\1.7.2\Useless code\DefaultToString.qlx.
+[168/171] Loaded C:\Users\VssAdministrator\.codeql\packages\codeql\csharp-queries\1.7.2\Useless code\FutileConditional.qlx.
+[169/171] Loaded C:\Users\VssAdministrator\.codeql\packages\codeql\csharp-queries\1.7.2\Useless code\IntGetHashCode.qlx.
+[170/171] Loaded C:\Users\VssAdministrator\.codeql\packages\codeql\csharp-queries\1.7.2\Useless code\RedundantToStringCall.qlx.
+[171/171] Loaded C:\Users\VssAdministrator\.codeql\packages\codeql\csharp-queries\1.7.2\Useless code\UnusedLabel.qlx.
+Starting evaluation of codeql\csharp-queries\API Abuse\CallToGCCollect.ql.
+Starting evaluation of codeql\csharp-queries\API Abuse\CallToObsoleteMethod.ql.
+[1/171 eval 9.5s] Evaluation done; writing results to codeql\csharp-queries\API Abuse\CallToGCCollect.bqrs.
+Starting evaluation of codeql\csharp-queries\API Abuse\ClassDoesNotImplementEquals.ql.
+[2/171 eval 65ms] Evaluation done; writing results to codeql\csharp-queries\API Abuse\CallToObsoleteMethod.bqrs.
+Starting evaluation of codeql\csharp-queries\API Abuse\ClassImplementsICloneable.ql.
+[3/171 eval 9.8s] Evaluation done; writing results to codeql\csharp-queries\API Abuse\ClassDoesNotImplementEquals.bqrs.
+Starting evaluation of codeql\csharp-queries\API Abuse\DisposeNotCalledOnException.ql.
+[4/171 eval 10ms] Evaluation done; writing results to codeql\csharp-queries\API Abuse\ClassImplementsICloneable.bqrs.
+[5/171 eval 53.5s] Query failed: codeql\csharp-queries\API Abuse\DisposeNotCalledOnException.ql (Query evaluation ran out of Java heap (Java heap (and arrays) maximum: 808 MiB).
+(eventual cause: OutOfMemoryError "Java heap space")).
+CodeQL is out of memory. You may need to adjust the memory used by CodeQL using the --ram option. (Unfortunately running out of memory can either mean you have set it too low for the analysis you're running, or that you have set it too high for the machine you're running on).
