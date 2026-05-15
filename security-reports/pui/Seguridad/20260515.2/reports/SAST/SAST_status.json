@@ -1,0 +1,107 @@
+{
+  "tool": "SAST",
+  "executedAt": "2026-05-15T15:30:51.6456875+00:00",
+  "runFolder": "D:\\a\\1\\s\\reportes-seguridad\\SAST\\20260515_153051",
+  "exitCode": 1,
+  "outcome": "blocking_findings",
+  "blockingFindings": true,
+  "operationalFailure": false,
+  "message": "SAST encontró hallazgos bloqueantes. CodeQL usa database create buildless, pre-descarga de packs y analyze con ram=4096MB y threads=2.",
+  "error": "SAST detectó hallazgos bloqueantes: layer1Sarif=20, layer2Sarif=34, layer1BuildErrors=0.",
+  "toolAvailability": {
+    "codeql": true
+  },
+  "stepExitCodes": {
+    "layer1Build": 0,
+    "codeqlDatabaseCreate": 0,
+    "codeqlPackDownload": 0,
+    "codeqlAnalyze": 0,
+    "codeqlDatabaseCreateRetry": null,
+    "codeqlAnalyzeRetry": null
+  },
+  "steps": {
+    "layer1Build": {
+      "exitCode": 0,
+      "reportFile": "D:\\a\\1\\s\\reportes-seguridad\\SAST\\20260515_153051\\layer1_build.txt",
+      "sarifFile": "D:\\a\\1\\s\\reportes-seguridad\\SAST\\20260515_153051\\layer1_build.sarif"
+    },
+    "codeqlDatabaseCreate": {
+      "exitCode": 0,
+      "reportFile": "D:\\a\\1\\s\\reportes-seguridad\\SAST\\20260515_153051\\layer2_codeql_create.txt"
+    },
+    "codeqlPackDownload": {
+      "exitCode": 0,
+      "reportFile": "D:\\a\\1\\s\\reportes-seguridad\\SAST\\20260515_153051\\layer2_codeql_pack_download.txt"
+    },
+    "codeqlAnalyze": {
+      "exitCode": 0,
+      "reportFile": "D:\\a\\1\\s\\reportes-seguridad\\SAST\\20260515_153051\\layer2_codeql_analyze.txt",
+      "sarifFile": "D:\\a\\1\\s\\reportes-seguridad\\SAST\\20260515_153051\\layer2_codeql.sarif"
+    },
+    "codeqlDatabaseCreateRetry": {
+      "exitCode": null,
+      "reportFile": "D:\\a\\1\\s\\reportes-seguridad\\SAST\\20260515_153051\\layer2_codeql_create_retry.txt"
+    },
+    "codeqlAnalyzeRetry": {
+      "exitCode": null,
+      "reportFile": "D:\\a\\1\\s\\reportes-seguridad\\SAST\\20260515_153051\\layer2_codeql_analyze_retry.txt",
+      "sarifFile": "D:\\a\\1\\s\\reportes-seguridad\\SAST\\20260515_153051\\layer2_codeql.sarif"
+    }
+  },
+  "codeql": {
+    "databaseCreateMode": "buildless",
+    "sourceRoot": "D:\\a\\1\\s",
+    "buildRoot": "",
+    "buildCommand": "",
+    "queryPack": "codeql/csharp-queries",
+    "querySuite": "codeql/csharp-queries:codeql-suites/csharp-security-and-quality.qls",
+    "packPreDownloadEnabled": true,
+    "packPreDownloadExitCode": 0,
+    "packPreDownloadLog": "D:\\a\\1\\s\\reportes-seguridad\\SAST\\20260515_153051\\layer2_codeql_pack_download.txt",
+    "resources": {
+      "ramMb": 4096,
+      "threads": 2
+    },
+    "fallbackTriggered": false,
+    "fallbackRecovered": false,
+    "fallbackReason": "",
+    "attempts": [
+      {
+        "name": "initial",
+        "databaseMode": "create",
+        "databaseCreateMode": "buildless",
+        "databaseCreateExitCode": 0,
+        "databaseCreateLog": "D:\\a\\1\\s\\reportes-seguridad\\SAST\\20260515_153051\\layer2_codeql_create.txt",
+        "packDownloadExitCode": 0,
+        "packDownloadLog": "D:\\a\\1\\s\\reportes-seguridad\\SAST\\20260515_153051\\layer2_codeql_pack_download.txt",
+        "analyzeExitCode": 0,
+        "analyzeLog": "D:\\a\\1\\s\\reportes-seguridad\\SAST\\20260515_153051\\layer2_codeql_analyze.txt",
+        "sarifProduced": true,
+        "resources": {
+          "ramMb": 4096,
+          "threads": 2
+        }
+      }
+    ]
+  },
+  "findings": {
+    "layer1SarifResults": 20,
+    "layer2SarifResults": 34,
+    "layer1BuildErrors": 0
+  },
+  "reportPaths": {
+    "runFolder": "D:\\a\\1\\s\\reportes-seguridad\\SAST\\20260515_153051",
+    "layer1Build": "D:\\a\\1\\s\\reportes-seguridad\\SAST\\20260515_153051\\layer1_build.txt",
+    "layer1Sarif": "D:\\a\\1\\s\\reportes-seguridad\\SAST\\20260515_153051\\layer1_build.sarif",
+    "codeqlCreateLog": "D:\\a\\1\\s\\reportes-seguridad\\SAST\\20260515_153051\\layer2_codeql_create.txt",
+    "codeqlPackDownloadLog": "D:\\a\\1\\s\\reportes-seguridad\\SAST\\20260515_153051\\layer2_codeql_pack_download.txt",
+    "codeqlAnalyzeLog": "D:\\a\\1\\s\\reportes-seguridad\\SAST\\20260515_153051\\layer2_codeql_analyze.txt",
+    "codeqlCreateRetryLog": "D:\\a\\1\\s\\reportes-seguridad\\SAST\\20260515_153051\\layer2_codeql_create_retry.txt",
+    "codeqlAnalyzeRetryLog": "D:\\a\\1\\s\\reportes-seguridad\\SAST\\20260515_153051\\layer2_codeql_analyze_retry.txt",
+    "layer2Sarif": "D:\\a\\1\\s\\reportes-seguridad\\SAST\\20260515_153051\\layer2_codeql.sarif",
+    "status": "D:\\a\\1\\s\\reportes-seguridad\\SAST\\20260515_153051\\SAST_status.json",
+    "codeQlDatabaseRoot": "D:\\a\\1\\security-runtime\\codeql-db"
+  },
+  "missingEvidence": [],
+  "failureReasons": []
+}

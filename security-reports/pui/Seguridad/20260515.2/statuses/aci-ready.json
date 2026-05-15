@@ -1,0 +1,15 @@
+{
+  "tool": "ACI-ReadyCheck",
+  "executedAt": "2026-05-15T15:36:20.9140563+00:00",
+  "operationalFailure": true,
+  "blockingFindings": false,
+  "outcome": "operational_failure",
+  "zapBaseUrl": "http://pui-zap-security-eoqgw0uuoo.mexicocentral.azurecontainer.io:8080",
+  "version": null,
+  "pollCount": 16,
+  "lastStatusCode": null,
+  "lastError": "The request was canceled due to the configured HttpClient.Timeout of 10 seconds elapsing.",
+  "lastAttemptAt": "2026-05-15T15:41:23.3917656+00:00",
+  "error": "ZAP no respondió en 300 segundos. Último estado: sin código HTTP. Último error: The request was canceled due to the configured HttpClient.Timeout of 10 seconds elapsing.",
+  "message": "ZAP no alcanzó estado ready dentro del timeout configurado."
+}

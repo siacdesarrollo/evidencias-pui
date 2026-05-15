@@ -1,0 +1,17 @@
+{
+  "tool": "DAST",
+  "executedAt": "2026-05-15T15:41:35.4598807+00:00",
+  "operationalFailure": true,
+  "blockingFindings": false,
+  "outcome": "operational_failure",
+  "reportFolder": "D:\\a\\1\\s\\reportes-seguridad\\DAST\\20260515_154135",
+  "evidenceFiles": [
+    "D:\\a\\1\\s\\reportes-seguridad\\DAST\\20260515_154135\\DAST_summary.html",
+    "D:\\a\\1\\s\\reportes-seguridad\\DAST\\20260515_154135\\DAST_raw.html",
+    "D:\\a\\1\\s\\reportes-seguridad\\DAST\\20260515_154135\\DAST_report.json",
+    "D:\\a\\1\\s\\reportes-seguridad\\DAST\\20260515_154135\\DAST_metadata.json"
+  ],
+  "zapBaseUrl": "http://pui-zap-security-eoqgw0uuoo.mexicocentral.azurecontainer.io:8080",
+  "error": "Response status code does not indicate success: 504 (Gateway Timeout).",
+  "message": "DAST remoto falló antes de completar la recolección de evidencia."
+}

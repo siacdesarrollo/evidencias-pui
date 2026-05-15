@@ -1,0 +1,207 @@
+CodeQL database create strategy: buildless
+CodeQL database source root: D:\a\1\s
+CodeQL database command root: D:\a\1\s
+CodeQL database create arguments: codeql database create D:\a\1\security-runtime\codeql-db --language=csharp --source-root=D:\a\1\s --build-mode=none --overwrite
+Initializing database at D:\a\1\security-runtime\codeql-db.
+Running build command: []
+Running command in D:\a\1\s: [D:\a\_temp\security-tools\codeql\codeql\csharp\tools\autobuild.cmd]
+[2026-05-15 15:31:13] [build-stdout] CodeQL C# autobuilder
+[2026-05-15 15:31:13] [build-stdout] Working directory: D:\a\1\s
+[2026-05-15 15:31:13] [build-stdout] [002] Extracting C# with build-mode set to 'none'
+[2026-05-15 15:31:13] [build-stdout] [002] Finding files in D:\a\1\s...
+[2026-05-15 15:31:13] [build-stdout] [002] Found 455 files in D:\a\1\s.
+[2026-05-15 15:31:13] [build-stdout] [002] Found 356 small non-binary files in D:\a\1\s.
+[2026-05-15 15:31:13] [build-stdout] [002] Found 147 source files in D:\a\1\s.
+[2026-05-15 15:31:13] [build-stdout] [002] Found 0 global.json files in D:\a\1\s.
+[2026-05-15 15:31:13] [build-stdout] [002] Using .NET CLI executable: 'dotnet'
+[2026-05-15 15:31:13] [build-stdout] [002] Running 'dotnet --info'
+[2026-05-15 15:31:13] [build-stdout] [002] .NET SDK:
+[2026-05-15 15:31:13] [build-stdout] [002]  Version:           10.0.300
+[2026-05-15 15:31:13] [build-stdout] [002]  Commit:            caa81fa497
+[2026-05-15 15:31:13] [build-stdout] [002]  Workload version:  10.0.300-manifests.b47d7e23
+[2026-05-15 15:31:13] [build-stdout] [002]  MSBuild version:   18.6.3+caa81fa49
+[2026-05-15 15:31:13] [build-stdout] [002] 
+[2026-05-15 15:31:13] [build-stdout] [002] Runtime Environment:
+[2026-05-15 15:31:13] [build-stdout] [002]  OS Name:     Windows
+[2026-05-15 15:31:13] [build-stdout] [002]  OS Version:  10.0.26100
+[2026-05-15 15:31:13] [build-stdout] [002]  OS Platform: Windows
+[2026-05-15 15:31:14] [build-stdout] [002]  RID:         win-x64
+[2026-05-15 15:31:14] [build-stdout] [002]  Base Path:   C:\hostedtoolcache\windows\dotnet\sdk\10.0.300\
+[2026-05-15 15:31:14] [build-stdout] [002] 
+[2026-05-15 15:31:14] [build-stdout] [002] .NET workloads installed:
+[2026-05-15 15:31:14] [build-stdout] [002]  [maui-windows]
+[2026-05-15 15:31:14] [build-stdout] [002]    Installation Source: VS 17.14.37216.2
+[2026-05-15 15:31:14] [build-stdout] [002]    Manifest Version:    10.0.0/10.0.100
+[2026-05-15 15:31:14] [build-stdout] [002]    Manifest Path:       C:\hostedtoolcache\windows\dotnet\sdk-manifests\10.0.100\microsoft.net.sdk.maui\10.0.0\WorkloadManifest.json
+[2026-05-15 15:31:14] [build-stdout] [002]    Install Type:        FileBased
+[2026-05-15 15:31:14] [build-stdout] [002] 
+[2026-05-15 15:31:14] [build-stdout] [002]  [maccatalyst]
+[2026-05-15 15:31:14] [build-stdout] [002]    Installation Source: VS 17.14.37216.2
+[2026-05-15 15:31:14] [build-stdout] [002]    Manifest Version:    26.0.11017/10.0.100
+[2026-05-15 15:31:14] [build-stdout] [002]    Manifest Path:       C:\hostedtoolcache\windows\dotnet\sdk-manifests\10.0.100\microsoft.net.sdk.maccatalyst\26.0.11017\WorkloadManifest.json
+[2026-05-15 15:31:14] [build-stdout] [002]    Install Type:        FileBased
+[2026-05-15 15:31:14] [build-stdout] [002] 
+[2026-05-15 15:31:14] [build-stdout] [002]  [ios]
+[2026-05-15 15:31:14] [build-stdout] [002]    Installation Source: VS 17.14.37216.2
+[2026-05-15 15:31:14] [build-stdout] [002]    Manifest Version:    26.0.11017/10.0.100
+[2026-05-15 15:31:14] [build-stdout] [002]    Manifest Path:       C:\hostedtoolcache\windows\dotnet\sdk-manifests\10.0.100\microsoft.net.sdk.ios\26.0.11017\WorkloadManifest.json
+[2026-05-15 15:31:14] [build-stdout] [002]    Install Type:        FileBased
+[2026-05-15 15:31:14] [build-stdout] [002] 
+[2026-05-15 15:31:14] [build-stdout] [002]  [android]
+[2026-05-15 15:31:14] [build-stdout] [002]    Installation Source: VS 17.14.37216.2
+[2026-05-15 15:31:14] [build-stdout] [002]    Manifest Version:    36.1.2/10.0.100
+[2026-05-15 15:31:14] [build-stdout] [002]    Manifest Path:       C:\hostedtoolcache\windows\dotnet\sdk-manifests\10.0.100\microsoft.net.sdk.android\36.1.2\WorkloadManifest.json
+[2026-05-15 15:31:14] [build-stdout] [002]    Install Type:        FileBased
+[2026-05-15 15:31:14] [build-stdout] [002] 
+[2026-05-15 15:31:14] [build-stdout] [002]  [wasm-tools]
+[2026-05-15 15:31:14] [build-stdout] [002]    Installation Source: VS 17.14.37216.2
+[2026-05-15 15:31:14] [build-stdout] [002]    Manifest Version:    10.0.108/10.0.100
+[2026-05-15 15:31:14] [build-stdout] [002]    Manifest Path:       C:\hostedtoolcache\windows\dotnet\sdk-manifests\10.0.100\microsoft.net.workload.mono.toolchain.current\10.0.108\WorkloadManifest.json
+[2026-05-15 15:31:14] [build-stdout] [002]    Install Type:        FileBased
+[2026-05-15 15:31:14] [build-stdout] [002] 
+[2026-05-15 15:31:14] [build-stdout] [002] Configured to use workload sets when installing new manifests.
+[2026-05-15 15:31:14] [build-stdout] [002] No workload sets are installed. Run "dotnet workload restore" to install a workload set.
+[2026-05-15 15:31:14] [build-stdout] [002] 
+[2026-05-15 15:31:14] [build-stdout] [002] Host:
+[2026-05-15 15:31:14] [build-stdout] [002]   Version:      10.0.8
+[2026-05-15 15:31:14] [build-stdout] [002]   Architecture: x64
+[2026-05-15 15:31:14] [build-stdout] [002]   Commit:       94ea82652c
+[2026-05-15 15:31:14] [build-stdout] [002] 
+[2026-05-15 15:31:14] [build-stdout] [002] .NET SDKs installed:
+[2026-05-15 15:31:14] [build-stdout] [002]   10.0.300 [C:\hostedtoolcache\windows\dotnet\sdk]
+[2026-05-15 15:31:14] [build-stdout] [002] 
+[2026-05-15 15:31:14] [build-stdout] [002] .NET runtimes installed:
+[2026-05-15 15:31:14] [build-stdout] [002]   Microsoft.AspNetCore.App 10.0.8 [C:\hostedtoolcache\windows\dotnet\shared\Microsoft.AspNetCore.App]
+[2026-05-15 15:31:14] [build-stdout] [002]   Microsoft.NETCore.App 10.0.8 [C:\hostedtoolcache\windows\dotnet\shared\Microsoft.NETCore.App]
+[2026-05-15 15:31:14] [build-stdout] [002]   Microsoft.WindowsDesktop.App 10.0.8 [C:\hostedtoolcache\windows\dotnet\shared\Microsoft.WindowsDesktop.App]
+[2026-05-15 15:31:14] [build-stdout] [002] 
+[2026-05-15 15:31:14] [build-stdout] [002] Other architectures found:
+[2026-05-15 15:31:14] [build-stdout] [002]   x86   [C:\Program Files (x86)\dotnet]
+[2026-05-15 15:31:14] [build-stdout] [002]     registered at [HKLM\SOFTWARE\dotnet\Setup\InstalledVersions\x86\InstallLocation]
+[2026-05-15 15:31:14] [build-stdout] [002] 
+[2026-05-15 15:31:14] [build-stdout] [002] Environment variables:
+[2026-05-15 15:31:14] [build-stdout] [002]   DOTNET_CLI_TELEMETRY_OPTOUT              [1]
+[2026-05-15 15:31:14] [build-stdout] [002]   DOTNET_CLI_UI_LANGUAGE                   [en]
+[2026-05-15 15:31:14] [build-stdout] [002]   DOTNET_GENERATE_ASPNET_CERTIFICATE       [false]
+[2026-05-15 15:31:14] [build-stdout] [002]   DOTNET_MULTILEVEL_LOOKUP                 [0]
+[2026-05-15 15:31:14] [build-stdout] [002]   DOTNET_NOLOGO                            [1]
+[2026-05-15 15:31:14] [build-stdout] [002]   DOTNET_ROOT                              [C:\hostedtoolcache\windows/dotnet]
+[2026-05-15 15:31:14] [build-stdout] [002]   DOTNET_SKIP_FIRST_TIME_EXPERIENCE        [true]
+[2026-05-15 15:31:14] [build-stdout] [002] 
+[2026-05-15 15:31:14] [build-stdout] [002] global.json file:
+[2026-05-15 15:31:14] [build-stdout] [002]   Not found
+[2026-05-15 15:31:14] [build-stdout] [002] 
+[2026-05-15 15:31:14] [build-stdout] [002] Learn more:
+[2026-05-15 15:31:14] [build-stdout] [002]   https://aka.ms/dotnet/info
+[2026-05-15 15:31:14] [build-stdout] [002] 
+[2026-05-15 15:31:14] [build-stdout] [002] Download .NET:
+[2026-05-15 15:31:14] [build-stdout] [002]   https://aka.ms/dotnet/download
+[2026-05-15 15:31:14] [build-stdout] [002] Found 94 DLL files in D:\a\1\s.
+[2026-05-15 15:31:14] [build-stdout] [002] Checking NuGet feed responsiveness: True
+[2026-05-15 15:31:14] [build-stdout] [002] Found 0 nuget.config files in D:\a\1\s.
+[2026-05-15 15:31:14] [build-stdout] [002] Getting NuGet feeds in folder 'D:\a\1\s'...
+[2026-05-15 15:31:14] [build-stdout] [002] Running 'dotnet nuget list source --format Short' in D:\a\1\s
+[2026-05-15 15:31:14] [build-stderr] [002] Error: Failed to parse feed from 'EM C:\Program Files (x86)\Microsoft SDKs\NuGetPackages\'
+[2026-05-15 15:31:14] [build-stdout] [002] Found 1 NuGet feeds (with inherited ones) in nuget.config files: https://api.nuget.org/v3/index.json
+[2026-05-15 15:31:14] [build-stdout] [002] Checking NuGet feed reachability on feeds: 
+[2026-05-15 15:31:14] [build-stdout] [002] Warning: No NuGet feeds are reachable.
+[2026-05-15 15:31:14] [build-stdout] [002] Checking NuGet feed reachability on feeds: https://api.nuget.org/v3/index.json
+[2026-05-15 15:31:14] [build-stdout] [002] Checking if NuGet feed 'https://api.nuget.org/v3/index.json' is reachable...
+[2026-05-15 15:31:14] [build-stdout] [002] Attempt 1/4 to reach NuGet feed 'https://api.nuget.org/v3/index.json'.
+[2026-05-15 15:31:15] [build-stdout] [002] Querying NuGet feed 'https://api.nuget.org/v3/index.json' succeeded.
+[2026-05-15 15:31:15] [build-stdout] [002] Reachable NuGet feeds: https://api.nuget.org/v3/index.json
+[2026-05-15 15:31:15] [build-stdout] [002] Found 0 packages.config files in D:\a\1\s.
+[2026-05-15 15:31:16] [build-stdout] [002] Failed to read file D:\a\1\s\reportes-seguridad\SAST\20260515_153051\layer2_codeql_create.txt
+[2026-05-15 15:31:16] [build-stdout] [002] Found 1 solution files in D:\a\1\s.
+[2026-05-15 15:31:16] [build-stdout] [002] Restoring solution D:\a\1\s\SIAC.PUI.slnx...
+[2026-05-15 15:31:16] [build-stdout] [002] Getting NuGet feeds in folder 'D:\a\1\s'...
+[2026-05-15 15:31:16] [build-stdout] [002] Running 'dotnet nuget list source --format Short' in D:\a\1\s
+[2026-05-15 15:31:17] [build-stderr] [002] Error: Failed to parse feed from 'EM C:\Program Files (x86)\Microsoft SDKs\NuGetPackages\'
+[2026-05-15 15:31:17] [build-stdout] [002] Running 'dotnet restore --no-dependencies "D:\a\1\s\SIAC.PUI.slnx" --packages "D:\a\1\security-runtime\codeql-db\working\packages" /p:DisableImplicitNuGetFallbackFolder=true --verbosity normal /p:TargetFrameworkRootPath="D:\a\1\security-runtime\codeql-db\working\emptyFakeDotnetRoot" /p:NetCoreTargetingPackRoot="D:\a\1\security-runtime\codeql-db\working\emptyFakeDotnetRoot" /p:AllowMissingPrunePackageData=true  -s "https://api.nuget.org/v3/index.json"'
+[2026-05-15 15:31:28] [build-stdout] [002] Found 3 project files in D:\a\1\s.
+[2026-05-15 15:31:28] [build-stdout] [002] Restored 100 packages
+[2026-05-15 15:31:28] [build-stdout] [002] Found 88 packages in project.assets.json files
+[2026-05-15 15:31:28] [build-stdout] [002] No fallback NuGet feeds specified. Adding default feed: https://api.nuget.org/v3/index.json
+[2026-05-15 15:31:28] [build-stdout] [002] Adding feeds from nuget.config to fallback restore: True
+[2026-05-15 15:31:28] [build-stdout] [002] Checking fallback NuGet feed reachability on feeds: https://api.nuget.org/v3/index.json
+[2026-05-15 15:31:28] [build-stdout] [002] Checking if NuGet feed 'https://api.nuget.org/v3/index.json' is reachable...
+[2026-05-15 15:31:28] [build-stdout] [002] Attempt 1/4 to reach NuGet feed 'https://api.nuget.org/v3/index.json'.
+[2026-05-15 15:31:28] [build-stdout] [002] Querying NuGet feed 'https://api.nuget.org/v3/index.json' succeeded.
+[2026-05-15 15:31:28] [build-stdout] [002] Reachable fallback NuGet feeds: https://api.nuget.org/v3/index.json
+[2026-05-15 15:31:28] [build-stdout] [002] Found 6 packages that are not yet restored
+[2026-05-15 15:31:28] [build-stdout] [002] Creating fallback nuget.config file D:\a\1\security-runtime\codeql-db\working\nugetconfig\nuget.config.
+[2026-05-15 15:31:28] [build-stdout] [007] Restoring package somepkg...
+[2026-05-15 15:31:28] [build-stdout] [002] Restoring package securitycodescan.vs2019...
+[2026-05-15 15:31:28] [build-stdout] [002] Running 'dotnet new console --no-restore --output "D:\a\1\security-runtime\codeql-db\working\79474761DC065E3133F9203CAD2AB756\missingpackages_workingdir"'
+[2026-05-15 15:31:28] [build-stdout] [007] Running 'dotnet new console --no-restore --output "D:\a\1\security-runtime\codeql-db\working\F413D3C0395F56F3E30575450EFC3DB0\missingpackages_workingdir"'
+[2026-05-15 15:31:30] [build-stdout] [007] Running 'dotnet add "D:\a\1\security-runtime\codeql-db\working\F413D3C0395F56F3E30575450EFC3DB0\missingpackages_workingdir" package "somepkg" --no-restore'
+[2026-05-15 15:31:30] [build-stdout] [002] Running 'dotnet add "D:\a\1\security-runtime\codeql-db\working\79474761DC065E3133F9203CAD2AB756\missingpackages_workingdir" package "securitycodescan.vs2019" --no-restore'
+[2026-05-15 15:31:32] [build-stdout] [007] Running 'dotnet restore --no-dependencies "D:\a\1\security-runtime\codeql-db\working\F413D3C0395F56F3E30575450EFC3DB0\missingpackages_workingdir" --packages "D:\a\1\security-runtime\codeql-db\working\missingpackages" /p:DisableImplicitNuGetFallbackFolder=true --verbosity normal --configfile "D:\a\1\security-runtime\codeql-db\working\nugetconfig\nuget.config" --force'
+[2026-05-15 15:31:32] [build-stdout] [002] Running 'dotnet restore --no-dependencies "D:\a\1\security-runtime\codeql-db\working\79474761DC065E3133F9203CAD2AB756\missingpackages_workingdir" --packages "D:\a\1\security-runtime\codeql-db\working\missingpackages" /p:DisableImplicitNuGetFallbackFolder=true --verbosity normal --configfile "D:\a\1\security-runtime\codeql-db\working\nugetconfig\nuget.config" --force'
+[2026-05-15 15:31:34] [build-stdout] [002] Restoring package swashbuckle.aspnetcore...
+[2026-05-15 15:31:34] [build-stdout] [002] Running 'dotnet new console --no-restore --output "D:\a\1\security-runtime\codeql-db\working\DB651595203149290BF1EFF75ED74403\missingpackages_workingdir"'
+[2026-05-15 15:31:35] [build-stderr] [007] Error: Command 'dotnet restore --no-dependencies "D:\a\1\security-runtime\codeql-db\working\F413D3C0395F56F3E30575450EFC3DB0\missingpackages_workingdir" --packages "D:\a\1\security-runtime\codeql-db\working\missingpackages" /p:DisableImplicitNuGetFallbackFolder=true --verbosity normal --configfile "D:\a\1\security-runtime\codeql-db\working\nugetconfig\nuget.config" --force' failed with exit code 1
+[2026-05-15 15:31:35] [build-stdout] [007] Failed to restore nuget package somepkg
+[2026-05-15 15:31:35] [build-stdout] [007] Restoring package microsoft.net.test.sdk...
+[2026-05-15 15:31:35] [build-stdout] [007] Running 'dotnet new console --no-restore --output "D:\a\1\security-runtime\codeql-db\working\5707D9CCD3909344C2384588AB311A3D\missingpackages_workingdir"'
+[2026-05-15 15:31:35] [build-stdout] [002] Running 'dotnet add "D:\a\1\security-runtime\codeql-db\working\DB651595203149290BF1EFF75ED74403\missingpackages_workingdir" package "swashbuckle.aspnetcore" --no-restore'
+[2026-05-15 15:31:36] [build-stdout] [007] Running 'dotnet add "D:\a\1\security-runtime\codeql-db\working\5707D9CCD3909344C2384588AB311A3D\missingpackages_workingdir" package "microsoft.net.test.sdk" --no-restore'
+[2026-05-15 15:31:37] [build-stdout] [002] Running 'dotnet restore --no-dependencies "D:\a\1\security-runtime\codeql-db\working\DB651595203149290BF1EFF75ED74403\missingpackages_workingdir" --packages "D:\a\1\security-runtime\codeql-db\working\missingpackages" /p:DisableImplicitNuGetFallbackFolder=true --verbosity normal --configfile "D:\a\1\security-runtime\codeql-db\working\nugetconfig\nuget.config" --force'
+[2026-05-15 15:31:38] [build-stdout] [007] Running 'dotnet restore --no-dependencies "D:\a\1\security-runtime\codeql-db\working\5707D9CCD3909344C2384588AB311A3D\missingpackages_workingdir" --packages "D:\a\1\security-runtime\codeql-db\working\missingpackages" /p:DisableImplicitNuGetFallbackFolder=true --verbosity normal --configfile "D:\a\1\security-runtime\codeql-db\working\nugetconfig\nuget.config" --force'
+[2026-05-15 15:31:43] [build-stdout] [002] Restoring package xunit...
+[2026-05-15 15:31:43] [build-stdout] [002] Running 'dotnet new console --no-restore --output "D:\a\1\security-runtime\codeql-db\working\CB3D70C1C3CCEDE61E9080295E05A90C\missingpackages_workingdir"'
+[2026-05-15 15:31:43] [build-stdout] [007] Restoring package xunit.runner.visualstudio...
+[2026-05-15 15:31:43] [build-stdout] [007] Running 'dotnet new console --no-restore --output "D:\a\1\security-runtime\codeql-db\working\38137712C671CCEA0DDC198C705E19A0\missingpackages_workingdir"'
+[2026-05-15 15:31:44] [build-stdout] [002] Running 'dotnet add "D:\a\1\security-runtime\codeql-db\working\CB3D70C1C3CCEDE61E9080295E05A90C\missingpackages_workingdir" package "xunit" --no-restore'
+[2026-05-15 15:31:44] [build-stdout] [007] Running 'dotnet add "D:\a\1\security-runtime\codeql-db\working\38137712C671CCEA0DDC198C705E19A0\missingpackages_workingdir" package "xunit.runner.visualstudio" --no-restore'
+[2026-05-15 15:31:45] [build-stdout] [002] Running 'dotnet restore --no-dependencies "D:\a\1\security-runtime\codeql-db\working\CB3D70C1C3CCEDE61E9080295E05A90C\missingpackages_workingdir" --packages "D:\a\1\security-runtime\codeql-db\working\missingpackages" /p:DisableImplicitNuGetFallbackFolder=true --verbosity normal --configfile "D:\a\1\security-runtime\codeql-db\working\nugetconfig\nuget.config" --force'
+[2026-05-15 15:31:46] [build-stdout] [007] Running 'dotnet restore --no-dependencies "D:\a\1\security-runtime\codeql-db\working\38137712C671CCEA0DDC198C705E19A0\missingpackages_workingdir" --packages "D:\a\1\security-runtime\codeql-db\working\missingpackages" /p:DisableImplicitNuGetFallbackFolder=true --verbosity normal --configfile "D:\a\1\security-runtime\codeql-db\working\nugetconfig\nuget.config" --force'
+[2026-05-15 15:31:49] [build-stdout] [002] Adding .NET Framework DLLs
+[2026-05-15 15:31:49] [build-stdout] [002] Indexing 1620 assemblies...
+[2026-05-15 15:31:50] [build-stdout] [002] Couldn't read assembly info from D:\a\1\security-runtime\codeql-db\working\missingpackages\microsoft.codecoverage\18.5.1\build\netstandard2.0\arm64\MicrosoftInstrumentationEngine_arm64.dll
+[2026-05-15 15:31:50] [build-stdout] [002] Couldn't read assembly info from D:\a\1\security-runtime\codeql-db\working\missingpackages\microsoft.codecoverage\18.5.1\build\netstandard2.0\CodeCoverage\CodeCoverageMessages.dll
+[2026-05-15 15:31:50] [build-stdout] [002] Couldn't read assembly info from D:\a\1\security-runtime\codeql-db\working\missingpackages\microsoft.codecoverage\18.5.1\build\netstandard2.0\CodeCoverage\covrun32.dll
+[2026-05-15 15:31:50] [build-stdout] [002] Couldn't read assembly info from D:\a\1\security-runtime\codeql-db\working\missingpackages\microsoft.codecoverage\18.5.1\build\netstandard2.0\CodeCoverage\msdia140.dll
+[2026-05-15 15:31:50] [build-stdout] [002] Couldn't read assembly info from D:\a\1\security-runtime\codeql-db\working\missingpackages\microsoft.codecoverage\18.5.1\build\netstandard2.0\x64\MicrosoftInstrumentationEngine_x64.dll
+[2026-05-15 15:31:50] [build-stdout] [002] Couldn't read assembly info from D:\a\1\security-runtime\codeql-db\working\missingpackages\microsoft.codecoverage\18.5.1\build\netstandard2.0\x86\MicrosoftInstrumentationEngine_x86.dll
+[2026-05-15 15:31:50] [build-stdout] [002] Couldn't read assembly info from D:\a\1\security-runtime\codeql-db\working\missingpackages\microsoft.testplatform.testhost\18.5.1\lib\net8.0\x64\msdia140.dll
+[2026-05-15 15:31:50] [build-stdout] [002] Couldn't read assembly info from D:\a\1\security-runtime\codeql-db\working\missingpackages\microsoft.testplatform.testhost\18.5.1\lib\net8.0\x86\msdia140.dll
+[2026-05-15 15:31:50] [build-stdout] [002] Couldn't read assembly info from D:\a\1\security-runtime\codeql-db\working\missingpackages\microsoft.codecoverage\18.5.1\build\netstandard2.0\CodeCoverage\amd64\covrun64.dll
+[2026-05-15 15:31:50] [build-stdout] [002] Couldn't read assembly info from D:\a\1\security-runtime\codeql-db\working\missingpackages\microsoft.codecoverage\18.5.1\build\netstandard2.0\CodeCoverage\amd64\msdia140.dll
+[2026-05-15 15:31:50] [build-stdout] [002] Couldn't read assembly info from D:\a\1\security-runtime\codeql-db\working\missingpackages\microsoft.codecoverage\18.5.1\build\netstandard2.0\CodeCoverage\arm64\covrunarm64.dll
+[2026-05-15 15:31:50] [build-stdout] [002] Couldn't read assembly info from D:\a\1\security-runtime\codeql-db\working\missingpackages\microsoft.codecoverage\18.5.1\build\netstandard2.0\CodeCoverage\arm64\msdia140.dll
+[2026-05-15 15:31:50] [build-stdout] [002] Read 1182 assembly infos
+[2026-05-15 15:31:50] [build-stdout] [002] Analyzing D:\a\1\s\SIAC.PUI.slnx...
+[2026-05-15 15:31:50] [build-stdout] [002] Reference list contains 993 assemblies
+[2026-05-15 15:31:50] [build-stdout] [002] After conflict resolution, reference list contains 442 assemblies
+[2026-05-15 15:31:50] [build-stdout] [002] Found 0 resource files in D:\a\1\s.
+[2026-05-15 15:31:50] [build-stdout] [002] Generating source file for implicit usings. Namespaces: Microsoft.AspNetCore.Builder, Microsoft.AspNetCore.Hosting, Microsoft.AspNetCore.Http, Microsoft.AspNetCore.Routing, Microsoft.Extensions.Configuration, Microsoft.Extensions.DependencyInjection, Microsoft.Extensions.Hosting, Microsoft.Extensions.Logging, System, System.Collections.Generic, System.IO, System.Linq, System.Net.Http, System.Net.Http.Json, System.Threading, System.Threading.Tasks
+[2026-05-15 15:31:50] [build-stdout] [002] Found 0 razor view files in D:\a\1\s.
+[2026-05-15 15:31:50] [build-stdout] [002] 
+[2026-05-15 15:31:50] [build-stdout] [002] Build analysis summary:
+[2026-05-15 15:31:50] [build-stdout] [002]    147 source files found on the filesystem
+[2026-05-15 15:31:50] [build-stdout] [002]      1 source files have been generated
+[2026-05-15 15:31:50] [build-stdout] [002]      1 solution files found on the filesystem
+[2026-05-15 15:31:50] [build-stdout] [002]      3 project files found on the filesystem
+[2026-05-15 15:31:50] [build-stdout] [002]    442 resolved references
+[2026-05-15 15:31:50] [build-stdout] [002]      0 unresolved references
+[2026-05-15 15:31:50] [build-stdout] [002]    243 resolved assembly conflicts
+[2026-05-15 15:31:50] [build-stdout] [002]      1 restored .NET framework variants
+[2026-05-15 15:31:50] [build-stdout] [002] Build analysis completed in 00:00:37.2135561
+[2026-05-15 15:31:50] [build-stdout] [002] 
+[2026-05-15 15:31:50] [build-stdout] [002] Extracting...
+[2026-05-15 15:31:50] [build-stdout] [002] Overlay: Overlay mode not enabled.
+[2026-05-15 15:32:23] [build-stdout] [002] Failed to resolve 1 types in 0 namespaces
+[2026-05-15 15:32:23] [build-stdout] [002] Extraction completed in 00:00:32.9556558
+[2026-05-15 15:32:23] [build-stdout] [002] Total time: 00:01:10.1822041
+Finalizing database at D:\a\1\security-runtime\codeql-db.
+Running pre-finalize script D:\a\_temp\security-tools\codeql\codeql\csharp\tools\pre-finalize.cmd in D:\a\1\s.
+Running command in D:\a\1\s: [D:\a\_temp\security-tools\codeql\codeql\csharp\tools\pre-finalize.cmd]
+Pre-finalize script D:\a\_temp\security-tools\codeql\codeql\csharp\tools\pre-finalize.cmd completed in 3109 ms.
+Running TRAP import for CodeQL database at D:\a\1\security-runtime\codeql-db...
+Importing TRAP files
+Merging relations
+Finished writing database (relations: 8.01 MiB; string pool: 7.03 MiB).
+TRAP import complete (11.8s).
+Finished zipping source archive (156.74 KiB).
+Successfully created database at D:\a\1\security-runtime\codeql-db.
