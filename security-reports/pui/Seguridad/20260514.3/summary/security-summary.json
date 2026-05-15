@@ -1,0 +1,224 @@
+{
+  "generatedAt": "2026-05-15T00:52:04.5774156+00:00",
+  "statusCount": 8,
+  "blockingFindings": true,
+  "operationalFailureCount": 4,
+  "operationalFailure": true,
+  "dependencyFailureCount": 2,
+  "dependencyFailure": true,
+  "skipped": true,
+  "statusFiles": [
+    "aci-cleanup.json",
+    "aci-deployment.json",
+    "aci-ready.json",
+    "dast-status.json",
+    "install-tools.json",
+    "sast-status.json",
+    "sca-status.json",
+    "zap-image-publish.json"
+  ],
+  "statuses": [
+    {
+      "tool": "ACI-Cleanup",
+      "executedAt": "2026-05-15T00:51:59.6076737+00:00",
+      "blockingFindings": false,
+      "operationalFailure": false,
+      "outcome": "skipped",
+      "resourceGroupName": "SecurityTestsPui-Pro",
+      "containerGroupName": "pui-zap-security",
+      "result": "not_found",
+      "message": "No había un ACI previo que limpiar."
+    },
+    {
+      "tool": "ACI-Deployment",
+      "executedAt": "2026-05-15T00:51:46.544903+00:00",
+      "operationalFailure": true,
+      "blockingFindings": false,
+      "outcome": "operational_failure",
+      "resourceGroupName": "SecurityTestsPui-Pro",
+      "containerGroupName": "pui-zap-security",
+      "image": "siacacr-h6c7ekdph3h2fhgb.azurecr.io/security/zaproxy:2.17.0",
+      "zapBaseUrl": null,
+      "error": "No se pudo interpretar la salida JSON de Azure CLI.\r\nComando: az container create --resource-group SecurityTestsPui-Pro --name pui-zap-security --location mexicocentral --image siacacr-h6c7ekdph3h2fhgb.azurecr.io/security/zaproxy:2.17.0 --cpu 2 --memory 4 --ports 8080 --ip-address Public --restart-policy Always --os-type Linux --environment-variables ZAP_PORT=8080 --secure-environment-variables ZAP_API_KEY=*** --command-line \"/bin/sh -c \\\"zap.sh -daemon -host 0.0.0.0 -port ${ZAP_PORT} -config api.disablekey=false -config api.key=${ZAP_API_KEY} -config api.addrs.addr.name=.* -config api.addrs.addr.regex=true\\\"\" --dns-name-label pui-zap-security-eOqgW0UuoO --registry-login-server siacacr-h6c7ekdph3h2fhgb.azurecr.io --registry-username siacacr --registry-password *** --only-show-errors --output json\r\nStdOut: Command\r\n    az container create : Create a container group.\r\n\r\nArguments\r\n    --resource-group -g                 [Required] : Name of resource group. You can configure the\r\n                                                     default group using `az configure --defaults\r\n                                                     group=<name>`.\r\n    --command-line                                 : The command line to run when the container is\r\n                                                     started, e.g. '/bin/bash -c myscript.sh'.\r\n    --config-map                                   : A list of config map key-value pairs for the\r\n                                                     container. Space-separated values in\r\n                                                     'key=value' format.\r\n    --cpu                                          : The required number of CPU cores of the\r\n                                                     containers, accurate to one decimal place.\r\n    --dns-name-label                               : The dns name label for container group with\r\n                                                     public IP.\r\n    --environment-variables -e                     : A list of environment variable for the\r\n                                                     container. Space-separated values in\r\n                                                     'key=value' format.\r\n    --file -f                                      : The path to the input file.\r\n    --image                                        : The container image name.\r\n    --ip-address                                   : The IP address type of the container group.\r\n                                                     Allowed values: Private, Public.\r\n    --location -l                                  : Location. Values from: `az account list-\r\n                                                     locations`. You can configure the default\r\n                                                     location using `az configure --defaults\r\n                                                     location=<location>`.\r\n    --memory                                       : The required memory of the containers in GB,\r\n                                                     accurate to one decimal place.\r\n    --name -n                                      : The name of the container group.\r\n    --no-wait                                      : Do not wait for the long-running operation to\r\n                                                     finish.\r\n    --os-type                                      : The OS type of the containers.  Allowed values:\r\n                                                     Linux, Windows.\r\n    --ports                                        : A list of ports to open. Space-separated list\r\n                                                     of ports.  Default: [80].\r\n    --priority                                     : The priority of the container group.\r\n    --protocol                                     : The network protocol to use.  Allowed values:\r\n                                                     TCP, UDP.\r\n    --restart-policy                               : Restart policy for all containers within the\r\n                                                     container group.  Allowed values: Always,\r\n                                                     Never, OnFailure.\r\n    --secrets                                      : Space-separated secrets in 'key=value' format.\r\n    --secrets-mount-path                           : The path within the container where the secrets\r\n                                                     volume should be mounted. Must not contain\r\n                                                     colon ':'.\r\n    --secure-environment-variables                 : A list of secure environment variable for the\r\n                                                     container. Space-separated values in\r\n                                                     'key=value' format.\r\n    --sku                                          : The SKU of the container group.\r\n    --zone                                         : The zone to place the container group.\r\n\r\nAzure File Volume Arguments\r\n    --azure-file-volume-account-key                : The storage account access key used to access\r\n                                                     the Azure File share.\r\n    --azure-file-volume-account-name               : The name of the storage account that contains\r\n                                                     the Azure File share.\r\n    --azure-file-volume-mount-path                 : The path within the container where the azure\r\n                                                     file volume should be mounted. Must not contain\r\n                                                     colon ':'.\r\n    --azure-file-volume-share-name                 : The name of the Azure File share to be mounted\r\n                                                     as a volume.\r\n\r\nConfidential Container Group Arguments\r\n    --add-capabilities                             : A List of security context capabilities to be\r\n                                                     added.\r\n    --allow-escalation                             : Allow whether a process can gain more\r\n                                                     privileges than its parent process.\r\n    --cce-policy                                   : The CCE policy for the confidential container\r\n                                                     group.\r\n    --drop-capabilities                            : A List of security context capabilities to be\r\n                                                     dropped.\r\n    --privileged                                   : The flag to determine if the container\r\n                                                     permissions is elevated to Privileged.\r\n    --run-as-group                                 : Set the User UID for the container.\r\n    --run-as-user                                  : Set the User GID for the container.\r\n    --seccomp-profile                              : A base64 encoded string containing the contents\r\n                                                     of the JSON in the seccomp profile.\r\n\r\nContainer Group Profile Reference Arguments\r\n    --container-group-profile-id                   : The reference container group profile ARM\r\n                                                     resource id.\r\n    --container-group-profile-revision             : The reference container group profile revision.\r\n\r\nGit Repo Volume Arguments\r\n    --gitrepo-dir                                  : The target directory path in the git\r\n                                                     repository. Must not contain '..'.  Default: ..\r\n    --gitrepo-mount-path                           : The path within the container where the git\r\n                                                     repo volume should be mounted. Must not contain\r\n                                                     colon ':'.\r\n    --gitrepo-revision                             : The commit hash for the specified revision.\r\n    --gitrepo-url                                  : The URL of a git repository to be mounted as a\r\n                                                     volume.\r\n\r\nGlobal Policy Arguments\r\n    --acquire-policy-token                         : Acquiring an Azure Policy token automatically\r\n                                                     for this resource operation.\r\n    --change-reference                             : The related change reference ID for this\r\n                                                     resource operation.\r\n\r\nImage Registry Arguments\r\n    --acr-identity                                 : The identity with access to the container\r\n                                                     registry.\r\n    --registry-login-server                        : The container image registry login server.\r\n    --registry-password                            : The password to log in container image registry\r\n                                                     server.\r\n    --registry-username                            : The username to log in container image registry\r\n                                                     server.\r\n\r\nLog Analytics Arguments\r\n    --log-analytics-workspace                      : The Log Analytics workspace name or id. Use the\r\n                                                     current subscription or use --subscription flag\r\n                                                     to set the desired subscription.\r\n    --log-analytics-workspace-key                  : The Log Analytics workspace key.\r\n\r\nManaged Service Identity Arguments\r\n    --assign-identity                              : Space-separated list of assigned identities.\r\n                                                     Assigned identities are either user assigned\r\n                                                     identities (resource IDs) and / or the system\r\n                                                     assigned identity ('[system]'). See examples\r\n                                                     for more info.\r\n    --role                                         : Role name or id the system assigned identity\r\n                                                     will have.  Default: Contributor.\r\n    --scope                                        : Scope that the system assigned identity can\r\n                                                     access.\r\n\r\nNetwork Arguments\r\n    --subnet                                       : The name of the subnet when creating a new VNET\r\n                                                     or referencing an existing one. Can also\r\n                                                     reference an existing subnet by ID.\r\n    --subnet-address-prefix                        : The subnet IP address prefix to use when\r\n                                                     creating a new VNET in CIDR format.  Default:\r\n                                                     10.0.0.0/24.\r\n    --vnet                                         : The name of the VNET when creating a new one or\r\n                                                     referencing an existing one. Can also reference\r\n                                                     an existing vnet by ID. This allows using vnets\r\n                                                     from other resource groups.\r\n    --vnet-address-prefix                          : The IP address prefix to use when creating a\r\n                                                     new VNET in CIDR format.  Default: 10.0.0.0/16.\r\n\r\nStandby Pool Profile Arguments\r\n    --fail-container-group-create-on-reuse-failure : The flag indicating whether to fail the\r\n                                                     container group creation if the standby pool\r\n                                                     reuse failed.\r\n    --standby-pool-profile-id                      : The standby pool profile ARM resource id from\r\n                                                     which the container will be reused.\r\n\r\nGlobal Arguments\r\n    --debug                                        : Increase logging verbosity to show all debug\r\n                                                     logs.\r\n    --help -h                                      : Show this help message and exit.\r\n    --only-show-errors                             : Only show errors, suppressing warnings.\r\n    --output -o                                    : Output format.  Allowed values: json, jsonc,\r\n                                                     none, table, tsv, yaml, yamlc.  Default: json.\r\n    --query                                        : JMESPath query string. See http://jmespath.org/\r\n                                                     for more information and examples.\r\n    --subscription                                 : Name or ID of subscription. You can configure\r\n                                                     the default subscription using `az account set\r\n                                                     -s NAME_OR_ID`.\r\n    --verbose                                      : Increase logging verbosity. Use --debug for\r\n                                                     full debug logs.\r\n\r\nExamples\r\n    Create a container in a container group with 1 core and 1Gb of memory.\r\n        az container create -g MyResourceGroup --name myapp --image myimage:latest --cpu 1 --memory\r\n        1\r\n\r\n    Create a container in a container group that runs Windows, with 2 cores and 3.5Gb of memory.\r\n        az container create -g MyResourceGroup --name mywinapp --image winappimage:latest --os-type\r\n        Windows --cpu 2 --memory 3.5\r\n\r\n    Create a container in a container group with public IP address, ports and DNS name label.\r\n        az container create -g MyResourceGroup --name myapp --image myimage:latest --ports 80 443\r\n        --dns-name-label contoso\r\n\r\n    Create a container in a container group that invokes a script upon start.\r\n        az container create -g MyResourceGroup --name myapp --image myimage:latest --command-line\r\n        \"/bin/sh -c '/path to/myscript.sh'\"\r\n\r\n    Create a container in a container group that runs a command and stop the container afterwards.\r\n        az container create -g MyResourceGroup --name myapp --image myimage:latest --command-line\r\n        \"echo hello\" --restart-policy Never\r\n\r\n    Create a container in a container group with environment variables.\r\n        az container create -g MyResourceGroup --name myapp --image myimage:latest --environment-\r\n        variables key1=value1 key2=value2\r\n\r\n    Create a container in a container group using container image from Azure Container Registry.\r\n        az container create -g MyResourceGroup --name myapp --image\r\n        myAcrRegistry.azurecr.io/myimage:latest --registry-password password\r\n\r\n    Create a container in a container group that mounts an Azure File share as volume.\r\n        az container create -g MyResourceGroup --name myapp --image myimage:latest --command-line\r\n        \"cat /mnt/azfile/myfile\" --azure-file-volume-share-name myshare --azure-file-volume-account-\r\n        name mystorageaccount --azure-file-volume-account-key mystoragekey --azure-file-volume-\r\n        mount-path /mnt/azfile\r\n\r\n    Create a container in a container group that mounts a git repo as volume.\r\n        az container create -g MyResourceGroup --name myapp --image myimage:latest --command-line\r\n        \"cat /mnt/gitrepo\" --gitrepo-url https://github.com/user/myrepo.git --gitrepo-dir ./dir1\r\n        --gitrepo-mount-path /mnt/gitrepo\r\n\r\n    Create a container in a container group using a yaml file.\r\n        az container create -g MyResourceGroup -f containerGroup.yaml\r\n\r\n    Create a container group using Log Analytics from a workspace name.\r\n        az container create -g MyResourceGroup --name myapp --log-analytics-workspace myworkspace\r\n\r\n    Create a container group with a system assigned identity.\r\n        az container create -g MyResourceGroup --name myapp --image myimage:latest --assign-identity\r\n\r\n    Create a container group with a system assigned identity. The group will have a 'Contributor'\r\n    role with access to a storage account.\r\n        az container create -g MyResourceGroup --name myapp --image myimage:latest --assign-identity\r\n        --scope /subscriptions/99999999-1bf0-4dda-\r\n        aec3-cb9272f09590/MyResourceGroup/myRG/providers/Microsoft.Storage/storageAccounts/storage1\r\n\r\n    Create a container group with a user assigned identity.\r\n        az container create -g MyResourceGroup --name myapp --image myimage:latest --assign-identity\r\n        /subscriptions/mySubscriptionId/resourcegroups/myRG/providers/Microsoft.ManagedIdentity/user\r\n        AssignedIdentities/myID\r\n\r\n    Create a container group with both system and user assigned identity.\r\n        az container create -g MyResourceGroup --name myapp --image myimage:latest --assign-identity\r\n        [system] /subscriptions/mySubscriptionId/resourcegroups/myRG/providers/Microsoft.ManagedIden\r\n        tity/userAssignedIdentities/myID",
+      "message": "Falló el despliegue de ZAP en ACI."
+    },
+    {
+      "tool": "ACI-ReadyCheck",
+      "executedAt": "2026-05-15T00:51:52.0263718+00:00",
+      "operationalFailure": false,
+      "blockingFindings": false,
+      "outcome": "dependency_failed",
+      "dependency": "aci-deployment.json",
+      "message": "Readiness no pudo ejecutarse porque falta el estado válido del despliegue ACI.",
+      "error": "No existe información válida del despliegue ACI para esperar ZAP."
+    },
+    {
+      "tool": "DAST",
+      "executedAt": "2026-05-15T00:51:54.0283168+00:00",
+      "operationalFailure": false,
+      "blockingFindings": false,
+      "outcome": "dependency_failed",
+      "dependency": "aci-deployment.json",
+      "message": "DAST no pudo ejecutarse porque falta el estado válido del despliegue ACI/ZAP.",
+      "error": "No existe información válida del despliegue de ZAP en ACI."
+    },
+    {
+      "tool": "InstallTools",
+      "executedAt": "2026-05-15T00:47:07.7634368+00:00",
+      "operationalFailure": false,
+      "blockingFindings": false,
+      "outcome": "success",
+      "tools": {
+        "codeql": {
+          "path": "D:\\a\\_temp\\security-tools\\codeql\\codeql\\codeql.exe",
+          "version": "CodeQL command-line toolchain release 2.25.4."
+        },
+        "trivy": {
+          "path": "D:\\a\\_temp\\security-tools\\trivy\\trivy.exe",
+          "version": "Version: 0.70.0"
+        }
+      },
+      "message": "Trivy y CodeQL quedaron disponibles para el pipeline."
+    },
+    {
+      "tool": "SAST",
+      "executedAt": "2026-05-15T00:48:08.4219212+00:00",
+      "operationalFailure": true,
+      "blockingFindings": true,
+      "outcome": "operational_failure",
+      "reportFolder": "D:\\a\\1\\s\\reportes-seguridad\\SAST\\20260515_004809",
+      "evidenceFiles": [
+        "D:\\a\\1\\s\\reportes-seguridad\\SAST\\20260515_004809\\layer1_build.txt",
+        "D:\\a\\1\\s\\reportes-seguridad\\SAST\\20260515_004809\\layer1_build.sarif"
+      ],
+      "findings": {
+        "exitCode": 1,
+        "layer1SarifResults": 20,
+        "layer2SarifResults": 0,
+        "explicitBuildErrors": 0,
+        "codeQlDatabaseRoot": "D:\\a\\1\\security-runtime\\codeql-db",
+        "missingEvidence": [
+          "layer2_codeql.sarif"
+        ]
+      },
+      "message": "SAST terminó con fallos operativos o evidencia incompleta."
+    },
+    {
+      "tool": "SCA",
+      "executedAt": "2026-05-15T00:47:23.2950563+00:00",
+      "operationalFailure": true,
+      "blockingFindings": false,
+      "outcome": "operational_failure",
+      "reportFolder": "D:\\a\\1\\s\\reportes-seguridad\\SCA\\20260515_004723",
+      "evidenceFiles": [
+        "D:\\a\\1\\s\\reportes-seguridad\\SCA\\20260515_004723\\SCA_nuget_audit.txt",
+        "D:\\a\\1\\s\\reportes-seguridad\\SCA\\20260515_004723\\SCA_dotnet_vulnerable.txt",
+        "D:\\a\\1\\s\\reportes-seguridad\\SCA\\20260515_004723\\SCA_trivy.txt",
+        "D:\\a\\1\\s\\reportes-seguridad\\SCA\\20260515_004723\\SCA_trivy.sarif",
+        "D:\\a\\1\\s\\reportes-seguridad\\SCA\\20260515_004723\\SCA_status.json"
+      ],
+      "findings": {
+        "exitCode": [
+          "Configuración cargada:",
+          "  Proyecto : D:\\a\\1\\s\\src\\SIAC.PUI",
+          "  .csproj  : D:\\a\\1\\s\\src\\SIAC.PUI\\SIAC.PUI.csproj",
+          "  Reportes : D:\\a\\1\\s\\reportes-seguridad",
+          "  URL Local: https://localhost:59633",
+          "",
+          "=== SCA - Análisis de Dependencias ===",
+          "",
+          "[1/4] NuGet Audit via dotnet restore...",
+          "  Determining projects to restore...",
+          "  Restored D:\\a\\1\\s\\src\\SIAC.WebApi.Common\\SIAC.WebApi.Common.csproj (in 3.37 sec).",
+          "  Restored D:\\a\\1\\s\\src\\SIAC.PUI\\SIAC.PUI.csproj (in 5.91 sec).",
+          "  NuGet Audit completado sin errores",
+          "  Reporte: D:\\a\\1\\s\\reportes-seguridad\\SCA\\20260515_004723\\SCA_nuget_audit.txt",
+          "",
+          "[2/4] dotnet build -c Release (genera deps.json para Trivy)...",
+          "  SIAC.WebApi.Common -> D:\\a\\1\\s\\src\\SIAC.WebApi.Common\\bin\\Release\\net10.0\\SIAC.WebApi.Common.dll",
+          "  SIAC.PUI -> D:\\a\\1\\s\\src\\SIAC.PUI\\bin\\Release\\net10.0\\SIAC.PUI.dll",
+          "",
+          "Build succeeded.",
+          "    0 Warning(s)",
+          "    0 Error(s)",
+          "",
+          "Time Elapsed 00:00:18.19",
+          "  Build completado — deps.json generado",
+          "  Reporte: D:\\a\\1\\s\\reportes-seguridad\\SCA\\20260515_004723\\SCA_build.txt",
+          "",
+          "[3/4] dotnet list package --vulnerable --include-transitive",
+          "  Determining projects to restore...",
+          "  All projects are up-to-date for restore.",
+          "",
+          "The following sources were used:",
+          "   https://api.nuget.org/v3/index.json",
+          "   C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\",
+          "",
+          "The given project `SIAC.PUI` has no vulnerable packages given the current sources.",
+          "  Reporte: D:\\a\\1\\s\\reportes-seguridad\\SCA\\20260515_004723\\SCA_dotnet_vulnerable.txt",
+          "",
+          "[4/4] Trivy - Scan de vulnerabilidades...",
+          "  Generando reporte tabla...",
+          "\u001b[31;1m2026-05-15T00:47:55Z\tINFO\t[vulndb] Need to update DB\u001b[0m",
+          "\u001b[31;1m2026-05-15T00:47:55Z\tINFO\t[vulndb] Downloading vulnerability DB...\u001b[0m",
+          "\u001b[31;1m2026-05-15T00:47:55Z\tINFO\t[vulndb] Downloading artifact...\trepo=\"mirror.gcr.io/aquasec/trivy-db:2\"\u001b[0m",
+          "\u001b[31;1m2026-05-15T00:48:02Z\tINFO\t[vulndb] Artifact successfully downloaded\trepo=\"mirror.gcr.io/aquasec/trivy-db:2\"\u001b[0m",
+          "\u001b[31;1m2026-05-15T00:48:02Z\tINFO\t[vuln] Vulnerability scanning is enabled\u001b[0m",
+          "\u001b[31;1m2026-05-15T00:48:02Z\tWARN\t[dotnet] Multiple root projects found in .deps.json\texisting_root=\"SIAC.WebApi.Common/1.0.0\" new_root=\"SIAC.PUI/1.0.0\"\u001b[0m",
+          "\u001b[31;1m2026-05-15T00:48:02Z\tINFO\tNumber of language-specific files\tnum=1\u001b[0m",
+          "\u001b[31;1m2026-05-15T00:48:02Z\tINFO\t[dotnet-core] Detecting vulnerabilities...\u001b[0m",
+          "",
+          "Report Summary",
+          "",
+          "┌────────────────────────────────────────┬─────────────┬─────────────────┐",
+          "│                 Target                 │    Type     │ Vulnerabilities │",
+          "├────────────────────────────────────────┼─────────────┼─────────────────┤",
+          "│ bin/Release/net10.0/SIAC.PUI.deps.json │ dotnet-core │        0        │",
+          "└────────────────────────────────────────┴─────────────┴─────────────────┘",
+          "Legend:",
+          "- '-': Not scanned",
+          "- '0': Clean (no security findings detected)",
+          "",
+          "  Generando reporte SARIF...",
+          "  Reporte tabla: D:\\a\\1\\s\\reportes-seguridad\\SCA\\20260515_004723\\SCA_trivy.txt",
+          "  Reporte SARIF: D:\\a\\1\\s\\reportes-seguridad\\SCA\\20260515_004723\\SCA_trivy.sarif",
+          "",
+          "Carpeta de ejecución: D:\\a\\1\\s\\reportes-seguridad\\SCA\\20260515_004723",
+          "=== SCA Completado ===",
+          0
+        ],
+        "nuGetAuditMatches": 0,
+        "dotnetListMatches": 0,
+        "trivySarifResults": 0,
+        "scriptStatusFile": "D:\\a\\1\\s\\reportes-seguridad\\SCA\\20260515_004723\\SCA_status.json",
+        "toolAvailability": {
+          "trivy": true
+        },
+        "stepExitCodes": {
+          "restore": 0,
+          "build": 0,
+          "dotnetList": 0,
+          "trivyTable": 0,
+          "trivySarif": 0
+        },
+        "failureReasons": [],
+        "missingEvidence": []
+      },
+      "message": "SCA terminó con fallos operativos o evidencia incompleta.",
+      "error": "SCA no completó correctamente."
+    },
+    {
+      "tool": "ZAP-ImagePublish",
+      "executedAt": "2026-05-15T00:51:24.3109846+00:00",
+      "operationalFailure": true,
+      "blockingFindings": false,
+      "outcome": "operational_failure",
+      "acrName": "siacacr",
+      "sourceImage": "ghcr.io/zaproxy/zaproxy:2.17.0",
+      "targetImage": "security/zaproxy:2.17.0",
+      "result": "failed",
+      "error": "You cannot call a method on a null-valued expression.",
+      "message": "Falló la importación de la imagen oficial de ZAP a ACR."
+    }
+  ]
+}

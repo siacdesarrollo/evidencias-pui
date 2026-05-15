@@ -1,0 +1,11 @@
+{
+  "tool": "ACI-Cleanup",
+  "executedAt": "2026-05-15T00:51:59.6076737+00:00",
+  "blockingFindings": false,
+  "operationalFailure": false,
+  "outcome": "skipped",
+  "resourceGroupName": "SecurityTestsPui-Pro",
+  "containerGroupName": "pui-zap-security",
+  "result": "not_found",
+  "message": "No había un ACI previo que limpiar."
+}

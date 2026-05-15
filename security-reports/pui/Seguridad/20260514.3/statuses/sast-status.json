@@ -1,0 +1,23 @@
+{
+  "tool": "SAST",
+  "executedAt": "2026-05-15T00:48:08.4219212+00:00",
+  "operationalFailure": true,
+  "blockingFindings": true,
+  "outcome": "operational_failure",
+  "reportFolder": "D:\\a\\1\\s\\reportes-seguridad\\SAST\\20260515_004809",
+  "evidenceFiles": [
+    "D:\\a\\1\\s\\reportes-seguridad\\SAST\\20260515_004809\\layer1_build.txt",
+    "D:\\a\\1\\s\\reportes-seguridad\\SAST\\20260515_004809\\layer1_build.sarif"
+  ],
+  "findings": {
+    "exitCode": 1,
+    "layer1SarifResults": 20,
+    "layer2SarifResults": 0,
+    "explicitBuildErrors": 0,
+    "codeQlDatabaseRoot": "D:\\a\\1\\security-runtime\\codeql-db",
+    "missingEvidence": [
+      "layer2_codeql.sarif"
+    ]
+  },
+  "message": "SAST terminó con fallos operativos o evidencia incompleta."
+}

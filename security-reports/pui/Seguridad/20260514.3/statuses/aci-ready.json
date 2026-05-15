@@ -1,0 +1,10 @@
+{
+  "tool": "ACI-ReadyCheck",
+  "executedAt": "2026-05-15T00:51:52.0263718+00:00",
+  "operationalFailure": false,
+  "blockingFindings": false,
+  "outcome": "dependency_failed",
+  "dependency": "aci-deployment.json",
+  "message": "Readiness no pudo ejecutarse porque falta el estado válido del despliegue ACI.",
+  "error": "No existe información válida del despliegue ACI para esperar ZAP."
+}

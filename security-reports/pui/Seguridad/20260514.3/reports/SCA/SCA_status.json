@@ -1,0 +1,40 @@
+{
+  "tool": "SCA",
+  "executedAt": "2026-05-15T00:47:23.8997713+00:00",
+  "runFolder": "D:\\a\\1\\s\\reportes-seguridad\\SCA\\20260515_004723",
+  "exitCode": 0,
+  "blockingFindings": false,
+  "operationalFailure": false,
+  "toolAvailability": {
+    "trivy": true
+  },
+  "steps": {
+    "restore": {
+      "exitCode": 0,
+      "reportFile": "D:\\a\\1\\s\\reportes-seguridad\\SCA\\20260515_004723\\SCA_nuget_audit.txt"
+    },
+    "build": {
+      "exitCode": 0,
+      "reportFile": "D:\\a\\1\\s\\reportes-seguridad\\SCA\\20260515_004723\\SCA_build.txt"
+    },
+    "dotnetList": {
+      "exitCode": 0,
+      "reportFile": "D:\\a\\1\\s\\reportes-seguridad\\SCA\\20260515_004723\\SCA_dotnet_vulnerable.txt"
+    },
+    "trivyTable": {
+      "exitCode": 0,
+      "reportFile": "D:\\a\\1\\s\\reportes-seguridad\\SCA\\20260515_004723\\SCA_trivy.txt"
+    },
+    "trivySarif": {
+      "exitCode": 0,
+      "reportFile": "D:\\a\\1\\s\\reportes-seguridad\\SCA\\20260515_004723\\SCA_trivy.sarif"
+    }
+  },
+  "findings": {
+    "nuGetAuditMatches": 0,
+    "dotnetListMatches": 0,
+    "trivySarifResults": 0
+  },
+  "missingEvidence": [],
+  "failureReasons": []
+}
