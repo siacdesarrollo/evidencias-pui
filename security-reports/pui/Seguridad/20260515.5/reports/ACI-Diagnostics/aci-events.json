@@ -1,0 +1,29 @@
+[
+  {
+    "scope": "container:pui-zap-security",
+    "name": "Pulling",
+    "type": "Normal",
+    "count": 1,
+    "firstTimestamp": "05/15/2026 19:15:31",
+    "lastTimestamp": "05/15/2026 19:15:31",
+    "message": "pulling image \"siacacr-h6c7ekdph3h2fhgb.azurecr.io/security/zaproxy@sha256:c0c1477512485fd1a39bf50f6085ca951073036e7506a38dfb5ac414053dbd8e\""
+  },
+  {
+    "scope": "container:pui-zap-security",
+    "name": "Pulled",
+    "type": "Normal",
+    "count": 1,
+    "firstTimestamp": "05/15/2026 19:16:09",
+    "lastTimestamp": "05/15/2026 19:16:09",
+    "message": "Successfully pulled image \"siacacr-h6c7ekdph3h2fhgb.azurecr.io/security/zaproxy@sha256:c0c1477512485fd1a39bf50f6085ca951073036e7506a38dfb5ac414053dbd8e\""
+  },
+  {
+    "scope": "container:pui-zap-security",
+    "name": "Started",
+    "type": "Normal",
+    "count": 1,
+    "firstTimestamp": "05/15/2026 19:16:17",
+    "lastTimestamp": "05/15/2026 19:16:17",
+    "message": "Started container"
+  }
+]

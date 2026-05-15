@@ -1,0 +1,69 @@
+{
+  "tool": "ACI-ReadyCheck",
+  "executedAt": "2026-05-15T19:16:33.8069373+00:00",
+  "operationalFailure": true,
+  "blockingFindings": false,
+  "outcome": "operational_failure",
+  "zapBaseUrl": "http://pui-zap-security-eoqgw0uuoo.mexicocentral.azurecontainer.io:8080",
+  "probeUrl": "http://pui-zap-security-eoqgw0uuoo.mexicocentral.azurecontainer.io:8080/JSON/core/view/version/",
+  "timeoutSeconds": 300,
+  "pollIntervalSeconds": 10,
+  "requestTimeoutSeconds": 10,
+  "deploymentStatusFile": "D:\\a\\1\\a\\security-status\\aci-deployment.json",
+  "deploymentContext": {
+    "containerGroupName": "pui-zap-security",
+    "fqdn": "pui-zap-security-eOqgW0UuoO.mexicocentral.azurecontainer.io",
+    "ipAddress": "158.23.230.151",
+    "endpointSourcePath": "properties.ipAddress"
+  },
+  "version": null,
+  "pollCount": 15,
+  "lastStatusCode": null,
+  "lastError": "The request was canceled due to the configured HttpClient.Timeout of 10 seconds elapsing.",
+  "firstAttemptAt": "2026-05-15T19:16:33.8212459+00:00",
+  "lastAttemptAt": "2026-05-15T19:21:24.1435863+00:00",
+  "deadlineAt": "2026-05-15T19:21:33.8151101+00:00",
+  "elapsedSeconds": 300,
+  "recentProbeResults": [
+    {
+      "attempt": 11,
+      "attemptedAt": "2026-05-15T19:20:04.0905697+00:00",
+      "statusCode": null,
+      "outcome": "retry",
+      "detail": "The request was canceled due to the configured HttpClient.Timeout of 10 seconds elapsing."
+    },
+    {
+      "attempt": 12,
+      "attemptedAt": "2026-05-15T19:20:24.0959152+00:00",
+      "statusCode": null,
+      "outcome": "retry",
+      "detail": "The request was canceled due to the configured HttpClient.Timeout of 10 seconds elapsing."
+    },
+    {
+      "attempt": 13,
+      "attemptedAt": "2026-05-15T19:20:44.1061933+00:00",
+      "statusCode": null,
+      "outcome": "retry",
+      "detail": "The request was canceled due to the configured HttpClient.Timeout of 10 seconds elapsing."
+    },
+    {
+      "attempt": 14,
+      "attemptedAt": "2026-05-15T19:21:04.1298082+00:00",
+      "statusCode": null,
+      "outcome": "retry",
+      "detail": "The request was canceled due to the configured HttpClient.Timeout of 10 seconds elapsing."
+    },
+    {
+      "attempt": 15,
+      "attemptedAt": "2026-05-15T19:21:24.1435863+00:00",
+      "statusCode": null,
+      "outcome": "retry",
+      "detail": "The request was canceled due to the configured HttpClient.Timeout of 10 seconds elapsing."
+    }
+  ],
+  "failureReasons": [
+    "zap_readiness_timeout"
+  ],
+  "error": "ZAP no respondió dentro del timeout. probeUrl=http://pui-zap-security-eoqgw0uuoo.mexicocentral.azurecontainer.io:8080/JSON/core/view/version/; timeoutSeconds=300; pollIntervalSeconds=10; requestTimeoutSeconds=10; lastStatusCode=sin código HTTP; lastError=The request was canceled due to the configured HttpClient.Timeout of 10 seconds elapsing.",
+  "message": "ZAP no alcanzó estado ready dentro del timeout configurado; revisar probeUrl, timeout efectivo y últimos intentos registrados."
+}

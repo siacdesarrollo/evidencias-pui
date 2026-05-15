@@ -1,0 +1,39 @@
+{
+  "tool": "ACI-Diagnostics",
+  "executedAt": "2026-05-15T19:21:45.3443182+00:00",
+  "operationalFailure": false,
+  "blockingFindings": false,
+  "outcome": "success",
+  "message": "Se recopilaron diagnósticos best-effort del ACI de ZAP.",
+  "reportFolder": "D:\\a\\1\\a\\security-status\\aci-diagnostics",
+  "evidenceFiles": [
+    "D:\\a\\1\\a\\security-status\\aci-diagnostics\\aci-show-summary.json",
+    "D:\\a\\1\\a\\security-status\\aci-diagnostics\\aci-show-raw.json",
+    "D:\\a\\1\\a\\security-status\\aci-diagnostics\\aci-events.json",
+    "D:\\a\\1\\a\\security-status\\aci-diagnostics\\aci-logs.txt"
+  ],
+  "failureReasons": [],
+  "missingEvidence": [],
+  "collectionErrors": [],
+  "stepExitCodes": {
+    "show": 0,
+    "logs": 0
+  },
+  "toolAvailability": {
+    "az": true
+  },
+  "deploymentStatusFile": "D:\\a\\1\\a\\security-status\\aci-deployment.json",
+  "deploymentStatusAvailable": true,
+  "deploymentStatusParseSucceeded": true,
+  "deploymentStatusReadError": "",
+  "resourceGroupName": "PUI",
+  "containerGroupName": "pui-zap-security",
+  "identitySource": "pipeline",
+  "reportPaths": {
+    "showStatus": "D:\\a\\1\\a\\security-status\\aci-diagnostics\\aci-show-summary.json",
+    "eventsStatus": "D:\\a\\1\\a\\security-status\\aci-diagnostics\\aci-events.json",
+    "containerLog": "D:\\a\\1\\a\\security-status\\aci-diagnostics\\aci-logs.txt",
+    "scriptStatus": "D:\\a\\1\\a\\security-status\\aci-diagnostics.json"
+  },
+  "containerNameForLogs": "pui-zap-security"
+}
