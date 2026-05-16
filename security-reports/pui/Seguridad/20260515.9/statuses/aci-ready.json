@@ -1,0 +1,165 @@
+{
+  "tool": "ACI-ReadyCheck",
+  "executedAt": "2026-05-16T02:37:22.3868948+00:00",
+  "operationalFailure": true,
+  "blockingFindings": false,
+  "outcome": "operational_failure",
+  "readinessMode": "az_container_exec_local_probe",
+  "probeTransport": "az container exec",
+  "probeTarget": "127.0.0.1:8080",
+  "probePath": "/JSON/core/view/version/",
+  "probeAuthentication": "api_key",
+  "probeUrl": "http://127.0.0.1:8080/JSON/core/view/version/",
+  "probeCommand": "/bin/sh -lc \"if command -v curl >/dev/null 2>&1; then curl --silent --show-error --fail --max-time 10 'http://127.0.0.1:8080/JSON/core/view/version/?***'; elif command -v wget >/dev/null 2>&1; then wget -qO- --timeout=10 'http://127.0.0.1:8080/JSON/core/view/version/?***'; elif command -v python3 >/dev/null 2>&1; then python3 -c \\\"import urllib.request;print(urllib.request.urlopen('http://127.0.0.1:8080/JSON/core/view/version/?***', timeout=10).read().decode('utf-8'))\\\"; elif command -v python >/dev/null 2>&1; then python -c \\\"import urllib.request;print(urllib.request.urlopen('http://127.0.0.1:8080/JSON/core/view/version/?***', timeout=10).read().decode('utf-8'))\\\"; else echo \\\"No supported HTTP client available inside container.\\\" >&2; exit 127; fi\"",
+  "resourceGroupName": "PUI",
+  "containerGroupName": "pui-zap-security",
+  "containerName": "pui-zap-security",
+  "timeoutSeconds": 300,
+  "pollIntervalSeconds": 10,
+  "requestTimeoutSeconds": 10,
+  "deploymentStatusFile": "D:\\a\\1\\a\\security-status\\aci-deployment.json",
+  "deploymentContext": {
+    "zapBaseUrl": "http://pui-zap-security-eoqgw0uuoo.mexicocentral.azurecontainer.io:8080",
+    "fqdn": "pui-zap-security-eOqgW0UuoO.mexicocentral.azurecontainer.io",
+    "ipAddress": "68.155.139.202",
+    "endpointSourcePath": "properties.ipAddress"
+  },
+  "version": null,
+  "pollCount": 25,
+  "firstAttemptAt": "2026-05-16T02:37:22.4198716+00:00",
+  "lastAttemptAt": "2026-05-16T02:42:10.8808019+00:00",
+  "deadlineAt": "2026-05-16T02:42:22.4127378+00:00",
+  "elapsedSeconds": 300,
+  "lastExitCode": 2,
+  "lastError": "ERROR: unrecognized arguments: command -v curl ; then curl --silent --show-error --fail --max-time 10 'http://127.0.0.1:8080/JSON/core/view/version/?***'; elif command -v wget ; then wget -qO- --timeout=10 'http://127.0.0.1:8080/JSON/core/view/version/?***'; elif command -v python3 ; then python3 -c \"import urllib.request;print(urllib.request.urlopen('http://127.0.0.1:8080/JSON/core/view/version/?***', timeout=10).read().decode('utf-8'))\"; elif command -v python ; then python -c \"import urllib.request;print(urllib.request.urlopen('http://127.0.0.1:8080/JSON/core/view/version/?***', timeout=...",
+  "lastStdout": "ERROR: unrecognized arguments: command -v curl ; then curl --silent --show-error --fail --max-time 10 'http://127.0.0.1:8080/JSON/core/view/version/?***'; elif command -v wget ; then wget -qO- --timeout=10 'http://127.0.0.1:8080/JSON/core/view/version/?***'; elif command -v python3 ; then python3 -c \"import urllib.request;print(urllib.request.urlopen('http://127.0.0.1:8080/JSON/core/view/version/?***', timeout=10).read().decode('utf-8'))\"; elif command -v python ; then python -c \"import urllib.request;print(urllib.request.urlopen('http://127.0.0.1:8080/JSON/core/view/version/?***', timeout=...",
+  "lastStderr": "",
+  "lastKnownContainerState": {
+    "provisioningState": "Succeeded",
+    "groupState": "Running",
+    "container": {
+      "state": "Running",
+      "detailStatus": "",
+      "exitCode": null,
+      "startTime": "05/16/2026 02:37:05"
+    },
+    "recentEvents": []
+  },
+  "recentProbeResults": [
+    {
+      "attempt": 21,
+      "attemptedAt": "2026-05-16T02:41:23.0411843+00:00",
+      "outcome": "retry",
+      "exitCode": 2,
+      "failureCategory": "exit_code_nonzero",
+      "version": "",
+      "stdout": "ERROR: unrecognized arguments: command -v curl ; then curl --silent --show-error --fail --max-time 10 'http://127.0.0.1:8080/JSON/core/view/version/?***'; elif command -v wget ; then wget -qO- --timeout=10 'http://127.0.0.1:8080/JSON/core/view/version/?***'; elif command -v python3 ; then python3 -c \"import urllib.request;print(urllib.request.urlopen('http://127.0.0.1:8080/JSON/core/view/version/?***', timeout=10).read().decode('utf-8'))\"; elif command -v python ; then python -c \"import urllib.request;print(urllib.request.urlopen('http://127.0.0.1:8080/JSON/core/view/version/?***', timeout=...",
+      "stderr": "",
+      "detail": "ERROR: unrecognized arguments: command -v curl ; then curl --silent --show-error --fail --max-time 10 'http://127.0.0.1:8080/JSON/core/view/version/?***'; elif command -v wget ; then wget -qO- --timeout=10 'http://127.0.0.1:8080/JSON/core/view/version/?***'; elif command -v python3 ; then python3 -c \"import urllib.request;print(urllib.request.urlopen('http://127.0.0.1:8080/JSON/core/view/version/?***', timeout=10).read().decode('utf-8'))\"; elif command -v python ; then python -c \"import urllib.request;print(urllib.request.urlopen('http://127.0.0.1:8080/JSON/core/view/version/?***', timeout=...",
+      "containerState": {
+        "provisioningState": "Succeeded",
+        "groupState": "Running",
+        "container": {
+          "state": "Running",
+          "detailStatus": "",
+          "exitCode": null,
+          "startTime": "05/16/2026 02:37:05"
+        },
+        "recentEvents": []
+      }
+    },
+    {
+      "attempt": 22,
+      "attemptedAt": "2026-05-16T02:41:34.8448307+00:00",
+      "outcome": "retry",
+      "exitCode": 2,
+      "failureCategory": "exit_code_nonzero",
+      "version": "",
+      "stdout": "ERROR: unrecognized arguments: command -v curl ; then curl --silent --show-error --fail --max-time 10 'http://127.0.0.1:8080/JSON/core/view/version/?***'; elif command -v wget ; then wget -qO- --timeout=10 'http://127.0.0.1:8080/JSON/core/view/version/?***'; elif command -v python3 ; then python3 -c \"import urllib.request;print(urllib.request.urlopen('http://127.0.0.1:8080/JSON/core/view/version/?***', timeout=10).read().decode('utf-8'))\"; elif command -v python ; then python -c \"import urllib.request;print(urllib.request.urlopen('http://127.0.0.1:8080/JSON/core/view/version/?***', timeout=...",
+      "stderr": "",
+      "detail": "ERROR: unrecognized arguments: command -v curl ; then curl --silent --show-error --fail --max-time 10 'http://127.0.0.1:8080/JSON/core/view/version/?***'; elif command -v wget ; then wget -qO- --timeout=10 'http://127.0.0.1:8080/JSON/core/view/version/?***'; elif command -v python3 ; then python3 -c \"import urllib.request;print(urllib.request.urlopen('http://127.0.0.1:8080/JSON/core/view/version/?***', timeout=10).read().decode('utf-8'))\"; elif command -v python ; then python -c \"import urllib.request;print(urllib.request.urlopen('http://127.0.0.1:8080/JSON/core/view/version/?***', timeout=...",
+      "containerState": {
+        "provisioningState": "Succeeded",
+        "groupState": "Running",
+        "container": {
+          "state": "Running",
+          "detailStatus": "",
+          "exitCode": null,
+          "startTime": "05/16/2026 02:37:05"
+        },
+        "recentEvents": []
+      }
+    },
+    {
+      "attempt": 23,
+      "attemptedAt": "2026-05-16T02:41:46.6748309+00:00",
+      "outcome": "retry",
+      "exitCode": 2,
+      "failureCategory": "exit_code_nonzero",
+      "version": "",
+      "stdout": "ERROR: unrecognized arguments: command -v curl ; then curl --silent --show-error --fail --max-time 10 'http://127.0.0.1:8080/JSON/core/view/version/?***'; elif command -v wget ; then wget -qO- --timeout=10 'http://127.0.0.1:8080/JSON/core/view/version/?***'; elif command -v python3 ; then python3 -c \"import urllib.request;print(urllib.request.urlopen('http://127.0.0.1:8080/JSON/core/view/version/?***', timeout=10).read().decode('utf-8'))\"; elif command -v python ; then python -c \"import urllib.request;print(urllib.request.urlopen('http://127.0.0.1:8080/JSON/core/view/version/?***', timeout=...",
+      "stderr": "",
+      "detail": "ERROR: unrecognized arguments: command -v curl ; then curl --silent --show-error --fail --max-time 10 'http://127.0.0.1:8080/JSON/core/view/version/?***'; elif command -v wget ; then wget -qO- --timeout=10 'http://127.0.0.1:8080/JSON/core/view/version/?***'; elif command -v python3 ; then python3 -c \"import urllib.request;print(urllib.request.urlopen('http://127.0.0.1:8080/JSON/core/view/version/?***', timeout=10).read().decode('utf-8'))\"; elif command -v python ; then python -c \"import urllib.request;print(urllib.request.urlopen('http://127.0.0.1:8080/JSON/core/view/version/?***', timeout=...",
+      "containerState": {
+        "provisioningState": "Succeeded",
+        "groupState": "Running",
+        "container": {
+          "state": "Running",
+          "detailStatus": "",
+          "exitCode": null,
+          "startTime": "05/16/2026 02:37:05"
+        },
+        "recentEvents": []
+      }
+    },
+    {
+      "attempt": 24,
+      "attemptedAt": "2026-05-16T02:41:59.0716748+00:00",
+      "outcome": "retry",
+      "exitCode": 2,
+      "failureCategory": "exit_code_nonzero",
+      "version": "",
+      "stdout": "ERROR: unrecognized arguments: command -v curl ; then curl --silent --show-error --fail --max-time 10 'http://127.0.0.1:8080/JSON/core/view/version/?***'; elif command -v wget ; then wget -qO- --timeout=10 'http://127.0.0.1:8080/JSON/core/view/version/?***'; elif command -v python3 ; then python3 -c \"import urllib.request;print(urllib.request.urlopen('http://127.0.0.1:8080/JSON/core/view/version/?***', timeout=10).read().decode('utf-8'))\"; elif command -v python ; then python -c \"import urllib.request;print(urllib.request.urlopen('http://127.0.0.1:8080/JSON/core/view/version/?***', timeout=...",
+      "stderr": "",
+      "detail": "ERROR: unrecognized arguments: command -v curl ; then curl --silent --show-error --fail --max-time 10 'http://127.0.0.1:8080/JSON/core/view/version/?***'; elif command -v wget ; then wget -qO- --timeout=10 'http://127.0.0.1:8080/JSON/core/view/version/?***'; elif command -v python3 ; then python3 -c \"import urllib.request;print(urllib.request.urlopen('http://127.0.0.1:8080/JSON/core/view/version/?***', timeout=10).read().decode('utf-8'))\"; elif command -v python ; then python -c \"import urllib.request;print(urllib.request.urlopen('http://127.0.0.1:8080/JSON/core/view/version/?***', timeout=...",
+      "containerState": {
+        "provisioningState": "Succeeded",
+        "groupState": "Running",
+        "container": {
+          "state": "Running",
+          "detailStatus": "",
+          "exitCode": null,
+          "startTime": "05/16/2026 02:37:05"
+        },
+        "recentEvents": []
+      }
+    },
+    {
+      "attempt": 25,
+      "attemptedAt": "2026-05-16T02:42:10.8808019+00:00",
+      "outcome": "retry",
+      "exitCode": 2,
+      "failureCategory": "exit_code_nonzero",
+      "version": "",
+      "stdout": "ERROR: unrecognized arguments: command -v curl ; then curl --silent --show-error --fail --max-time 10 'http://127.0.0.1:8080/JSON/core/view/version/?***'; elif command -v wget ; then wget -qO- --timeout=10 'http://127.0.0.1:8080/JSON/core/view/version/?***'; elif command -v python3 ; then python3 -c \"import urllib.request;print(urllib.request.urlopen('http://127.0.0.1:8080/JSON/core/view/version/?***', timeout=10).read().decode('utf-8'))\"; elif command -v python ; then python -c \"import urllib.request;print(urllib.request.urlopen('http://127.0.0.1:8080/JSON/core/view/version/?***', timeout=...",
+      "stderr": "",
+      "detail": "ERROR: unrecognized arguments: command -v curl ; then curl --silent --show-error --fail --max-time 10 'http://127.0.0.1:8080/JSON/core/view/version/?***'; elif command -v wget ; then wget -qO- --timeout=10 'http://127.0.0.1:8080/JSON/core/view/version/?***'; elif command -v python3 ; then python3 -c \"import urllib.request;print(urllib.request.urlopen('http://127.0.0.1:8080/JSON/core/view/version/?***', timeout=10).read().decode('utf-8'))\"; elif command -v python ; then python -c \"import urllib.request;print(urllib.request.urlopen('http://127.0.0.1:8080/JSON/core/view/version/?***', timeout=...",
+      "containerState": {
+        "provisioningState": "Succeeded",
+        "groupState": "Running",
+        "container": {
+          "state": "Running",
+          "detailStatus": "",
+          "exitCode": null,
+          "startTime": "05/16/2026 02:37:05"
+        },
+        "recentEvents": []
+      }
+    }
+  ],
+  "failureReasons": [
+    "zap_readiness_timeout"
+  ],
+  "error": "ZAP no respondió al probe local interno dentro del timeout. readinessMode=az_container_exec_local_probe; resourceGroupName=PUI; containerGroupName=pui-zap-security; containerName=pui-zap-security; probeUrl=http://127.0.0.1:8080/JSON/core/view/version/; timeoutSeconds=300; pollIntervalSeconds=10; requestTimeoutSeconds=10; lastExitCode=2; lastError=ERROR: unrecognized arguments: command -v curl ; then curl --silent --show-error --fail --max-time 10 'http://127.0.0.1:8080/JSON/core/view/version/?***'; elif command -v wget ; then wget -qO- --timeout=10 'http://127.0.0.1:8080/JSON/core/view/version/?***'; elif command -v python3 ; then python3 -c \"import urllib.request;print(urllib.request.urlopen('http://127.0.0.1:8080/JSON/core/view/version/?***', timeout=10).read().decode('utf-8'))\"; elif command -v python ; then python -c \"import urllib.request;print(urllib.request.urlopen('http://127.0.0.1:8080/JSON/core/view/version/?***', timeout=...",
+  "message": "ZAP no alcanzó readiness vía probe local interno con az container exec dentro del timeout configurado."
+}
