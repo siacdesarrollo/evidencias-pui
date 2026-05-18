@@ -1,0 +1,32 @@
+{
+  "tool": "ZAP-ImagePublish",
+  "executedAt": "2026-05-18T18:56:12.5757738+00:00",
+  "operationalFailure": false,
+  "blockingFindings": false,
+  "outcome": "success",
+  "acrName": "siacacr",
+  "sourceImage": "ghcr.io/zaproxy/zaproxy:2.17.0",
+  "targetImage": "security/zaproxy:2.17.0",
+  "failureReasons": [],
+  "azCli": {
+    "executable": "az",
+    "command": "az acr import --name siacacr --source ghcr.io/zaproxy/zaproxy:2.17.0 --image security/zaproxy:2.17.0 --force --only-show-errors --output json",
+    "outputFormat": "json",
+    "executableFound": true,
+    "executablePath": "C:\\Program Files\\Microsoft SDKs\\Azure\\CLI2\\wbin\\az.cmd",
+    "success": true,
+    "structuredSuccess": true,
+    "exitCode": 0,
+    "stdout": "",
+    "stderr": "",
+    "json": null,
+    "parseSucceeded": true,
+    "responsePresent": false,
+    "failureCategory": "",
+    "parseError": ""
+  },
+  "result": "imported",
+  "azureCliResult": null,
+  "responsePresent": false,
+  "message": "Imagen oficial de ZAP importada a ACR."
+}

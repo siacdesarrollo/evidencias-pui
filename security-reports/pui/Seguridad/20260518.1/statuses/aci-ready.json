@@ -1,0 +1,290 @@
+{
+  "tool": "ACI-ReadyCheck",
+  "executedAt": "2026-05-18T18:58:24.4628394+00:00",
+  "operationalFailure": true,
+  "blockingFindings": false,
+  "outcome": "operational_failure",
+  "readinessMode": "az_container_exec_local_probe",
+  "probeTransport": "az container exec",
+  "probeTarget": "127.0.0.1:8080",
+  "probePath": "/JSON/core/view/version/",
+  "probeAuthentication": "api_key",
+  "probeUrl": "http://127.0.0.1:8080/JSON/core/view/version/",
+  "probeClientOrder": [
+    "curl",
+    "wget",
+    "python3",
+    "python"
+  ],
+  "probeCommands": [
+    {
+      "client": "curl",
+      "execCommand": "curl --silent --show-error --fail --max-time 10 'http://127.0.0.1:8080/JSON/core/view/version/?***'"
+    },
+    {
+      "client": "wget",
+      "execCommand": "wget -qO- --timeout=10 'http://127.0.0.1:8080/JSON/core/view/version/?***'"
+    },
+    {
+      "client": "python3",
+      "execCommand": "python3 -c \"import urllib.request;print(urllib.request.urlopen('http://127.0.0.1:8080/JSON/core/view/version/?***', timeout=10).read().decode('utf-8'))\""
+    },
+    {
+      "client": "python",
+      "execCommand": "python -c \"import urllib.request;print(urllib.request.urlopen('http://127.0.0.1:8080/JSON/core/view/version/?***', timeout=10).read().decode('utf-8'))\""
+    }
+  ],
+  "resourceGroupName": "PUI",
+  "containerGroupName": "pui-zap-security",
+  "containerName": "pui-zap-security",
+  "timeoutSeconds": 300,
+  "pollIntervalSeconds": 10,
+  "requestTimeoutSeconds": 10,
+  "deploymentStatusFile": "D:\\a\\1\\a\\security-status\\aci-deployment.json",
+  "deploymentContext": {
+    "zapBaseUrl": "http://pui-zap-security-eoqgw0uuoo.mexicocentral.azurecontainer.io:8080",
+    "fqdn": "pui-zap-security-eOqgW0UuoO.mexicocentral.azurecontainer.io",
+    "ipAddress": "68.155.138.144",
+    "endpointSourcePath": "properties.ipAddress"
+  },
+  "version": null,
+  "pollCount": 21,
+  "firstAttemptAt": "2026-05-18T18:58:24.4941415+00:00",
+  "lastAttemptAt": "2026-05-18T19:03:08.9059149+00:00",
+  "deadlineAt": "2026-05-18T19:03:24.4879280+00:00",
+  "elapsedSeconds": 300,
+  "lastExitCode": 0,
+  "lastProbeClient": "curl",
+  "nextProbeClient": "curl",
+  "lastSuccessfulProbeClient": "",
+  "unavailableProbeClients": [],
+  "lastError": "curl: (3) URL using bad/illegal format or missing URL command terminated with non-zero exit code: error executing command [curl --silent --show-error --fail --max-time 10 'http://127.0.0.1:8080/JSON/core/view/version/?***'], exit code 3",
+  "lastStdout": "curl: (3) URL using bad/illegal format or missing URL command terminated with non-zero exit code: error executing command [curl --silent --show-error --fail --max-time 10 'http://127.0.0.1:8080/JSON/core/view/version/?***'], exit code 3",
+  "lastStderr": "",
+  "lastProbeAttempts": [
+    {
+      "client": "curl",
+      "execCommand": "curl --silent --show-error --fail --max-time 10 'http://127.0.0.1:8080/JSON/core/view/version/?***'",
+      "exitCode": 0,
+      "stdout": "curl: (3) URL using bad/illegal format or missing URL command terminated with non-zero exit code: error executing command [curl --silent --show-error --fail --max-time 10 'http://127.0.0.1:8080/JSON/core/view/version/?***'], exit code 3",
+      "stderr": "",
+      "failureCategory": "missing_version_payload",
+      "success": false,
+      "version": "",
+      "unavailable": false
+    }
+  ],
+  "lastKnownContainerState": {
+    "provisioningState": "Succeeded",
+    "groupState": "Running",
+    "container": {
+      "state": "Running",
+      "detailStatus": "",
+      "exitCode": null,
+      "startTime": "05/18/2026 18:57:36"
+    },
+    "recentEvents": []
+  },
+  "recentProbeResults": [
+    {
+      "attempt": 17,
+      "attemptedAt": "2026-05-18T19:02:12.6200514+00:00",
+      "outcome": "retry",
+      "exitCode": 0,
+      "probeClient": "curl",
+      "nextProbeClient": "curl",
+      "successfulClient": "",
+      "failureCategory": "missing_version_payload",
+      "version": "",
+      "stdout": "curl: (3) URL using bad/illegal format or missing URL command terminated with non-zero exit code: error executing command [curl --silent --show-error --fail --max-time 10 'http://127.0.0.1:8080/JSON/core/view/version/?***'], exit code 3",
+      "stderr": "",
+      "probeAttempts": [
+        {
+          "client": "curl",
+          "execCommand": "curl --silent --show-error --fail --max-time 10 'http://127.0.0.1:8080/JSON/core/view/version/?***'",
+          "exitCode": 0,
+          "stdout": "curl: (3) URL using bad/illegal format or missing URL command terminated with non-zero exit code: error executing command [curl --silent --show-error --fail --max-time 10 'http://127.0.0.1:8080/JSON/core/view/version/?***'], exit code 3",
+          "stderr": "",
+          "failureCategory": "missing_version_payload",
+          "success": false,
+          "version": "",
+          "unavailable": false
+        }
+      ],
+      "unavailableProbeClients": [],
+      "detail": "curl: (3) URL using bad/illegal format or missing URL command terminated with non-zero exit code: error executing command [curl --silent --show-error --fail --max-time 10 'http://127.0.0.1:8080/JSON/core/view/version/?***'], exit code 3",
+      "containerState": {
+        "provisioningState": "Succeeded",
+        "groupState": "Running",
+        "container": {
+          "state": "Running",
+          "detailStatus": "",
+          "exitCode": null,
+          "startTime": "05/18/2026 18:57:36"
+        },
+        "recentEvents": []
+      }
+    },
+    {
+      "attempt": 18,
+      "attemptedAt": "2026-05-18T19:02:26.4433076+00:00",
+      "outcome": "retry",
+      "exitCode": 0,
+      "probeClient": "curl",
+      "nextProbeClient": "curl",
+      "successfulClient": "",
+      "failureCategory": "missing_version_payload",
+      "version": "",
+      "stdout": "curl: (3) URL using bad/illegal format or missing URL command terminated with non-zero exit code: error executing command [curl --silent --show-error --fail --max-time 10 'http://127.0.0.1:8080/JSON/core/view/version/?***'], exit code 3",
+      "stderr": "",
+      "probeAttempts": [
+        {
+          "client": "curl",
+          "execCommand": "curl --silent --show-error --fail --max-time 10 'http://127.0.0.1:8080/JSON/core/view/version/?***'",
+          "exitCode": 0,
+          "stdout": "curl: (3) URL using bad/illegal format or missing URL command terminated with non-zero exit code: error executing command [curl --silent --show-error --fail --max-time 10 'http://127.0.0.1:8080/JSON/core/view/version/?***'], exit code 3",
+          "stderr": "",
+          "failureCategory": "missing_version_payload",
+          "success": false,
+          "version": "",
+          "unavailable": false
+        }
+      ],
+      "unavailableProbeClients": [],
+      "detail": "curl: (3) URL using bad/illegal format or missing URL command terminated with non-zero exit code: error executing command [curl --silent --show-error --fail --max-time 10 'http://127.0.0.1:8080/JSON/core/view/version/?***'], exit code 3",
+      "containerState": {
+        "provisioningState": "Succeeded",
+        "groupState": "Running",
+        "container": {
+          "state": "Running",
+          "detailStatus": "",
+          "exitCode": null,
+          "startTime": "05/18/2026 18:57:36"
+        },
+        "recentEvents": []
+      }
+    },
+    {
+      "attempt": 19,
+      "attemptedAt": "2026-05-18T19:02:40.3291480+00:00",
+      "outcome": "retry",
+      "exitCode": 0,
+      "probeClient": "curl",
+      "nextProbeClient": "curl",
+      "successfulClient": "",
+      "failureCategory": "missing_version_payload",
+      "version": "",
+      "stdout": "curl: (3) URL using bad/illegal format or missing URL command terminated with non-zero exit code: error executing command [curl --silent --show-error --fail --max-time 10 'http://127.0.0.1:8080/JSON/core/view/version/?***'], exit code 3",
+      "stderr": "",
+      "probeAttempts": [
+        {
+          "client": "curl",
+          "execCommand": "curl --silent --show-error --fail --max-time 10 'http://127.0.0.1:8080/JSON/core/view/version/?***'",
+          "exitCode": 0,
+          "stdout": "curl: (3) URL using bad/illegal format or missing URL command terminated with non-zero exit code: error executing command [curl --silent --show-error --fail --max-time 10 'http://127.0.0.1:8080/JSON/core/view/version/?***'], exit code 3",
+          "stderr": "",
+          "failureCategory": "missing_version_payload",
+          "success": false,
+          "version": "",
+          "unavailable": false
+        }
+      ],
+      "unavailableProbeClients": [],
+      "detail": "curl: (3) URL using bad/illegal format or missing URL command terminated with non-zero exit code: error executing command [curl --silent --show-error --fail --max-time 10 'http://127.0.0.1:8080/JSON/core/view/version/?***'], exit code 3",
+      "containerState": {
+        "provisioningState": "Succeeded",
+        "groupState": "Running",
+        "container": {
+          "state": "Running",
+          "detailStatus": "",
+          "exitCode": null,
+          "startTime": "05/18/2026 18:57:36"
+        },
+        "recentEvents": []
+      }
+    },
+    {
+      "attempt": 20,
+      "attemptedAt": "2026-05-18T19:02:54.2764422+00:00",
+      "outcome": "retry",
+      "exitCode": 0,
+      "probeClient": "curl",
+      "nextProbeClient": "curl",
+      "successfulClient": "",
+      "failureCategory": "missing_version_payload",
+      "version": "",
+      "stdout": "curl: (3) URL using bad/illegal format or missing URL command terminated with non-zero exit code: error executing command [curl --silent --show-error --fail --max-time 10 'http://127.0.0.1:8080/JSON/core/view/version/?***'], exit code 3",
+      "stderr": "",
+      "probeAttempts": [
+        {
+          "client": "curl",
+          "execCommand": "curl --silent --show-error --fail --max-time 10 'http://127.0.0.1:8080/JSON/core/view/version/?***'",
+          "exitCode": 0,
+          "stdout": "curl: (3) URL using bad/illegal format or missing URL command terminated with non-zero exit code: error executing command [curl --silent --show-error --fail --max-time 10 'http://127.0.0.1:8080/JSON/core/view/version/?***'], exit code 3",
+          "stderr": "",
+          "failureCategory": "missing_version_payload",
+          "success": false,
+          "version": "",
+          "unavailable": false
+        }
+      ],
+      "unavailableProbeClients": [],
+      "detail": "curl: (3) URL using bad/illegal format or missing URL command terminated with non-zero exit code: error executing command [curl --silent --show-error --fail --max-time 10 'http://127.0.0.1:8080/JSON/core/view/version/?***'], exit code 3",
+      "containerState": {
+        "provisioningState": "Succeeded",
+        "groupState": "Running",
+        "container": {
+          "state": "Running",
+          "detailStatus": "",
+          "exitCode": null,
+          "startTime": "05/18/2026 18:57:36"
+        },
+        "recentEvents": []
+      }
+    },
+    {
+      "attempt": 21,
+      "attemptedAt": "2026-05-18T19:03:08.9059149+00:00",
+      "outcome": "retry",
+      "exitCode": 0,
+      "probeClient": "curl",
+      "nextProbeClient": "curl",
+      "successfulClient": "",
+      "failureCategory": "missing_version_payload",
+      "version": "",
+      "stdout": "curl: (3) URL using bad/illegal format or missing URL command terminated with non-zero exit code: error executing command [curl --silent --show-error --fail --max-time 10 'http://127.0.0.1:8080/JSON/core/view/version/?***'], exit code 3",
+      "stderr": "",
+      "probeAttempts": [
+        {
+          "client": "curl",
+          "execCommand": "curl --silent --show-error --fail --max-time 10 'http://127.0.0.1:8080/JSON/core/view/version/?***'",
+          "exitCode": 0,
+          "stdout": "curl: (3) URL using bad/illegal format or missing URL command terminated with non-zero exit code: error executing command [curl --silent --show-error --fail --max-time 10 'http://127.0.0.1:8080/JSON/core/view/version/?***'], exit code 3",
+          "stderr": "",
+          "failureCategory": "missing_version_payload",
+          "success": false,
+          "version": "",
+          "unavailable": false
+        }
+      ],
+      "unavailableProbeClients": [],
+      "detail": "curl: (3) URL using bad/illegal format or missing URL command terminated with non-zero exit code: error executing command [curl --silent --show-error --fail --max-time 10 'http://127.0.0.1:8080/JSON/core/view/version/?***'], exit code 3",
+      "containerState": {
+        "provisioningState": "Succeeded",
+        "groupState": "Running",
+        "container": {
+          "state": "Running",
+          "detailStatus": "",
+          "exitCode": null,
+          "startTime": "05/18/2026 18:57:36"
+        },
+        "recentEvents": []
+      }
+    }
+  ],
+  "failureReasons": [
+    "zap_readiness_timeout"
+  ],
+  "error": "ZAP no respondió al probe local interno dentro del timeout. readinessMode=az_container_exec_local_probe; resourceGroupName=PUI; containerGroupName=pui-zap-security; containerName=pui-zap-security; probeUrl=http://127.0.0.1:8080/JSON/core/view/version/; timeoutSeconds=300; pollIntervalSeconds=10; requestTimeoutSeconds=10; lastExitCode=0; lastError=curl: (3) URL using bad/illegal format or missing URL command terminated with non-zero exit code: error executing command [curl --silent --show-error --fail --max-time 10 'http://127.0.0.1:8080/JSON/core/view/version/?***'], exit code 3",
+  "message": "ZAP no alcanzó readiness vía probe local interno con az container exec dentro del timeout configurado."
+}
