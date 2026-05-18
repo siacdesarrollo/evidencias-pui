@@ -1,0 +1,20 @@
+2026-05-18T20:57:45Z	INFO	[vulndb] Need to update DB
+2026-05-18T20:57:45Z	INFO	[vulndb] Downloading vulnerability DB...
+2026-05-18T20:57:45Z	INFO	[vulndb] Downloading artifact...	repo="mirror.gcr.io/aquasec/trivy-db:2"
+2026-05-18T20:57:52Z	INFO	[vulndb] Artifact successfully downloaded	repo="mirror.gcr.io/aquasec/trivy-db:2"
+2026-05-18T20:57:52Z	INFO	[vuln] Vulnerability scanning is enabled
+2026-05-18T20:57:52Z	WARN	[dotnet] Multiple root projects found in .deps.json	existing_root="SIAC.WebApi.Common/1.0.0" new_root="SIAC.PUI/1.0.0"
+2026-05-18T20:57:52Z	INFO	Number of language-specific files	num=1
+2026-05-18T20:57:52Z	INFO	[dotnet-core] Detecting vulnerabilities...
+
+Report Summary
+
+┌────────────────────────────────────────┬─────────────┬─────────────────┐
+│                 Target                 │    Type     │ Vulnerabilities │
+├────────────────────────────────────────┼─────────────┼─────────────────┤
+│ bin/Release/net10.0/SIAC.PUI.deps.json │ dotnet-core │        0        │
+└────────────────────────────────────────┴─────────────┴─────────────────┘
+Legend:
+- '-': Not scanned
+- '0': Clean (no security findings detected)
+

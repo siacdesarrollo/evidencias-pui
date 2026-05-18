@@ -1,0 +1,169 @@
+{
+  "tool": "ACI-ReadyCheck",
+  "executedAt": "2026-05-18T21:04:31.3287426+00:00",
+  "operationalFailure": true,
+  "blockingFindings": false,
+  "outcome": "operational_failure",
+  "readinessMode": "aci_state_observation_public_http_confirmation",
+  "probeTransport": "public_http",
+  "probeTarget": "public_aci_endpoint",
+  "probePath": "/JSON/core/view/version/",
+  "probeAuthentication": "api_key",
+  "probeUrl": "http://pui-zap-security-eoqgw0uuoo.mexicocentral.azurecontainer.io:8080/JSON/core/view/version/?***",
+  "resourceGroupName": "PUI",
+  "containerGroupName": "pui-zap-security",
+  "containerName": "pui-zap-security",
+  "timeoutSeconds": 300,
+  "pollIntervalSeconds": 10,
+  "requestTimeoutSeconds": 10,
+  "deploymentStatusFile": "D:\\a\\1\\a\\security-status\\aci-deployment.json",
+  "deploymentContext": {
+    "zapBaseUrl": "http://pui-zap-security-eoqgw0uuoo.mexicocentral.azurecontainer.io:8080",
+    "fqdn": "pui-zap-security-eOqgW0UuoO.mexicocentral.azurecontainer.io",
+    "ipAddress": "68.155.90.133",
+    "endpointSourcePath": "properties.ipAddress"
+  },
+  "version": null,
+  "pollCount": 15,
+  "firstAttemptAt": "2026-05-18T21:04:31.3403351+00:00",
+  "lastAttemptAt": "2026-05-18T21:09:29.7848263+00:00",
+  "deadlineAt": "2026-05-18T21:09:31.3345095+00:00",
+  "elapsedSeconds": 320,
+  "lastHttpStatusCode": null,
+  "lastError": "The request was canceled due to the configured HttpClient.Timeout of 10 seconds elapsing.",
+  "lastResponse": "",
+  "lastFailureCategory": "request_exception",
+  "lastKnownContainerState": {
+    "provisioningState": "Succeeded",
+    "groupState": "Running",
+    "container": {
+      "state": "Running",
+      "detailStatus": "",
+      "exitCode": null,
+      "startTime": "05/18/2026 21:04:13"
+    },
+    "recentEvents": []
+  },
+  "recentProbeResults": [
+    {
+      "attempt": 11,
+      "attemptedAt": "2026-05-18T21:08:04.7248391+00:00",
+      "outcome": "retry",
+      "httpStatusCode": null,
+      "failureCategory": "request_exception",
+      "version": "",
+      "response": "",
+      "error": "The request was canceled due to the configured HttpClient.Timeout of 10 seconds elapsing.",
+      "detail": "The request was canceled due to the configured HttpClient.Timeout of 10 seconds elapsing.",
+      "publicVersionUri": "http://pui-zap-security-eoqgw0uuoo.mexicocentral.azurecontainer.io:8080/JSON/core/view/version/?***",
+      "containerState": {
+        "provisioningState": "Succeeded",
+        "groupState": "Running",
+        "container": {
+          "state": "Running",
+          "detailStatus": "",
+          "exitCode": null,
+          "startTime": "05/18/2026 21:04:13"
+        },
+        "recentEvents": []
+      }
+    },
+    {
+      "attempt": 12,
+      "attemptedAt": "2026-05-18T21:08:25.9070714+00:00",
+      "outcome": "retry",
+      "httpStatusCode": null,
+      "failureCategory": "request_exception",
+      "version": "",
+      "response": "",
+      "error": "The request was canceled due to the configured HttpClient.Timeout of 10 seconds elapsing.",
+      "detail": "The request was canceled due to the configured HttpClient.Timeout of 10 seconds elapsing.",
+      "publicVersionUri": "http://pui-zap-security-eoqgw0uuoo.mexicocentral.azurecontainer.io:8080/JSON/core/view/version/?***",
+      "containerState": {
+        "provisioningState": "Succeeded",
+        "groupState": "Running",
+        "container": {
+          "state": "Running",
+          "detailStatus": "",
+          "exitCode": null,
+          "startTime": "05/18/2026 21:04:13"
+        },
+        "recentEvents": []
+      }
+    },
+    {
+      "attempt": 13,
+      "attemptedAt": "2026-05-18T21:08:47.1439582+00:00",
+      "outcome": "retry",
+      "httpStatusCode": null,
+      "failureCategory": "request_exception",
+      "version": "",
+      "response": "",
+      "error": "The request was canceled due to the configured HttpClient.Timeout of 10 seconds elapsing.",
+      "detail": "The request was canceled due to the configured HttpClient.Timeout of 10 seconds elapsing.",
+      "publicVersionUri": "http://pui-zap-security-eoqgw0uuoo.mexicocentral.azurecontainer.io:8080/JSON/core/view/version/?***",
+      "containerState": {
+        "provisioningState": "Succeeded",
+        "groupState": "Running",
+        "container": {
+          "state": "Running",
+          "detailStatus": "",
+          "exitCode": null,
+          "startTime": "05/18/2026 21:04:13"
+        },
+        "recentEvents": []
+      }
+    },
+    {
+      "attempt": 14,
+      "attemptedAt": "2026-05-18T21:09:08.5992985+00:00",
+      "outcome": "retry",
+      "httpStatusCode": null,
+      "failureCategory": "request_exception",
+      "version": "",
+      "response": "",
+      "error": "The request was canceled due to the configured HttpClient.Timeout of 10 seconds elapsing.",
+      "detail": "The request was canceled due to the configured HttpClient.Timeout of 10 seconds elapsing.",
+      "publicVersionUri": "http://pui-zap-security-eoqgw0uuoo.mexicocentral.azurecontainer.io:8080/JSON/core/view/version/?***",
+      "containerState": {
+        "provisioningState": "Succeeded",
+        "groupState": "Running",
+        "container": {
+          "state": "Running",
+          "detailStatus": "",
+          "exitCode": null,
+          "startTime": "05/18/2026 21:04:13"
+        },
+        "recentEvents": []
+      }
+    },
+    {
+      "attempt": 15,
+      "attemptedAt": "2026-05-18T21:09:29.7848263+00:00",
+      "outcome": "retry",
+      "httpStatusCode": null,
+      "failureCategory": "request_exception",
+      "version": "",
+      "response": "",
+      "error": "The request was canceled due to the configured HttpClient.Timeout of 10 seconds elapsing.",
+      "detail": "The request was canceled due to the configured HttpClient.Timeout of 10 seconds elapsing.",
+      "publicVersionUri": "http://pui-zap-security-eoqgw0uuoo.mexicocentral.azurecontainer.io:8080/JSON/core/view/version/?***",
+      "containerState": {
+        "provisioningState": "Succeeded",
+        "groupState": "Running",
+        "container": {
+          "state": "Running",
+          "detailStatus": "",
+          "exitCode": null,
+          "startTime": "05/18/2026 21:04:13"
+        },
+        "recentEvents": []
+      }
+    }
+  ],
+  "failureReasons": [
+    "zap_readiness_timeout"
+  ],
+  "error": "ZAP no respondió al endpoint público de versión dentro del timeout. readinessMode=aci_state_observation_public_http_confirmation; resourceGroupName=PUI; containerGroupName=pui-zap-security; containerName=pui-zap-security; probeUrl=http://pui-zap-security-eoqgw0uuoo.mexicocentral.azurecontainer.io:8080/JSON/core/view/version/?***; timeoutSeconds=300; pollIntervalSeconds=10; requestTimeoutSeconds=10; lastHttpStatusCode=sin HTTP status; lastError=The request was canceled due to the configured HttpClient.Timeout of 10 seconds elapsing.",
+  "message": "ZAP no alcanzó readiness vía confirmación HTTP pública dentro del timeout configurado."
+}

@@ -1,0 +1,332 @@
+{
+  "tool": "ACI-Deployment",
+  "executedAt": "2026-05-18T21:02:43.0014375+00:00",
+  "operationalFailure": false,
+  "blockingFindings": false,
+  "outcome": "success",
+  "resourceGroupName": "PUI",
+  "containerGroupName": "pui-zap-security",
+  "image": "siacacr-h6c7ekdph3h2fhgb.azurecr.io/security/zaproxy:2.17.0",
+  "deploymentMode": "yaml_template",
+  "templateVersion": "v1",
+  "templatePath": "D:\\a\\1\\s\\pipeline-scripts\\security\\templates\\aci-zap-container.v1.yaml",
+  "deletionTimeoutSeconds": 180,
+  "endpointTimeoutSeconds": 180,
+  "endpointPollIntervalSeconds": 10,
+  "createAccepted": true,
+  "endpointReady": true,
+  "endpointSourcePath": "properties.ipAddress",
+  "endpointPollCount": 0,
+  "zapBaseUrl": "http://pui-zap-security-eoqgw0uuoo.mexicocentral.azurecontainer.io:8080",
+  "failureReasons": [],
+  "aciShowBeforeCreate": {
+    "executable": "az",
+    "command": "az container show --resource-group PUI --name pui-zap-security --only-show-errors --output none",
+    "outputFormat": "none",
+    "executableFound": true,
+    "executablePath": "C:\\Program Files\\Microsoft SDKs\\Azure\\CLI2\\wbin\\az.cmd",
+    "success": false,
+    "structuredSuccess": false,
+    "exitCode": 3,
+    "stdout": "",
+    "stderr": "ERROR: (ResourceNotFound) The Resource 'Microsoft.ContainerInstance/containerGroups/pui-zap-security' under resource group 'PUI' was not found. For more details please go to https://aka.ms/ARMResourceNotFoundFix\r\nCode: ResourceNotFound\r\nMessage: The Resource 'Microsoft.ContainerInstance/containerGroups/pui-zap-security' under resource group 'PUI' was not found. For more details please go to https://aka.ms/ARMResourceNotFoundFix",
+    "json": null,
+    "parseSucceeded": false,
+    "responsePresent": false,
+    "failureCategory": "exit_code_nonzero",
+    "parseError": ""
+  },
+  "templateRendered": true,
+  "azCli": {
+    "executable": "az",
+    "command": "az container create --resource-group PUI --file C:\\Users\\VssAdministrator\\AppData\\Local\\Temp\\pui-zap-aci-a34dfaa1fc5d4c9b92a778b5c150cd63.yaml --only-show-errors --output json",
+    "outputFormat": "json",
+    "executableFound": true,
+    "executablePath": "C:\\Program Files\\Microsoft SDKs\\Azure\\CLI2\\wbin\\az.cmd",
+    "success": true,
+    "structuredSuccess": true,
+    "exitCode": 0,
+    "stdout": "{\r\n  \"extendedLocation\": null,\r\n  \"id\": \"/subscriptions/ce46d502-a4e7-49cc-885f-4ca618e51016/resourceGroups/PUI/providers/Microsoft.ContainerInstance/containerGroups/pui-zap-security\",\r\n  \"identity\": null,\r\n  \"kind\": null,\r\n  \"location\": \"mexicocentral\",\r\n  \"managedBy\": null,\r\n  \"name\": \"pui-zap-security\",\r\n  \"plan\": null,\r\n  \"properties\": {\r\n    \"containers\": [\r\n      {\r\n        \"name\": \"pui-zap-security\",\r\n        \"properties\": {\r\n          \"command\": [\r\n            \"/bin/sh\",\r\n            \"-c\",\r\n            \"zap.sh -daemon -host 0.0.0.0 -port $ZAP_PORT -config api.disablekey=false -config api.key=$ZAP_API_KEY -config api.addrs.addr.name=.* -config api.addrs.addr.regex=true\"\r\n          ],\r\n          \"configMap\": {\r\n            \"keyValuePairs\": {}\r\n          },\r\n          \"environmentVariables\": [\r\n            {\r\n              \"name\": \"ZAP_PORT\",\r\n              \"value\": \"8080\"\r\n            },\r\n            {\r\n              \"name\": \"ZAP_API_KEY\"\r\n            }\r\n          ],\r\n          \"image\": \"siacacr-h6c7ekdph3h2fhgb.azurecr.io/security/zaproxy:2.17.0\",\r\n          \"instanceView\": {\r\n            \"currentState\": {\r\n              \"detailStatus\": \"\",\r\n              \"startTime\": \"2026-05-18T21:04:13.25Z\",\r\n              \"state\": \"Running\"\r\n            },\r\n            \"events\": [\r\n              {\r\n                \"count\": 1,\r\n                \"firstTimestamp\": \"2026-05-18T21:02:56Z\",\r\n                \"lastTimestamp\": \"2026-05-18T21:02:56Z\",\r\n                \"message\": \"pulling image \\\"siacacr-h6c7ekdph3h2fhgb.azurecr.io/security/zaproxy@sha256:c0c1477512485fd1a39bf50f6085ca951073036e7506a38dfb5ac414053dbd8e\\\"\",\r\n                \"name\": \"Pulling\",\r\n                \"type\": \"Normal\"\r\n              },\r\n              {\r\n                \"count\": 1,\r\n                \"firstTimestamp\": \"2026-05-18T21:04:02Z\",\r\n                \"lastTimestamp\": \"2026-05-18T21:04:02Z\",\r\n                \"message\": \"Successfully pulled image \\\"siacacr-h6c7ekdph3h2fhgb.azurecr.io/security/zaproxy@sha256:c0c1477512485fd1a39bf50f6085ca951073036e7506a38dfb5ac414053dbd8e\\\"\",\r\n                \"name\": \"Pulled\",\r\n                \"type\": \"Normal\"\r\n              },\r\n              {\r\n                \"count\": 1,\r\n                \"firstTimestamp\": \"2026-05-18T21:04:13Z\",\r\n                \"lastTimestamp\": \"2026-05-18T21:04:13Z\",\r\n                \"message\": \"Started container\",\r\n                \"name\": \"Started\",\r\n                \"type\": \"Normal\"\r\n              }\r\n            ],\r\n            \"restartCount\": 0\r\n          },\r\n          \"ports\": [\r\n            {\r\n              \"port\": 8080,\r\n              \"protocol\": \"TCP\"\r\n            }\r\n          ],\r\n          \"readinessProbe\": {\r\n            \"exec\": {\r\n              \"command\": [\r\n                \"/bin/sh\",\r\n                \"-c\",\r\n                \"url=\\\"http://127.0.0.1:8080/JSON/core/view/version/?***\"; if command -v curl >/dev/null 2>&1; then curl -fsS --max-time 5 \\\"$url\\\" | grep -q '\\\"version\\\"'; elif command -v wget >/dev/null 2>&1; then wget -qO- --timeout=5 \\\"$url\\\" | grep -q '\\\"version\\\"'; elif command -v python3 >/dev/null 2>&1; then python3 -c \\\"import json,os,urllib.request; data=json.load(urllib.request.urlopen('http://127.0.0.1:8080/JSON/core/view/version/?***' + os.environ['ZAP_API_KEY'], timeout=5)); raise SystemExit(0 if data.get('version') else 1)\\\"; elif command -v python >/dev/null 2>&1; then python -c \\\"import json,os,urllib.request; data=json.load(urllib.request.urlopen('http://127.0.0.1:8080/JSON/core/view/version/?***' + os.environ['ZAP_API_KEY'], timeout=5)); raise SystemExit(0 if data.get('version') else 1)\\\"; else exit 1; fi\"\r\n              ]\r\n            },\r\n            \"failureThreshold\": 12,\r\n            \"initialDelaySeconds\": 20,\r\n            \"periodSeconds\": 10,\r\n            \"timeoutSeconds\": 8\r\n          },\r\n          \"resources\": {\r\n            \"requests\": {\r\n              \"cpu\": 2.0,\r\n              \"memoryInGB\": 4.0\r\n            }\r\n          }\r\n        }\r\n      }\r\n    ],\r\n    \"imageRegistryCredentials\": [\r\n      {\r\n        \"isDelegatedIdentity\": false,\r\n        \"server\": \"siacacr-h6c7ekdph3h2fhgb.azurecr.io\",\r\n        \"username\": \"siacacr\"\r\n      }\r\n    ],\r\n    \"initContainers\": [],\r\n    \"instanceView\": {\r\n      \"events\": [],\r\n      \"state\": \"Running\"\r\n    },\r\n    \"ipAddress\": {\r\n      \"autoGeneratedDomainNameLabelScope\": \"Unsecure\",\r\n      \"dnsNameLabel\": \"pui-zap-security-eOqgW0UuoO\",\r\n      \"fqdn\": \"pui-zap-security-eOqgW0UuoO.mexicocentral.azurecontainer.io\",\r\n      \"ip\": \"68.155.90.133\",\r\n      \"ports\": [\r\n        {\r\n          \"port\": 8080,\r\n          \"protocol\": \"TCP\"\r\n        }\r\n      ],\r\n      \"type\": \"Public\"\r\n    },\r\n    \"isCreatedFromStandbyPool\": false,\r\n    \"isCustomProvisioningTimeout\": false,\r\n    \"osType\": \"Linux\",\r\n    \"provisioningState\": \"Succeeded\",\r\n    \"provisioningTimeoutInSeconds\": 1800,\r\n    \"restartPolicy\": \"Always\",\r\n    \"sku\": \"Standard\"\r\n  },\r\n  \"resourceGroup\": \"PUI\",\r\n  \"sku\": null,\r\n  \"tags\": null,\r\n  \"type\": \"Microsoft.ContainerInstance/containerGroups\"\r\n}",
+    "stderr": "",
+    "json": {
+      "extendedLocation": null,
+      "id": "/subscriptions/ce46d502-a4e7-49cc-885f-4ca618e51016/resourceGroups/PUI/providers/Microsoft.ContainerInstance/containerGroups/pui-zap-security",
+      "identity": null,
+      "kind": null,
+      "location": "mexicocentral",
+      "managedBy": null,
+      "name": "pui-zap-security",
+      "plan": null,
+      "properties": {
+        "containers": [
+          {
+            "name": "pui-zap-security",
+            "properties": {
+              "command": [
+                "/bin/sh",
+                "-c",
+                "zap.sh -daemon -host 0.0.0.0 -port $ZAP_PORT -config api.disablekey=false -config api.key=$ZAP_API_KEY -config api.addrs.addr.name=.* -config api.addrs.addr.regex=true"
+              ],
+              "configMap": {
+                "keyValuePairs": {}
+              },
+              "environmentVariables": [
+                {
+                  "name": "ZAP_PORT",
+                  "value": "8080"
+                },
+                {
+                  "name": "ZAP_API_KEY"
+                }
+              ],
+              "image": "siacacr-h6c7ekdph3h2fhgb.azurecr.io/security/zaproxy:2.17.0",
+              "instanceView": {
+                "currentState": {
+                  "detailStatus": "",
+                  "startTime": "2026-05-18T21:04:13.25Z",
+                  "state": "Running"
+                },
+                "events": [
+                  {
+                    "count": 1,
+                    "firstTimestamp": "2026-05-18T21:02:56Z",
+                    "lastTimestamp": "2026-05-18T21:02:56Z",
+                    "message": "pulling image \"siacacr-h6c7ekdph3h2fhgb.azurecr.io/security/zaproxy@sha256:c0c1477512485fd1a39bf50f6085ca951073036e7506a38dfb5ac414053dbd8e\"",
+                    "name": "Pulling",
+                    "type": "Normal"
+                  },
+                  {
+                    "count": 1,
+                    "firstTimestamp": "2026-05-18T21:04:02Z",
+                    "lastTimestamp": "2026-05-18T21:04:02Z",
+                    "message": "Successfully pulled image \"siacacr-h6c7ekdph3h2fhgb.azurecr.io/security/zaproxy@sha256:c0c1477512485fd1a39bf50f6085ca951073036e7506a38dfb5ac414053dbd8e\"",
+                    "name": "Pulled",
+                    "type": "Normal"
+                  },
+                  {
+                    "count": 1,
+                    "firstTimestamp": "2026-05-18T21:04:13Z",
+                    "lastTimestamp": "2026-05-18T21:04:13Z",
+                    "message": "Started container",
+                    "name": "Started",
+                    "type": "Normal"
+                  }
+                ],
+                "restartCount": 0
+              },
+              "ports": [
+                {
+                  "port": 8080,
+                  "protocol": "TCP"
+                }
+              ],
+              "readinessProbe": {
+                "exec": {
+                  "command": [
+                    "/bin/sh",
+                    "-c",
+                    "url=\"http://127.0.0.1:8080/JSON/core/view/version/?apikey=${ZAP_API_KEY}\"; if command -v curl >/dev/null 2>&1; then curl -fsS --max-time 5 \"$url\" | grep -q '\"version\"'; elif command -v wget >/dev/null 2>&1; then wget -qO- --timeout=5 \"$url\" | grep -q '\"version\"'; elif command -v python3 >/dev/null 2>&1; then python3 -c \"import json,os,urllib.request; data=json.load(urllib.request.urlopen('http://127.0.0.1:8080/JSON/core/view/version/?apikey=' + os.environ['ZAP_API_KEY'], timeout=5)); raise SystemExit(0 if data.get('version') else 1)\"; elif command -v python >/dev/null 2>&1; then python -c \"import json,os,urllib.request; data=json.load(urllib.request.urlopen('http://127.0.0.1:8080/JSON/core/view/version/?apikey=' + os.environ['ZAP_API_KEY'], timeout=5)); raise SystemExit(0 if data.get('version') else 1)\"; else exit 1; fi"
+                  ]
+                },
+                "failureThreshold": 12,
+                "initialDelaySeconds": 20,
+                "periodSeconds": 10,
+                "timeoutSeconds": 8
+              },
+              "resources": {
+                "requests": {
+                  "cpu": 2.0,
+                  "memoryInGB": 4.0
+                }
+              }
+            }
+          }
+        ],
+        "imageRegistryCredentials": [
+          {
+            "isDelegatedIdentity": false,
+            "server": "siacacr-h6c7ekdph3h2fhgb.azurecr.io",
+            "username": "siacacr"
+          }
+        ],
+        "initContainers": [],
+        "instanceView": {
+          "events": [],
+          "state": "Running"
+        },
+        "ipAddress": {
+          "autoGeneratedDomainNameLabelScope": "Unsecure",
+          "dnsNameLabel": "pui-zap-security-eOqgW0UuoO",
+          "fqdn": "pui-zap-security-eOqgW0UuoO.mexicocentral.azurecontainer.io",
+          "ip": "68.155.90.133",
+          "ports": [
+            {
+              "port": 8080,
+              "protocol": "TCP"
+            }
+          ],
+          "type": "Public"
+        },
+        "isCreatedFromStandbyPool": false,
+        "isCustomProvisioningTimeout": false,
+        "osType": "Linux",
+        "provisioningState": "Succeeded",
+        "provisioningTimeoutInSeconds": 1800,
+        "restartPolicy": "Always",
+        "sku": "Standard"
+      },
+      "resourceGroup": "PUI",
+      "sku": null,
+      "tags": null,
+      "type": "Microsoft.ContainerInstance/containerGroups"
+    },
+    "parseSucceeded": true,
+    "responsePresent": true,
+    "failureCategory": "",
+    "parseError": ""
+  },
+  "endpointInitialResult": {
+    "hasEndpoint": true,
+    "hostName": "pui-zap-security-eOqgW0UuoO.mexicocentral.azurecontainer.io",
+    "fqdn": "pui-zap-security-eOqgW0UuoO.mexicocentral.azurecontainer.io",
+    "ipAddress": "68.155.90.133",
+    "sourcePath": "properties.ipAddress"
+  },
+  "endpointPolls": [],
+  "fqdn": "pui-zap-security-eOqgW0UuoO.mexicocentral.azurecontainer.io",
+  "ipAddress": "68.155.90.133",
+  "registryLoginServer": "siacacr-h6c7ekdph3h2fhgb.azurecr.io",
+  "azureCliResult": {
+    "extendedLocation": null,
+    "id": "/subscriptions/ce46d502-a4e7-49cc-885f-4ca618e51016/resourceGroups/PUI/providers/Microsoft.ContainerInstance/containerGroups/pui-zap-security",
+    "identity": null,
+    "kind": null,
+    "location": "mexicocentral",
+    "managedBy": null,
+    "name": "pui-zap-security",
+    "plan": null,
+    "properties": {
+      "containers": [
+        {
+          "name": "pui-zap-security",
+          "properties": {
+            "command": [
+              "/bin/sh",
+              "-c",
+              "zap.sh -daemon -host 0.0.0.0 -port $ZAP_PORT -config api.disablekey=false -config api.key=$ZAP_API_KEY -config api.addrs.addr.name=.* -config api.addrs.addr.regex=true"
+            ],
+            "configMap": {
+              "keyValuePairs": {}
+            },
+            "environmentVariables": [
+              {
+                "name": "ZAP_PORT",
+                "value": "8080"
+              },
+              {
+                "name": "ZAP_API_KEY"
+              }
+            ],
+            "image": "siacacr-h6c7ekdph3h2fhgb.azurecr.io/security/zaproxy:2.17.0",
+            "instanceView": {
+              "currentState": {
+                "detailStatus": "",
+                "startTime": "2026-05-18T21:04:13.25Z",
+                "state": "Running"
+              },
+              "events": [
+                {
+                  "count": 1,
+                  "firstTimestamp": "2026-05-18T21:02:56Z",
+                  "lastTimestamp": "2026-05-18T21:02:56Z",
+                  "message": "pulling image \"siacacr-h6c7ekdph3h2fhgb.azurecr.io/security/zaproxy@sha256:c0c1477512485fd1a39bf50f6085ca951073036e7506a38dfb5ac414053dbd8e\"",
+                  "name": "Pulling",
+                  "type": "Normal"
+                },
+                {
+                  "count": 1,
+                  "firstTimestamp": "2026-05-18T21:04:02Z",
+                  "lastTimestamp": "2026-05-18T21:04:02Z",
+                  "message": "Successfully pulled image \"siacacr-h6c7ekdph3h2fhgb.azurecr.io/security/zaproxy@sha256:c0c1477512485fd1a39bf50f6085ca951073036e7506a38dfb5ac414053dbd8e\"",
+                  "name": "Pulled",
+                  "type": "Normal"
+                },
+                {
+                  "count": 1,
+                  "firstTimestamp": "2026-05-18T21:04:13Z",
+                  "lastTimestamp": "2026-05-18T21:04:13Z",
+                  "message": "Started container",
+                  "name": "Started",
+                  "type": "Normal"
+                }
+              ],
+              "restartCount": 0
+            },
+            "ports": [
+              {
+                "port": 8080,
+                "protocol": "TCP"
+              }
+            ],
+            "readinessProbe": {
+              "exec": {
+                "command": [
+                  "/bin/sh",
+                  "-c",
+                  "url=\"http://127.0.0.1:8080/JSON/core/view/version/?apikey=${ZAP_API_KEY}\"; if command -v curl >/dev/null 2>&1; then curl -fsS --max-time 5 \"$url\" | grep -q '\"version\"'; elif command -v wget >/dev/null 2>&1; then wget -qO- --timeout=5 \"$url\" | grep -q '\"version\"'; elif command -v python3 >/dev/null 2>&1; then python3 -c \"import json,os,urllib.request; data=json.load(urllib.request.urlopen('http://127.0.0.1:8080/JSON/core/view/version/?apikey=' + os.environ['ZAP_API_KEY'], timeout=5)); raise SystemExit(0 if data.get('version') else 1)\"; elif command -v python >/dev/null 2>&1; then python -c \"import json,os,urllib.request; data=json.load(urllib.request.urlopen('http://127.0.0.1:8080/JSON/core/view/version/?apikey=' + os.environ['ZAP_API_KEY'], timeout=5)); raise SystemExit(0 if data.get('version') else 1)\"; else exit 1; fi"
+                ]
+              },
+              "failureThreshold": 12,
+              "initialDelaySeconds": 20,
+              "periodSeconds": 10,
+              "timeoutSeconds": 8
+            },
+            "resources": {
+              "requests": {
+                "cpu": 2.0,
+                "memoryInGB": 4.0
+              }
+            }
+          }
+        }
+      ],
+      "imageRegistryCredentials": [
+        {
+          "isDelegatedIdentity": false,
+          "server": "siacacr-h6c7ekdph3h2fhgb.azurecr.io",
+          "username": "siacacr"
+        }
+      ],
+      "initContainers": [],
+      "instanceView": {
+        "events": [],
+        "state": "Running"
+      },
+      "ipAddress": {
+        "autoGeneratedDomainNameLabelScope": "Unsecure",
+        "dnsNameLabel": "pui-zap-security-eOqgW0UuoO",
+        "fqdn": "pui-zap-security-eOqgW0UuoO.mexicocentral.azurecontainer.io",
+        "ip": "68.155.90.133",
+        "ports": [
+          {
+            "port": 8080,
+            "protocol": "TCP"
+          }
+        ],
+        "type": "Public"
+      },
+      "isCreatedFromStandbyPool": false,
+      "isCustomProvisioningTimeout": false,
+      "osType": "Linux",
+      "provisioningState": "Succeeded",
+      "provisioningTimeoutInSeconds": 1800,
+      "restartPolicy": "Always",
+      "sku": "Standard"
+    },
+    "resourceGroup": "PUI",
+    "sku": null,
+    "tags": null,
+    "type": "Microsoft.ContainerInstance/containerGroups"
+  },
+  "message": "ACI desplegado para ZAP."
+}

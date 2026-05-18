@@ -1,0 +1,38 @@
+[
+  {
+    "scope": "container:pui-zap-security",
+    "name": "Pulling",
+    "type": "Normal",
+    "count": 1,
+    "firstTimestamp": "05/18/2026 21:02:56",
+    "lastTimestamp": "05/18/2026 21:02:56",
+    "message": "pulling image \"siacacr-h6c7ekdph3h2fhgb.azurecr.io/security/zaproxy@sha256:c0c1477512485fd1a39bf50f6085ca951073036e7506a38dfb5ac414053dbd8e\""
+  },
+  {
+    "scope": "container:pui-zap-security",
+    "name": "Pulled",
+    "type": "Normal",
+    "count": 1,
+    "firstTimestamp": "05/18/2026 21:04:02",
+    "lastTimestamp": "05/18/2026 21:04:02",
+    "message": "Successfully pulled image \"siacacr-h6c7ekdph3h2fhgb.azurecr.io/security/zaproxy@sha256:c0c1477512485fd1a39bf50f6085ca951073036e7506a38dfb5ac414053dbd8e\""
+  },
+  {
+    "scope": "container:pui-zap-security",
+    "name": "Started",
+    "type": "Normal",
+    "count": 1,
+    "firstTimestamp": "05/18/2026 21:04:13",
+    "lastTimestamp": "05/18/2026 21:04:13",
+    "message": "Started container"
+  },
+  {
+    "scope": "container:pui-zap-security",
+    "name": "Failed",
+    "type": "Warning",
+    "count": 1,
+    "firstTimestamp": "05/18/2026 21:06:25",
+    "lastTimestamp": "05/18/2026 21:06:25",
+    "message": "Readiness probe failed: os: 1: Syntax error: Unterminated quoted string"
+  }
+]
