@@ -1,0 +1,706 @@
+CodeQL analyze resources: ram=4096MB; threads=2
+CodeQL analyze arguments: codeql database analyze D:\a\1\security-runtime\codeql-db --format=sarif-latest --output=D:\a\1\s\reportes-seguridad\SAST\20260518_225438\layer2_codeql.sarif --ram=4096 --threads=2 codeql/csharp-queries:codeql-suites/csharp-security-and-quality.qls
+Running queries.
+Resolving data extensions.
+Finished resolving data extensions.
+Loading data extensions.
+Finished loading data extensions.
+Not caching stages during query-loading, since max heap size is only 1800 MB.
+[1/171] Loaded C:\Users\VssAdministrator\.codeql\packages\codeql\csharp-queries\1.7.2\Input Validation\UseOfFileUpload.qlx.
+[2/171] Loaded C:\Users\VssAdministrator\.codeql\packages\codeql\csharp-queries\1.7.2\Security Features\CookieWithOverlyBroadDomain.qlx.
+[3/171] Loaded C:\Users\VssAdministrator\.codeql\packages\codeql\csharp-queries\1.7.2\Security Features\CookieWithOverlyBroadPath.qlx.
+[4/171] Loaded C:\Users\VssAdministrator\.codeql\packages\codeql\csharp-queries\1.7.2\Security Features\CWE-011\ASPNetDebug.qlx.
+[5/171] Loaded C:\Users\VssAdministrator\.codeql\packages\codeql\csharp-queries\1.7.2\Security Features\CWE-016\ASPNetPagesValidateRequest.qlx.
+[6/171] Loaded C:\Users\VssAdministrator\.codeql\packages\codeql\csharp-queries\1.7.2\Security Features\CWE-022\ZipSlip.qlx.
+[7/171] Loaded C:\Users\VssAdministrator\.codeql\packages\codeql\csharp-queries\1.7.2\Security Features\CWE-022\TaintedPath.qlx.
+[8/171] Loaded C:\Users\VssAdministrator\.codeql\packages\codeql\csharp-queries\1.7.2\Security Features\CWE-079\XSS.qlx.
+[9/171] Loaded C:\Users\VssAdministrator\.codeql\packages\codeql\csharp-queries\1.7.2\Security Features\CWE-078\CommandInjection.qlx.
+[10/171] Loaded C:\Users\VssAdministrator\.codeql\packages\codeql\csharp-queries\1.7.2\Security Features\CWE-090\LDAPInjection.qlx.
+[11/171] Loaded C:\Users\VssAdministrator\.codeql\packages\codeql\csharp-queries\1.7.2\Security Features\CWE-089\SqlInjection.qlx.
+[12/171] Loaded C:\Users\VssAdministrator\.codeql\packages\codeql\csharp-queries\1.7.2\Security Features\CWE-091\XMLInjection.qlx.
+[13/171] Loaded C:\Users\VssAdministrator\.codeql\packages\codeql\csharp-queries\1.7.2\Security Features\CWE-094\CodeInjection.qlx.
+[14/171] Loaded C:\Users\VssAdministrator\.codeql\packages\codeql\csharp-queries\1.7.2\Security Features\CWE-099\ResourceInjection.qlx.
+[15/171] Loaded C:\Users\VssAdministrator\.codeql\packages\codeql\csharp-queries\1.7.2\Security Features\CWE-1004\CookieWithoutHttpOnly.qlx.
+[16/171] Loaded C:\Users\VssAdministrator\.codeql\packages\codeql\csharp-queries\1.7.2\Security Features\CWE-112\MissingXMLValidation.qlx.
+[17/171] Loaded C:\Users\VssAdministrator\.codeql\packages\codeql\csharp-queries\1.7.2\Security Features\CWE-114\AssemblyPathInjection.qlx.
+[18/171] Loaded C:\Users\VssAdministrator\.codeql\packages\codeql\csharp-queries\1.7.2\Security Features\CWE-117\LogForging.qlx.
+[19/171] Loaded C:\Users\VssAdministrator\.codeql\packages\codeql\csharp-queries\1.7.2\Security Features\CWE-119\LocalUnvalidatedArithmetic.qlx.
+[20/171] Loaded C:\Users\VssAdministrator\.codeql\packages\codeql\csharp-queries\1.7.2\Security Features\CWE-134\UncontrolledFormatString.qlx.
+[21/171] Loaded C:\Users\VssAdministrator\.codeql\packages\codeql\csharp-queries\1.7.2\Security Features\CWE-201\ExposureInTransmittedData.qlx.
+[22/171] Loaded C:\Users\VssAdministrator\.codeql\packages\codeql\csharp-queries\1.7.2\Security Features\CWE-209\ExceptionInformationExposure.qlx.
+[23/171] Loaded C:\Users\VssAdministrator\.codeql\packages\codeql\csharp-queries\1.7.2\Security Features\CWE-248\MissingASPNETGlobalErrorHandler.qlx.
+[24/171] Loaded C:\Users\VssAdministrator\.codeql\packages\codeql\csharp-queries\1.7.2\Security Features\CWE-352\MissingAntiForgeryTokenValidation.qlx.
+[25/171] Loaded C:\Users\VssAdministrator\.codeql\packages\codeql\csharp-queries\1.7.2\Security Features\CWE-312\CleartextStorage.qlx.
+[26/171] Loaded C:\Users\VssAdministrator\.codeql\packages\codeql\csharp-queries\1.7.2\Security Features\CWE-359\ExposureOfPrivateInformation.qlx.
+[27/171] Loaded C:\Users\VssAdministrator\.codeql\packages\codeql\csharp-queries\1.7.2\Security Features\CWE-384\AbandonSession.qlx.
+[28/171] Loaded C:\Users\VssAdministrator\.codeql\packages\codeql\csharp-queries\1.7.2\Security Features\CWE-451\MissingXFrameOptions.qlx.
+[29/171] Loaded C:\Users\VssAdministrator\.codeql\packages\codeql\csharp-queries\1.7.2\Security Features\CWE-502\DeserializedDelegate.qlx.
+[30/171] Loaded C:\Users\VssAdministrator\.codeql\packages\codeql\csharp-queries\1.7.2\Security Features\CWE-548\ASPNetDirectoryListing.qlx.
+[31/171] Loaded C:\Users\VssAdministrator\.codeql\packages\codeql\csharp-queries\1.7.2\Security Features\CWE-601\UrlRedirect.qlx.
+[32/171] Loaded C:\Users\VssAdministrator\.codeql\packages\codeql\csharp-queries\1.7.2\Security Features\CWE-611\UntrustedDataInsecureXml.qlx.
+[33/171] Loaded C:\Users\VssAdministrator\.codeql\packages\codeql\csharp-queries\1.7.2\Security Features\CWE-502\UnsafeDeserializationUntrustedInput.qlx.
+[34/171] Loaded C:\Users\VssAdministrator\.codeql\packages\codeql\csharp-queries\1.7.2\Security Features\CWE-614\RequireSSL.qlx.
+[35/171] Loaded C:\Users\VssAdministrator\.codeql\packages\codeql\csharp-queries\1.7.2\Security Features\CWE-614\CookieWithoutSecure.qlx.
+[36/171] Loaded C:\Users\VssAdministrator\.codeql\packages\codeql\csharp-queries\1.7.2\Security Features\CWE-643\XPathInjection.qlx.
+[37/171] Loaded C:\Users\VssAdministrator\.codeql\packages\codeql\csharp-queries\1.7.2\Security Features\CWE-730\ReDoS.qlx.
+[38/171] Loaded C:\Users\VssAdministrator\.codeql\packages\codeql\csharp-queries\1.7.2\Security Features\CWE-730\RegexInjection.qlx.
+[39/171] Loaded C:\Users\VssAdministrator\.codeql\packages\codeql\csharp-queries\1.7.2\Security Features\CWE-807\ConditionalBypass.qlx.
+[40/171] Loaded C:\Users\VssAdministrator\.codeql\packages\codeql\csharp-queries\1.7.2\Security Features\Encryption using ECB.qlx.
+[41/171] Loaded C:\Users\VssAdministrator\.codeql\packages\codeql\csharp-queries\1.7.2\Security Features\HeaderCheckingDisabled.qlx.
+[42/171] Loaded C:\Users\VssAdministrator\.codeql\packages\codeql\csharp-queries\1.7.2\Security Features\InadequateRSAPadding.qlx.
+[43/171] Loaded C:\Users\VssAdministrator\.codeql\packages\codeql\csharp-queries\1.7.2\Security Features\InsufficientKeySize.qlx.
+[44/171] Loaded C:\Users\VssAdministrator\.codeql\packages\codeql\csharp-queries\1.7.2\Security Features\PersistentCookie.qlx.
+[45/171] Loaded C:\Users\VssAdministrator\.codeql\packages\codeql\csharp-queries\1.7.2\Security Features\WeakEncryption.qlx.
+[46/171] Loaded C:\Users\VssAdministrator\.codeql\packages\codeql\csharp-queries\1.7.2\Configuration\EmptyPasswordInConfigurationFile.qlx.
+[47/171] Loaded C:\Users\VssAdministrator\.codeql\packages\codeql\csharp-queries\1.7.2\Security Features\InsecureRandomness.qlx.
+[48/171] Loaded C:\Users\VssAdministrator\.codeql\packages\codeql\csharp-queries\1.7.2\Input Validation\ValueShadowingServerVariable.qlx.
+[49/171] Loaded C:\Users\VssAdministrator\.codeql\packages\codeql\csharp-queries\1.7.2\Likely Bugs\ThreadUnsafeICryptoTransform.qlx.
+[50/171] Loaded C:\Users\VssAdministrator\.codeql\packages\codeql\csharp-queries\1.7.2\Input Validation\ValueShadowing.qlx.
+[51/171] Loaded C:\Users\VssAdministrator\.codeql\packages\codeql\csharp-queries\1.7.2\Security Features\CWE-020\RuntimeChecksBypass.qlx.
+[52/171] Loaded C:\Users\VssAdministrator\.codeql\packages\codeql\csharp-queries\1.7.2\Likely Bugs\ThreadUnsafeICryptoTransformLambda.qlx.
+[53/171] Loaded C:\Users\VssAdministrator\.codeql\packages\codeql\csharp-queries\1.7.2\Security Features\CWE-285\MissingAccessControl.qlx.
+[54/171] Loaded C:\Users\VssAdministrator\.codeql\packages\codeql\csharp-queries\1.7.2\Security Features\CWE-639\InsecureDirectObjectReference.qlx.
+[55/171] Loaded C:\Users\VssAdministrator\.codeql\packages\codeql\csharp-queries\1.7.2\Diagnostics\CompilerError.qlx.
+[56/171] Loaded C:\Users\VssAdministrator\.codeql\packages\codeql\csharp-queries\1.7.2\Security Features\CWE-327\InsecureSQLConnection.qlx.
+[57/171] Loaded C:\Users\VssAdministrator\.codeql\packages\codeql\csharp-queries\1.7.2\Diagnostics\CompilerMessage.qlx.
+[58/171] Loaded C:\Users\VssAdministrator\.codeql\packages\codeql\csharp-queries\1.7.2\Diagnostics\ExtractedFiles.qlx.
+[59/171] Loaded C:\Users\VssAdministrator\.codeql\packages\codeql\csharp-queries\1.7.2\Diagnostics\ExtractorError.qlx.
+[60/171] Loaded C:\Users\VssAdministrator\.codeql\packages\codeql\csharp-queries\1.7.2\Diagnostics\ExtractorMessage.qlx.
+[61/171] Loaded C:\Users\VssAdministrator\.codeql\packages\codeql\csharp-queries\1.7.2\Diagnostics\DiagnosticExtractionErrors.qlx.
+[62/171] Loaded C:\Users\VssAdministrator\.codeql\packages\codeql\csharp-queries\1.7.2\Telemetry\DatabaseQualityDiagnostics.qlx.
+[63/171] Loaded C:\Users\VssAdministrator\.codeql\packages\codeql\csharp-queries\1.7.2\Metrics\Summaries\LinesOfCode.qlx.
+[64/171] Loaded C:\Users\VssAdministrator\.codeql\packages\codeql\csharp-queries\1.7.2\Telemetry\ExtractorInformation.qlx.
+[65/171] Loaded C:\Users\VssAdministrator\.codeql\packages\codeql\csharp-queries\1.7.2\Telemetry\ExternalLibraryUsage.qlx.
+[66/171] Loaded C:\Users\VssAdministrator\.codeql\packages\codeql\csharp-queries\1.7.2\Telemetry\SupportedExternalApis.qlx.
+[67/171] Loaded C:\Users\VssAdministrator\.codeql\packages\codeql\csharp-queries\1.7.2\Telemetry\SupportedExternalSinks.qlx.
+[68/171] Loaded C:\Users\VssAdministrator\.codeql\packages\codeql\csharp-queries\1.7.2\Telemetry\SupportedExternalSources.qlx.
+[69/171] Loaded C:\Users\VssAdministrator\.codeql\packages\codeql\csharp-queries\1.7.2\Telemetry\SupportedExternalTaint.qlx.
+[70/171] Loaded C:\Users\VssAdministrator\.codeql\packages\codeql\csharp-queries\1.7.2\API Abuse\CallToGCCollect.qlx.
+[71/171] Loaded C:\Users\VssAdministrator\.codeql\packages\codeql\csharp-queries\1.7.2\API Abuse\CallToObsoleteMethod.qlx.
+[72/171] Loaded C:\Users\VssAdministrator\.codeql\packages\codeql\csharp-queries\1.7.2\API Abuse\ClassDoesNotImplementEquals.qlx.
+[73/171] Loaded C:\Users\VssAdministrator\.codeql\packages\codeql\csharp-queries\1.7.2\API Abuse\ClassImplementsICloneable.qlx.
+[74/171] Loaded C:\Users\VssAdministrator\.codeql\packages\codeql\csharp-queries\1.7.2\Telemetry\UnsupportedExternalAPIs.qlx.
+[75/171] Loaded C:\Users\VssAdministrator\.codeql\packages\codeql\csharp-queries\1.7.2\API Abuse\DisposeNotCalledOnException.qlx.
+[76/171] Loaded C:\Users\VssAdministrator\.codeql\packages\codeql\csharp-queries\1.7.2\API Abuse\FormatInvalid.qlx.
+[77/171] Loaded C:\Users\VssAdministrator\.codeql\packages\codeql\csharp-queries\1.7.2\API Abuse\InconsistentEqualsGetHashCode.qlx.
+[78/171] Loaded C:\Users\VssAdministrator\.codeql\packages\codeql\csharp-queries\1.7.2\API Abuse\IncorrectCompareToSignature.qlx.
+[79/171] Loaded C:\Users\VssAdministrator\.codeql\packages\codeql\csharp-queries\1.7.2\API Abuse\IncorrectEqualsSignature.qlx.
+[80/171] Loaded C:\Users\VssAdministrator\.codeql\packages\codeql\csharp-queries\1.7.2\API Abuse\NullArgumentToEquals.qlx.
+[81/171] Loaded C:\Users\VssAdministrator\.codeql\packages\codeql\csharp-queries\1.7.2\API Abuse\NoDisposeCallOnLocalIDisposable.qlx.
+[82/171] Loaded C:\Users\VssAdministrator\.codeql\packages\codeql\csharp-queries\1.7.2\Architecture\Refactoring Opportunities\InappropriateIntimacy.qlx.
+[83/171] Loaded C:\Users\VssAdministrator\.codeql\packages\codeql\csharp-queries\1.7.2\Bad Practices\CallsUnmanagedCode.qlx.
+[84/171] Loaded C:\Users\VssAdministrator\.codeql\packages\codeql\csharp-queries\1.7.2\ASP\BlockCodeResponseWrite.qlx.
+[85/171] Loaded C:\Users\VssAdministrator\.codeql\packages\codeql\csharp-queries\1.7.2\Bad Practices\CatchOfNullReferenceException.qlx.
+[86/171] Loaded C:\Users\VssAdministrator\.codeql\packages\codeql\csharp-queries\1.7.2\Bad Practices\Declarations\LocalScopeVariableShadowsMember.qlx.
+[87/171] Loaded C:\Users\VssAdministrator\.codeql\packages\codeql\csharp-queries\1.7.2\Bad Practices\Control-Flow\ConstantCondition.qlx.
+[88/171] Loaded C:\Users\VssAdministrator\.codeql\packages\codeql\csharp-queries\1.7.2\Bad Practices\EmptyCatchBlock.qlx.
+[89/171] Loaded C:\Users\VssAdministrator\.codeql\packages\codeql\csharp-queries\1.7.2\Bad Practices\Declarations\TooManyRefParameters.qlx.
+[90/171] Loaded C:\Users\VssAdministrator\.codeql\packages\codeql\csharp-queries\1.7.2\Bad Practices\Implementation Hiding\AbstractToConcreteCollection.qlx.
+[91/171] Loaded C:\Users\VssAdministrator\.codeql\packages\codeql\csharp-queries\1.7.2\Bad Practices\ErroneousClassCompare.qlx.
+[92/171] Loaded C:\Users\VssAdministrator\.codeql\packages\codeql\csharp-queries\1.7.2\Bad Practices\Naming Conventions\FieldMasksSuperField.qlx.
+[93/171] Loaded C:\Users\VssAdministrator\.codeql\packages\codeql\csharp-queries\1.7.2\Bad Practices\Naming Conventions\SameNameAsSuper.qlx.
+[94/171] Loaded C:\Users\VssAdministrator\.codeql\packages\codeql\csharp-queries\1.7.2\Bad Practices\Implementation Hiding\ExposeRepresentation.qlx.
+[95/171] Loaded C:\Users\VssAdministrator\.codeql\packages\codeql\csharp-queries\1.7.2\Bad Practices\PathCombine.qlx.
+[96/171] Loaded C:\Users\VssAdministrator\.codeql\packages\codeql\csharp-queries\1.7.2\Bad Practices\UnmanagedCodeCheck.qlx.
+[97/171] Loaded C:\Users\VssAdministrator\.codeql\packages\codeql\csharp-queries\1.7.2\Complexity\BlockWithTooManyStatements.qlx.
+[98/171] Loaded C:\Users\VssAdministrator\.codeql\packages\codeql\csharp-queries\1.7.2\Bad Practices\VirtualCallInConstructorOrDestructor.qlx.
+[99/171] Loaded C:\Users\VssAdministrator\.codeql\packages\codeql\csharp-queries\1.7.2\Complexity\ComplexCondition.qlx.
+[100/171] Loaded C:\Users\VssAdministrator\.codeql\packages\codeql\csharp-queries\1.7.2\Concurrency\FutileSyncOnField.qlx.
+[101/171] Loaded C:\Users\VssAdministrator\.codeql\packages\codeql\csharp-queries\1.7.2\Concurrency\LockedWait.qlx.
+[102/171] Loaded C:\Users\VssAdministrator\.codeql\packages\codeql\csharp-queries\1.7.2\Concurrency\LockOrder.qlx.
+[103/171] Loaded C:\Users\VssAdministrator\.codeql\packages\codeql\csharp-queries\1.7.2\Concurrency\SynchSetUnsynchGet.qlx.
+[104/171] Loaded C:\Users\VssAdministrator\.codeql\packages\codeql\csharp-queries\1.7.2\Concurrency\UnsafeLazyInitialization.qlx.
+[105/171] Loaded C:\Users\VssAdministrator\.codeql\packages\codeql\csharp-queries\1.7.2\Concurrency\LockThis.qlx.
+[106/171] Loaded C:\Users\VssAdministrator\.codeql\packages\codeql\csharp-queries\1.7.2\CSI\CompareIdenticalValues.qlx.
+[107/171] Loaded C:\Users\VssAdministrator\.codeql\packages\codeql\csharp-queries\1.7.2\Concurrency\UnsynchronizedStaticAccess.qlx.
+[108/171] Loaded C:\Users\VssAdministrator\.codeql\packages\codeql\csharp-queries\1.7.2\CSI\NullAlways.qlx.
+[109/171] Loaded C:\Users\VssAdministrator\.codeql\packages\codeql\csharp-queries\1.7.2\Dead Code\DeadStoreOfLocal.qlx.
+[110/171] Loaded C:\Users\VssAdministrator\.codeql\packages\codeql\csharp-queries\1.7.2\Documentation\XmldocMissingSummary.qlx.
+[111/171] Loaded C:\Users\VssAdministrator\.codeql\packages\codeql\csharp-queries\1.7.2\CSI\NullMaybe.qlx.
+[112/171] Loaded C:\Users\VssAdministrator\.codeql\packages\codeql\csharp-queries\1.7.2\Language Abuse\CastThisToTypeParameter.qlx.
+[113/171] Loaded C:\Users\VssAdministrator\.codeql\packages\codeql\csharp-queries\1.7.2\Language Abuse\CatchOfGenericException.qlx.
+[114/171] Loaded C:\Users\VssAdministrator\.codeql\packages\codeql\csharp-queries\1.7.2\Language Abuse\ChainedIs.qlx.
+[115/171] Loaded C:\Users\VssAdministrator\.codeql\packages\codeql\csharp-queries\1.7.2\Language Abuse\DubiousDowncastOfThis.qlx.
+[116/171] Loaded C:\Users\VssAdministrator\.codeql\packages\codeql\csharp-queries\1.7.2\Language Abuse\DubiousTypeTestOfThis.qlx.
+[117/171] Loaded C:\Users\VssAdministrator\.codeql\packages\codeql\csharp-queries\1.7.2\Language Abuse\MissedReadonlyOpportunity.qlx.
+[118/171] Loaded C:\Users\VssAdministrator\.codeql\packages\codeql\csharp-queries\1.7.2\Language Abuse\MissedTernaryOpportunity.qlx.
+[119/171] Loaded C:\Users\VssAdministrator\.codeql\packages\codeql\csharp-queries\1.7.2\Language Abuse\MissedUsingOpportunity.qlx.
+[120/171] Loaded C:\Users\VssAdministrator\.codeql\packages\codeql\csharp-queries\1.7.2\Language Abuse\NestedIf.qlx.
+[121/171] Loaded C:\Users\VssAdministrator\.codeql\packages\codeql\csharp-queries\1.7.2\Language Abuse\RethrowException.qlx.
+[122/171] Loaded C:\Users\VssAdministrator\.codeql\packages\codeql\csharp-queries\1.7.2\Language Abuse\SimplifyBoolExpr.qlx.
+[123/171] Loaded C:\Users\VssAdministrator\.codeql\packages\codeql\csharp-queries\1.7.2\Language Abuse\UnusedPropertyValue.qlx.
+[124/171] Loaded C:\Users\VssAdministrator\.codeql\packages\codeql\csharp-queries\1.7.2\Language Abuse\UselessCastToSelf.qlx.
+[125/171] Loaded C:\Users\VssAdministrator\.codeql\packages\codeql\csharp-queries\1.7.2\Language Abuse\UselessNullCoalescingExpression.qlx.
+[126/171] Loaded C:\Users\VssAdministrator\.codeql\packages\codeql\csharp-queries\1.7.2\Language Abuse\UselessTypeTest.qlx.
+[127/171] Loaded C:\Users\VssAdministrator\.codeql\packages\codeql\csharp-queries\1.7.2\Language Abuse\UselessUpcast.qlx.
+[128/171] Loaded C:\Users\VssAdministrator\.codeql\packages\codeql\csharp-queries\1.7.2\Likely Bugs\Collections\ContainerSizeCmpZero.qlx.
+[129/171] Loaded C:\Users\VssAdministrator\.codeql\packages\codeql\csharp-queries\1.7.2\Likely Bugs\Collections\ContainerLengthCmpOffByOne.qlx.
+[130/171] Loaded C:\Users\VssAdministrator\.codeql\packages\codeql\csharp-queries\1.7.2\Likely Bugs\Collections\ReadOnlyContainer.qlx.
+[131/171] Loaded C:\Users\VssAdministrator\.codeql\packages\codeql\csharp-queries\1.7.2\Likely Bugs\Collections\WriteOnlyContainer.qlx.
+[132/171] Loaded C:\Users\VssAdministrator\.codeql\packages\codeql\csharp-queries\1.7.2\Likely Bugs\DangerousNonShortCircuitLogic.qlx.
+[133/171] Loaded C:\Users\VssAdministrator\.codeql\packages\codeql\csharp-queries\1.7.2\Likely Bugs\EqualityCheckOnFloats.qlx.
+[134/171] Loaded C:\Users\VssAdministrator\.codeql\packages\codeql\csharp-queries\1.7.2\Likely Bugs\EqualsArray.qlx.
+[135/171] Loaded C:\Users\VssAdministrator\.codeql\packages\codeql\csharp-queries\1.7.2\Likely Bugs\EqualsUsesAs.qlx.
+[136/171] Loaded C:\Users\VssAdministrator\.codeql\packages\codeql\csharp-queries\1.7.2\Likely Bugs\Dynamic\BadDynamicCall.qlx.
+[137/171] Loaded C:\Users\VssAdministrator\.codeql\packages\codeql\csharp-queries\1.7.2\Likely Bugs\EqualsUsesIs.qlx.
+[138/171] Loaded C:\Users\VssAdministrator\.codeql\packages\codeql\csharp-queries\1.7.2\Likely Bugs\HashedButNoHash.qlx.
+[139/171] Loaded C:\Users\VssAdministrator\.codeql\packages\codeql\csharp-queries\1.7.2\Likely Bugs\ImpossibleArrayCast.qlx.
+[140/171] Loaded C:\Users\VssAdministrator\.codeql\packages\codeql\csharp-queries\1.7.2\Likely Bugs\IncomparableEquals.qlx.
+[141/171] Loaded C:\Users\VssAdministrator\.codeql\packages\codeql\csharp-queries\1.7.2\Likely Bugs\InconsistentCompareTo.qlx.
+[142/171] Loaded C:\Users\VssAdministrator\.codeql\packages\codeql\csharp-queries\1.7.2\Likely Bugs\MishandlingJapaneseEra.qlx.
+[143/171] Loaded C:\Users\VssAdministrator\.codeql\packages\codeql\csharp-queries\1.7.2\Likely Bugs\NestedLoopsSameVariable.qlx.
+[144/171] Loaded C:\Users\VssAdministrator\.codeql\packages\codeql\csharp-queries\1.7.2\Likely Bugs\ObjectComparison.qlx.
+[145/171] Loaded C:\Users\VssAdministrator\.codeql\packages\codeql\csharp-queries\1.7.2\Likely Bugs\LeapYear\UnsafeYearConstruction.qlx.
+[146/171] Loaded C:\Users\VssAdministrator\.codeql\packages\codeql\csharp-queries\1.7.2\Likely Bugs\PossibleLossOfPrecision.qlx.
+[147/171] Loaded C:\Users\VssAdministrator\.codeql\packages\codeql\csharp-queries\1.7.2\Likely Bugs\RecursiveOperatorEquals.qlx.
+[148/171] Loaded C:\Users\VssAdministrator\.codeql\packages\codeql\csharp-queries\1.7.2\Likely Bugs\RecursiveEquals.qlx.
+[149/171] Loaded C:\Users\VssAdministrator\.codeql\packages\codeql\csharp-queries\1.7.2\Likely Bugs\SelfAssignment.qlx.
+[150/171] Loaded C:\Users\VssAdministrator\.codeql\packages\codeql\csharp-queries\1.7.2\Likely Bugs\ReferenceEqualsOnValueTypes.qlx.
+[151/171] Loaded C:\Users\VssAdministrator\.codeql\packages\codeql\csharp-queries\1.7.2\Likely Bugs\Statements\EmptyBlock.qlx.
+[152/171] Loaded C:\Users\VssAdministrator\.codeql\packages\codeql\csharp-queries\1.7.2\Likely Bugs\Statements\EmptyLockStatement.qlx.
+[153/171] Loaded C:\Users\VssAdministrator\.codeql\packages\codeql\csharp-queries\1.7.2\Likely Bugs\Statements\UseBraces.qlx.
+[154/171] Loaded C:\Users\VssAdministrator\.codeql\packages\codeql\csharp-queries\1.7.2\Likely Bugs\StaticFieldWrittenByInstance.qlx.
+[155/171] Loaded C:\Users\VssAdministrator\.codeql\packages\codeql\csharp-queries\1.7.2\Likely Bugs\StringBuilderCharInit.qlx.
+[156/171] Loaded C:\Users\VssAdministrator\.codeql\packages\codeql\csharp-queries\1.7.2\Linq\BadMultipleIteration.qlx.
+[157/171] Loaded C:\Users\VssAdministrator\.codeql\packages\codeql\csharp-queries\1.7.2\Likely Bugs\UncheckedCastInEquals.qlx.
+[158/171] Loaded C:\Users\VssAdministrator\.codeql\packages\codeql\csharp-queries\1.7.2\Linq\MissedCastOpportunity.qlx.
+[159/171] Loaded C:\Users\VssAdministrator\.codeql\packages\codeql\csharp-queries\1.7.2\Linq\MissedAllOpportunity.qlx.
+[160/171] Loaded C:\Users\VssAdministrator\.codeql\packages\codeql\csharp-queries\1.7.2\Linq\MissedSelectOpportunity.qlx.
+[161/171] Loaded C:\Users\VssAdministrator\.codeql\packages\codeql\csharp-queries\1.7.2\Linq\MissedOfTypeOpportunity.qlx.
+[162/171] Loaded C:\Users\VssAdministrator\.codeql\packages\codeql\csharp-queries\1.7.2\Linq\RedundantSelect.qlx.
+[163/171] Loaded C:\Users\VssAdministrator\.codeql\packages\codeql\csharp-queries\1.7.2\Linq\MissedWhereOpportunity.qlx.
+[164/171] Loaded C:\Users\VssAdministrator\.codeql\packages\codeql\csharp-queries\1.7.2\Performance\StringConcatenationInLoop.qlx.
+[165/171] Loaded C:\Users\VssAdministrator\.codeql\packages\codeql\csharp-queries\1.7.2\Performance\StringBuilderInLoop.qlx.
+[166/171] Loaded C:\Users\VssAdministrator\.codeql\packages\codeql\csharp-queries\1.7.2\Performance\UseTryGetValue.qlx.
+[167/171] Loaded C:\Users\VssAdministrator\.codeql\packages\codeql\csharp-queries\1.7.2\Useless code\FutileConditional.qlx.
+[168/171] Loaded C:\Users\VssAdministrator\.codeql\packages\codeql\csharp-queries\1.7.2\Useless code\IntGetHashCode.qlx.
+[169/171] Loaded C:\Users\VssAdministrator\.codeql\packages\codeql\csharp-queries\1.7.2\Useless code\DefaultToString.qlx.
+[170/171] Loaded C:\Users\VssAdministrator\.codeql\packages\codeql\csharp-queries\1.7.2\Useless code\UnusedLabel.qlx.
+[171/171] Loaded C:\Users\VssAdministrator\.codeql\packages\codeql\csharp-queries\1.7.2\Useless code\RedundantToStringCall.qlx.
+Starting evaluation of codeql\csharp-queries\API Abuse\CallToGCCollect.ql.
+Starting evaluation of codeql\csharp-queries\API Abuse\CallToObsoleteMethod.ql.
+Starting evaluation of codeql\csharp-queries\API Abuse\ClassDoesNotImplementEquals.ql.
+Starting evaluation of codeql\csharp-queries\API Abuse\ClassImplementsICloneable.ql.
+Starting evaluation of codeql\csharp-queries\API Abuse\DisposeNotCalledOnException.ql.
+[1/171 eval 13.1s] Evaluation done; writing results to codeql\csharp-queries\API Abuse\CallToGCCollect.bqrs.
+[2/171 eval 13.1s] Evaluation done; writing results to codeql\csharp-queries\API Abuse\CallToObsoleteMethod.bqrs.
+[3/171 eval 7.3s] Evaluation done; writing results to codeql\csharp-queries\API Abuse\ClassImplementsICloneable.bqrs.
+[4/171 eval 16.1s] Evaluation done; writing results to codeql\csharp-queries\API Abuse\ClassDoesNotImplementEquals.bqrs.
+Starting evaluation of codeql\csharp-queries\API Abuse\FormatInvalid.ql.
+[5/171 eval 21.9s] Evaluation done; writing results to codeql\csharp-queries\API Abuse\DisposeNotCalledOnException.bqrs.
+Starting evaluation of codeql\csharp-queries\API Abuse\InconsistentEqualsGetHashCode.ql.
+Starting evaluation of codeql\csharp-queries\API Abuse\IncorrectCompareToSignature.ql.
+[6/171 eval 1s] Evaluation done; writing results to codeql\csharp-queries\API Abuse\FormatInvalid.bqrs.
+Starting evaluation of codeql\csharp-queries\API Abuse\IncorrectEqualsSignature.ql.
+[7/171 eval 189ms] Evaluation done; writing results to codeql\csharp-queries\API Abuse\IncorrectCompareToSignature.bqrs.
+[8/171 eval 893ms] Evaluation done; writing results to codeql\csharp-queries\API Abuse\InconsistentEqualsGetHashCode.bqrs.
+Starting evaluation of codeql\csharp-queries\API Abuse\NoDisposeCallOnLocalIDisposable.ql.
+Starting evaluation of codeql\csharp-queries\API Abuse\NullArgumentToEquals.ql.
+[9/171 eval 187ms] Evaluation done; writing results to codeql\csharp-queries\API Abuse\IncorrectEqualsSignature.bqrs.
+Starting evaluation of codeql\csharp-queries\Architecture\Refactoring Opportunities\InappropriateIntimacy.ql.
+[10/171 eval 25ms] Evaluation done; writing results to codeql\csharp-queries\API Abuse\NullArgumentToEquals.bqrs.
+[11/171 eval 463ms] Evaluation done; writing results to codeql\csharp-queries\Architecture\Refactoring Opportunities\InappropriateIntimacy.bqrs.
+Starting evaluation of codeql\csharp-queries\ASP\BlockCodeResponseWrite.ql.
+Starting evaluation of codeql\csharp-queries\Bad Practices\CallsUnmanagedCode.ql.
+[12/171 eval 3ms] Evaluation done; writing results to codeql\csharp-queries\ASP\BlockCodeResponseWrite.bqrs.
+[13/171 eval 51ms] Evaluation done; writing results to codeql\csharp-queries\Bad Practices\CallsUnmanagedCode.bqrs.
+Starting evaluation of codeql\csharp-queries\Bad Practices\CatchOfNullReferenceException.ql.
+Starting evaluation of codeql\csharp-queries\Bad Practices\Control-Flow\ConstantCondition.ql.
+[14/171 eval 11ms] Evaluation done; writing results to codeql\csharp-queries\Bad Practices\CatchOfNullReferenceException.bqrs.
+[15/171 eval 545ms] Evaluation done; writing results to codeql\csharp-queries\Bad Practices\Control-Flow\ConstantCondition.bqrs.
+Starting evaluation of codeql\csharp-queries\Bad Practices\Declarations\LocalScopeVariableShadowsMember.ql.
+[16/171 eval 1.6s] Evaluation done; writing results to codeql\csharp-queries\API Abuse\NoDisposeCallOnLocalIDisposable.bqrs.
+Starting evaluation of codeql\csharp-queries\Bad Practices\Declarations\TooManyRefParameters.ql.
+[17/171 eval 44ms] Evaluation done; writing results to codeql\csharp-queries\Bad Practices\Declarations\TooManyRefParameters.bqrs.
+Starting evaluation of codeql\csharp-queries\Bad Practices\EmptyCatchBlock.ql.
+Starting evaluation of codeql\csharp-queries\Bad Practices\ErroneousClassCompare.ql.
+[18/171 eval 4ms] Evaluation done; writing results to codeql\csharp-queries\Bad Practices\EmptyCatchBlock.bqrs.
+[19/171 eval 26ms] Evaluation done; writing results to codeql\csharp-queries\Bad Practices\ErroneousClassCompare.bqrs.
+Starting evaluation of codeql\csharp-queries\Bad Practices\Implementation Hiding\AbstractToConcreteCollection.ql.
+Starting evaluation of codeql\csharp-queries\Bad Practices\Implementation Hiding\ExposeRepresentation.ql.
+[20/171 eval 376ms] Evaluation done; writing results to codeql\csharp-queries\Bad Practices\Declarations\LocalScopeVariableShadowsMember.bqrs.
+Starting evaluation of codeql\csharp-queries\Bad Practices\Naming Conventions\FieldMasksSuperField.ql.
+[21/171 eval 60ms] Evaluation done; writing results to codeql\csharp-queries\Bad Practices\Implementation Hiding\AbstractToConcreteCollection.bqrs.
+Starting evaluation of codeql\csharp-queries\Bad Practices\Naming Conventions\SameNameAsSuper.ql.
+Starting evaluation of codeql\csharp-queries\Bad Practices\PathCombine.ql.
+Starting evaluation of codeql\csharp-queries\Bad Practices\UnmanagedCodeCheck.ql.
+[22/171 eval 127ms] Evaluation done; writing results to codeql\csharp-queries\Bad Practices\Naming Conventions\FieldMasksSuperField.bqrs.
+[23/171 eval 16ms] Evaluation done; writing results to codeql\csharp-queries\Bad Practices\Naming Conventions\SameNameAsSuper.bqrs.
+[24/171 eval 4ms] Evaluation done; writing results to codeql\csharp-queries\Bad Practices\PathCombine.bqrs.
+[25/171 eval 83ms] Evaluation done; writing results to codeql\csharp-queries\Bad Practices\UnmanagedCodeCheck.bqrs.
+Starting evaluation of codeql\csharp-queries\Bad Practices\VirtualCallInConstructorOrDestructor.ql.
+[26/171 eval 394ms] Evaluation done; writing results to codeql\csharp-queries\Bad Practices\Implementation Hiding\ExposeRepresentation.bqrs.
+Starting evaluation of codeql\csharp-queries\Complexity\BlockWithTooManyStatements.ql.
+[27/171 eval 140ms] Evaluation done; writing results to codeql\csharp-queries\Bad Practices\VirtualCallInConstructorOrDestructor.bqrs.
+Starting evaluation of codeql\csharp-queries\Complexity\ComplexCondition.ql.
+[28/171 eval 223ms] Evaluation done; writing results to codeql\csharp-queries\Complexity\BlockWithTooManyStatements.bqrs.
+Starting evaluation of codeql\csharp-queries\Concurrency\FutileSyncOnField.ql.
+[29/171 eval 4ms] Evaluation done; writing results to codeql\csharp-queries\Concurrency\FutileSyncOnField.bqrs.
+Starting evaluation of codeql\csharp-queries\Concurrency\LockedWait.ql.
+Starting evaluation of codeql\csharp-queries\Concurrency\LockOrder.ql.
+Starting evaluation of codeql\csharp-queries\Concurrency\LockThis.ql.
+Starting evaluation of codeql\csharp-queries\Concurrency\SynchSetUnsynchGet.ql.
+Starting evaluation of codeql\csharp-queries\Concurrency\UnsafeLazyInitialization.ql.
+Starting evaluation of codeql\csharp-queries\Concurrency\UnsynchronizedStaticAccess.ql.
+[30/171 eval 244ms] Evaluation done; writing results to codeql\csharp-queries\Complexity\ComplexCondition.bqrs.
+[31/171 eval 8ms] Evaluation done; writing results to codeql\csharp-queries\Concurrency\LockOrder.bqrs.
+[32/171 eval 2ms] Evaluation done; writing results to codeql\csharp-queries\Concurrency\SynchSetUnsynchGet.bqrs.
+[33/171 eval 4ms] Evaluation done; writing results to codeql\csharp-queries\Concurrency\LockThis.bqrs.
+[34/171 eval 4ms] Evaluation done; writing results to codeql\csharp-queries\Concurrency\UnsafeLazyInitialization.bqrs.
+Starting evaluation of codeql\csharp-queries\Configuration\EmptyPasswordInConfigurationFile.ql.
+[35/171 eval 59ms] Evaluation done; writing results to codeql\csharp-queries\Concurrency\LockedWait.bqrs.
+Starting evaluation of codeql\csharp-queries\CSI\CompareIdenticalValues.ql.
+[36/171 eval 59ms] Evaluation done; writing results to codeql\csharp-queries\Configuration\EmptyPasswordInConfigurationFile.bqrs.
+Starting evaluation of codeql\csharp-queries\CSI\NullAlways.ql.
+[37/171 eval 109ms] Evaluation done; writing results to codeql\csharp-queries\Concurrency\UnsynchronizedStaticAccess.bqrs.
+[38/171 eval 75ms] Evaluation done; writing results to codeql\csharp-queries\CSI\CompareIdenticalValues.bqrs.
+Starting evaluation of codeql\csharp-queries\CSI\NullMaybe.ql.
+Starting evaluation of codeql\csharp-queries\Dead Code\DeadStoreOfLocal.ql.
+[39/171 eval 119ms] Evaluation done; writing results to codeql\csharp-queries\Dead Code\DeadStoreOfLocal.bqrs.
+[40/171 eval 619ms] Evaluation done; writing results to codeql\csharp-queries\CSI\NullAlways.bqrs.
+Starting evaluation of codeql\csharp-queries\Diagnostics\CompilerError.ql.
+Starting evaluation of codeql\csharp-queries\Diagnostics\CompilerMessage.ql.
+[41/171 eval 13ms] Evaluation done; writing results to codeql\csharp-queries\Diagnostics\CompilerError.bqrs.
+Starting evaluation of codeql\csharp-queries\Diagnostics\DiagnosticExtractionErrors.ql.
+[42/171 eval 50ms] Evaluation done; writing results to codeql\csharp-queries\Diagnostics\CompilerMessage.bqrs.
+Starting evaluation of codeql\csharp-queries\Diagnostics\ExtractedFiles.ql.
+[43/171 eval 90ms] Evaluation done; writing results to codeql\csharp-queries\Diagnostics\DiagnosticExtractionErrors.bqrs.
+[44/171 eval 5ms] Evaluation done; writing results to codeql\csharp-queries\Diagnostics\ExtractedFiles.bqrs.
+Starting evaluation of codeql\csharp-queries\Diagnostics\ExtractorError.ql.
+Starting evaluation of codeql\csharp-queries\Diagnostics\ExtractorMessage.ql.
+[45/171 eval 10ms] Evaluation done; writing results to codeql\csharp-queries\Diagnostics\ExtractorError.bqrs.
+Starting evaluation of codeql\csharp-queries\Documentation\XmldocMissingSummary.ql.
+[46/171 eval 49ms] Evaluation done; writing results to codeql\csharp-queries\Diagnostics\ExtractorMessage.bqrs.
+Starting evaluation of codeql\csharp-queries\Input Validation\UseOfFileUpload.ql.
+[47/171 eval 930ms] Evaluation done; writing results to codeql\csharp-queries\CSI\NullMaybe.bqrs.
+Starting evaluation of codeql\csharp-queries\Input Validation\ValueShadowing.ql.
+[48/171 eval 3ms] Evaluation done; writing results to codeql\csharp-queries\Input Validation\UseOfFileUpload.bqrs.
+[49/171 eval 315ms] Evaluation done; writing results to codeql\csharp-queries\Documentation\XmldocMissingSummary.bqrs.
+Starting evaluation of codeql\csharp-queries\Input Validation\ValueShadowingServerVariable.ql.
+Starting evaluation of codeql\csharp-queries\Language Abuse\CastThisToTypeParameter.ql.
+[50/171 eval 326ms] Evaluation done; writing results to codeql\csharp-queries\Input Validation\ValueShadowing.bqrs.
+[51/171 eval 9ms] Evaluation done; writing results to codeql\csharp-queries\Input Validation\ValueShadowingServerVariable.bqrs.
+Starting evaluation of codeql\csharp-queries\Language Abuse\CatchOfGenericException.ql.
+Starting evaluation of codeql\csharp-queries\Language Abuse\ChainedIs.ql.
+[52/171 eval 30ms] Evaluation done; writing results to codeql\csharp-queries\Language Abuse\CastThisToTypeParameter.bqrs.
+[53/171 eval 70ms] Evaluation done; writing results to codeql\csharp-queries\Language Abuse\CatchOfGenericException.bqrs.
+Starting evaluation of codeql\csharp-queries\Language Abuse\DubiousDowncastOfThis.ql.
+Starting evaluation of codeql\csharp-queries\Language Abuse\DubiousTypeTestOfThis.ql.
+[54/171 eval 68ms] Evaluation done; writing results to codeql\csharp-queries\Language Abuse\ChainedIs.bqrs.
+Starting evaluation of codeql\csharp-queries\Language Abuse\MissedReadonlyOpportunity.ql.
+Starting evaluation of codeql\csharp-queries\Language Abuse\MissedTernaryOpportunity.ql.
+[55/171 eval 22ms] Evaluation done; writing results to codeql\csharp-queries\Language Abuse\DubiousDowncastOfThis.bqrs.
+[56/171 eval 11ms] Evaluation done; writing results to codeql\csharp-queries\Language Abuse\DubiousTypeTestOfThis.bqrs.
+Starting evaluation of codeql\csharp-queries\Language Abuse\MissedUsingOpportunity.ql.
+[57/171 eval 69ms] Evaluation done; writing results to codeql\csharp-queries\Language Abuse\MissedTernaryOpportunity.bqrs.
+Starting evaluation of codeql\csharp-queries\Language Abuse\NestedIf.ql.
+[58/171 eval 170ms] Evaluation done; writing results to codeql\csharp-queries\Language Abuse\MissedReadonlyOpportunity.bqrs.
+[59/171 eval 25ms] Evaluation done; writing results to codeql\csharp-queries\Language Abuse\NestedIf.bqrs.
+Starting evaluation of codeql\csharp-queries\Language Abuse\RethrowException.ql.
+[60/171 eval 29ms] Evaluation done; writing results to codeql\csharp-queries\Language Abuse\RethrowException.bqrs.
+Starting evaluation of codeql\csharp-queries\Language Abuse\SimplifyBoolExpr.ql.
+[61/171 eval 12ms] Evaluation done; writing results to codeql\csharp-queries\Language Abuse\SimplifyBoolExpr.bqrs.
+Starting evaluation of codeql\csharp-queries\Language Abuse\UnusedPropertyValue.ql.
+Starting evaluation of codeql\csharp-queries\Language Abuse\UselessCastToSelf.ql.
+[62/171 eval 5ms] Evaluation done; writing results to codeql\csharp-queries\Language Abuse\UnusedPropertyValue.bqrs.
+Starting evaluation of codeql\csharp-queries\Language Abuse\UselessNullCoalescingExpression.ql.
+[63/171 eval 6ms] Evaluation done; writing results to codeql\csharp-queries\Language Abuse\UselessCastToSelf.bqrs.
+[64/171 eval 32ms] Evaluation done; writing results to codeql\csharp-queries\Language Abuse\UselessNullCoalescingExpression.bqrs.
+Starting evaluation of codeql\csharp-queries\Language Abuse\UselessTypeTest.ql.
+Starting evaluation of codeql\csharp-queries\Language Abuse\UselessUpcast.ql.
+[65/171 eval 260ms] Evaluation done; writing results to codeql\csharp-queries\Language Abuse\MissedUsingOpportunity.bqrs.
+[66/171 eval 27ms] Evaluation done; writing results to codeql\csharp-queries\Language Abuse\UselessTypeTest.bqrs.
+Starting evaluation of codeql\csharp-queries\Likely Bugs\Collections\ContainerLengthCmpOffByOne.ql.
+[67/171 eval 10ms] Evaluation done; writing results to codeql\csharp-queries\Likely Bugs\Collections\ContainerLengthCmpOffByOne.bqrs.
+Starting evaluation of codeql\csharp-queries\Likely Bugs\Collections\ContainerSizeCmpZero.ql.
+[68/171 eval 83ms] Evaluation done; writing results to codeql\csharp-queries\Language Abuse\UselessUpcast.bqrs.
+Starting evaluation of codeql\csharp-queries\Likely Bugs\Collections\ReadOnlyContainer.ql.
+[69/171 eval 129ms] Evaluation done; writing results to codeql\csharp-queries\Likely Bugs\Collections\ContainerSizeCmpZero.bqrs.
+Starting evaluation of codeql\csharp-queries\Likely Bugs\Collections\WriteOnlyContainer.ql.
+Starting evaluation of codeql\csharp-queries\Likely Bugs\DangerousNonShortCircuitLogic.ql.
+[70/171 eval 160ms] Evaluation done; writing results to codeql\csharp-queries\Likely Bugs\Collections\ReadOnlyContainer.bqrs.
+[71/171 eval 13ms] Evaluation done; writing results to codeql\csharp-queries\Likely Bugs\DangerousNonShortCircuitLogic.bqrs.
+Starting evaluation of codeql\csharp-queries\Likely Bugs\Dynamic\BadDynamicCall.ql.
+[72/171 eval 5ms] Evaluation done; writing results to codeql\csharp-queries\Likely Bugs\Dynamic\BadDynamicCall.bqrs.
+Starting evaluation of codeql\csharp-queries\Likely Bugs\EqualityCheckOnFloats.ql.
+[73/171 eval 13ms] Evaluation done; writing results to codeql\csharp-queries\Likely Bugs\EqualityCheckOnFloats.bqrs.
+Starting evaluation of codeql\csharp-queries\Likely Bugs\EqualsArray.ql.
+Starting evaluation of codeql\csharp-queries\Likely Bugs\EqualsUsesAs.ql.
+[74/171 eval 107ms] Evaluation done; writing results to codeql\csharp-queries\Likely Bugs\Collections\WriteOnlyContainer.bqrs.
+Starting evaluation of codeql\csharp-queries\Likely Bugs\EqualsUsesIs.ql.
+[75/171 eval 47ms] Evaluation done; writing results to codeql\csharp-queries\Likely Bugs\EqualsArray.bqrs.
+Starting evaluation of codeql\csharp-queries\Likely Bugs\HashedButNoHash.ql.
+[76/171 eval 73ms] Evaluation done; writing results to codeql\csharp-queries\Likely Bugs\EqualsUsesAs.bqrs.
+[77/171 eval 40ms] Evaluation done; writing results to codeql\csharp-queries\Likely Bugs\HashedButNoHash.bqrs.
+Starting evaluation of codeql\csharp-queries\Likely Bugs\ImpossibleArrayCast.ql.
+[78/171 eval 8ms] Evaluation done; writing results to codeql\csharp-queries\Likely Bugs\ImpossibleArrayCast.bqrs.
+Starting evaluation of codeql\csharp-queries\Likely Bugs\IncomparableEquals.ql.
+[79/171 eval 120ms] Evaluation done; writing results to codeql\csharp-queries\Likely Bugs\EqualsUsesIs.bqrs.
+Starting evaluation of codeql\csharp-queries\Likely Bugs\InconsistentCompareTo.ql.
+[80/171 eval 29ms] Evaluation done; writing results to codeql\csharp-queries\Likely Bugs\IncomparableEquals.bqrs.
+Starting evaluation of codeql\csharp-queries\Likely Bugs\LeapYear\UnsafeYearConstruction.ql.
+[81/171 eval 102ms] Evaluation done; writing results to codeql\csharp-queries\Likely Bugs\LeapYear\UnsafeYearConstruction.bqrs.
+Starting evaluation of codeql\csharp-queries\Likely Bugs\MishandlingJapaneseEra.ql.
+Starting evaluation of codeql\csharp-queries\Likely Bugs\NestedLoopsSameVariable.ql.
+[82/171 eval 146ms] Evaluation done; writing results to codeql\csharp-queries\Likely Bugs\InconsistentCompareTo.bqrs.
+Starting evaluation of codeql\csharp-queries\Likely Bugs\ObjectComparison.ql.
+[83/171 eval 20ms] Evaluation done; writing results to codeql\csharp-queries\Likely Bugs\MishandlingJapaneseEra.bqrs.
+Starting evaluation of codeql\csharp-queries\Likely Bugs\PossibleLossOfPrecision.ql.
+[84/171 eval 4ms] Evaluation done; writing results to codeql\csharp-queries\Likely Bugs\ObjectComparison.bqrs.
+Starting evaluation of codeql\csharp-queries\Likely Bugs\RecursiveEquals.ql.
+[85/171 eval 66ms] Evaluation done; writing results to codeql\csharp-queries\Likely Bugs\PossibleLossOfPrecision.bqrs.
+[86/171 eval 93ms] Evaluation done; writing results to codeql\csharp-queries\Likely Bugs\NestedLoopsSameVariable.bqrs.
+Starting evaluation of codeql\csharp-queries\Likely Bugs\RecursiveOperatorEquals.ql.
+Starting evaluation of codeql\csharp-queries\Likely Bugs\ReferenceEqualsOnValueTypes.ql.
+Starting evaluation of codeql\csharp-queries\Likely Bugs\SelfAssignment.ql.
+[87/171 eval 15ms] Evaluation done; writing results to codeql\csharp-queries\Likely Bugs\RecursiveEquals.bqrs.
+[88/171 eval 2ms] Evaluation done; writing results to codeql\csharp-queries\Likely Bugs\RecursiveOperatorEquals.bqrs.
+[89/171 eval 126ms] Evaluation done; writing results to codeql\csharp-queries\Likely Bugs\ReferenceEqualsOnValueTypes.bqrs.
+Starting evaluation of codeql\csharp-queries\Likely Bugs\Statements\EmptyBlock.ql.
+Starting evaluation of codeql\csharp-queries\Likely Bugs\Statements\EmptyLockStatement.ql.
+Starting evaluation of codeql\csharp-queries\Likely Bugs\Statements\UseBraces.ql.
+[90/171 eval 17ms] Evaluation done; writing results to codeql\csharp-queries\Likely Bugs\Statements\EmptyBlock.bqrs.
+[91/171 eval 1ms] Evaluation done; writing results to codeql\csharp-queries\Likely Bugs\Statements\EmptyLockStatement.bqrs.
+Starting evaluation of codeql\csharp-queries\Likely Bugs\StaticFieldWrittenByInstance.ql.
+[92/171 eval 200ms] Evaluation done; writing results to codeql\csharp-queries\Likely Bugs\SelfAssignment.bqrs.
+[93/171 eval 87ms] Evaluation done; writing results to codeql\csharp-queries\Likely Bugs\Statements\UseBraces.bqrs.
+Starting evaluation of codeql\csharp-queries\Likely Bugs\StringBuilderCharInit.ql.
+Starting evaluation of codeql\csharp-queries\Likely Bugs\ThreadUnsafeICryptoTransform.ql.
+[94/171 eval 14ms] Evaluation done; writing results to codeql\csharp-queries\Likely Bugs\StringBuilderCharInit.bqrs.
+[95/171 eval 115ms] Evaluation done; writing results to codeql\csharp-queries\Likely Bugs\StaticFieldWrittenByInstance.bqrs.
+Starting evaluation of codeql\csharp-queries\Likely Bugs\ThreadUnsafeICryptoTransformLambda.ql.
+[96/171 eval 92ms] Evaluation done; writing results to codeql\csharp-queries\Likely Bugs\ThreadUnsafeICryptoTransformLambda.bqrs.
+Starting evaluation of codeql\csharp-queries\Likely Bugs\UncheckedCastInEquals.ql.
+Starting evaluation of codeql\csharp-queries\Linq\BadMultipleIteration.ql.
+[97/171 eval 75ms] Evaluation done; writing results to codeql\csharp-queries\Likely Bugs\UncheckedCastInEquals.bqrs.
+Starting evaluation of codeql\csharp-queries\Linq\MissedAllOpportunity.ql.
+[98/171 eval 230ms] Evaluation done; writing results to codeql\csharp-queries\Likely Bugs\ThreadUnsafeICryptoTransform.bqrs.
+Starting evaluation of codeql\csharp-queries\Linq\MissedCastOpportunity.ql.
+[99/171 eval 73ms] Evaluation done; writing results to codeql\csharp-queries\Linq\BadMultipleIteration.bqrs.
+Starting evaluation of codeql\csharp-queries\Linq\MissedOfTypeOpportunity.ql.
+[100/171 eval 20ms] Evaluation done; writing results to codeql\csharp-queries\Linq\MissedCastOpportunity.bqrs.
+[101/171 eval 1ms] Evaluation done; writing results to codeql\csharp-queries\Linq\MissedOfTypeOpportunity.bqrs.
+Starting evaluation of codeql\csharp-queries\Linq\MissedSelectOpportunity.ql.
+Starting evaluation of codeql\csharp-queries\Linq\MissedWhereOpportunity.ql.
+Starting evaluation of codeql\csharp-queries\Linq\RedundantSelect.ql.
+Starting evaluation of codeql\csharp-queries\Metrics\Summaries\LinesOfCode.ql.
+[102/171 eval 22ms] Evaluation done; writing results to codeql\csharp-queries\Linq\MissedSelectOpportunity.bqrs.
+[103/171 eval 97ms] Evaluation done; writing results to codeql\csharp-queries\Linq\MissedAllOpportunity.bqrs.
+Starting evaluation of codeql\csharp-queries\Performance\StringBuilderInLoop.ql.
+Starting evaluation of codeql\csharp-queries\Performance\StringConcatenationInLoop.ql.
+[104/171 eval 26ms] Evaluation done; writing results to codeql\csharp-queries\Linq\MissedWhereOpportunity.bqrs.
+[105/171 eval 18ms] Evaluation done; writing results to codeql\csharp-queries\Metrics\Summaries\LinesOfCode.bqrs.
+[106/171 eval 24ms] Evaluation done; writing results to codeql\csharp-queries\Linq\RedundantSelect.bqrs.
+[107/171 eval 98ms] Evaluation done; writing results to codeql\csharp-queries\Performance\StringBuilderInLoop.bqrs.
+Starting evaluation of codeql\csharp-queries\Performance\UseTryGetValue.ql.
+[108/171 eval 18ms] Evaluation done; writing results to codeql\csharp-queries\Performance\UseTryGetValue.bqrs.
+Starting evaluation of codeql\csharp-queries\Security Features\CookieWithOverlyBroadDomain.ql.
+Starting evaluation of codeql\csharp-queries\Security Features\CookieWithOverlyBroadPath.ql.
+[109/171 eval 137ms] Evaluation done; writing results to codeql\csharp-queries\Performance\StringConcatenationInLoop.bqrs.
+Starting evaluation of codeql\csharp-queries\Security Features\CWE-011\ASPNetDebug.ql.
+[110/171 eval 7ms] Evaluation done; writing results to codeql\csharp-queries\Security Features\CookieWithOverlyBroadPath.bqrs.
+Starting evaluation of codeql\csharp-queries\Security Features\CWE-016\ASPNetPagesValidateRequest.ql.
+[111/171 eval 5ms] Evaluation done; writing results to codeql\csharp-queries\Security Features\CWE-011\ASPNetDebug.bqrs.
+Starting evaluation of codeql\csharp-queries\Security Features\CWE-020\RuntimeChecksBypass.ql.
+[112/171 eval 3ms] Evaluation done; writing results to codeql\csharp-queries\Security Features\CWE-016\ASPNetPagesValidateRequest.bqrs.
+[113/171 eval 16ms] Evaluation done; writing results to codeql\csharp-queries\Security Features\CWE-020\RuntimeChecksBypass.bqrs.
+Starting evaluation of codeql\csharp-queries\Security Features\CWE-022\TaintedPath.ql.
+[114/171 eval 78ms] Evaluation done; writing results to codeql\csharp-queries\Security Features\CookieWithOverlyBroadDomain.bqrs.
+Starting evaluation of codeql\csharp-queries\Security Features\CWE-022\ZipSlip.ql.
+Starting evaluation of codeql\csharp-queries\Security Features\CWE-078\CommandInjection.ql.
+[115/171 eval 38ms] Evaluation done; writing results to codeql\csharp-queries\Security Features\CWE-022\ZipSlip.bqrs.
+[116/171 eval 623ms] Evaluation done; writing results to codeql\csharp-queries\Security Features\CWE-022\TaintedPath.bqrs.
+Starting evaluation of codeql\csharp-queries\Security Features\CWE-079\XSS.ql.
+[117/171 eval 586ms] Evaluation done; writing results to codeql\csharp-queries\Security Features\CWE-078\CommandInjection.bqrs.
+Starting evaluation of codeql\csharp-queries\Security Features\CWE-089\SqlInjection.ql.
+[118/171 eval 477ms] Evaluation done; writing results to codeql\csharp-queries\Security Features\CWE-079\XSS.bqrs.
+Starting evaluation of codeql\csharp-queries\Security Features\CWE-090\LDAPInjection.ql.
+[119/171 eval 41ms] Evaluation done; writing results to codeql\csharp-queries\Security Features\CWE-090\LDAPInjection.bqrs.
+Starting evaluation of codeql\csharp-queries\Security Features\CWE-091\XMLInjection.ql.
+[120/171 eval 374ms] Evaluation done; writing results to codeql\csharp-queries\Security Features\CWE-089\SqlInjection.bqrs.
+Starting evaluation of codeql\csharp-queries\Security Features\CWE-094\CodeInjection.ql.
+[121/171 eval 144ms] Evaluation done; writing results to codeql\csharp-queries\Security Features\CWE-091\XMLInjection.bqrs.
+Starting evaluation of codeql\csharp-queries\Security Features\CWE-099\ResourceInjection.ql.
+Starting evaluation of codeql\csharp-queries\Security Features\CWE-1004\CookieWithoutHttpOnly.ql.
+[122/171 eval 54ms] Evaluation done; writing results to codeql\csharp-queries\Security Features\CWE-094\CodeInjection.bqrs.
+[123/171 eval 207ms] Evaluation done; writing results to codeql\csharp-queries\Security Features\CWE-099\ResourceInjection.bqrs.
+Starting evaluation of codeql\csharp-queries\Security Features\CWE-112\MissingXMLValidation.ql.
+[124/171 eval 353ms] Evaluation done; writing results to codeql\csharp-queries\Security Features\CWE-1004\CookieWithoutHttpOnly.bqrs.
+Starting evaluation of codeql\csharp-queries\Security Features\CWE-114\AssemblyPathInjection.ql.
+[125/171 eval 88ms] Evaluation done; writing results to codeql\csharp-queries\Security Features\CWE-112\MissingXMLValidation.bqrs.
+Starting evaluation of codeql\csharp-queries\Security Features\CWE-117\LogForging.ql.
+[126/171 eval 87ms] Evaluation done; writing results to codeql\csharp-queries\Security Features\CWE-114\AssemblyPathInjection.bqrs.
+Starting evaluation of codeql\csharp-queries\Security Features\CWE-119\LocalUnvalidatedArithmetic.ql.
+[127/171 eval 16ms] Evaluation done; writing results to codeql\csharp-queries\Security Features\CWE-119\LocalUnvalidatedArithmetic.bqrs.
+Starting evaluation of codeql\csharp-queries\Security Features\CWE-134\UncontrolledFormatString.ql.
+[128/171 eval 226ms] Evaluation done; writing results to codeql\csharp-queries\Security Features\CWE-117\LogForging.bqrs.
+Starting evaluation of codeql\csharp-queries\Security Features\CWE-201\ExposureInTransmittedData.ql.
+[129/171 eval 284ms] Evaluation done; writing results to codeql\csharp-queries\Security Features\CWE-134\UncontrolledFormatString.bqrs.
+Starting evaluation of codeql\csharp-queries\Security Features\CWE-209\ExceptionInformationExposure.ql.
+[130/171 eval 641ms] Evaluation done; writing results to codeql\csharp-queries\Security Features\CWE-201\ExposureInTransmittedData.bqrs.
+Starting evaluation of codeql\csharp-queries\Security Features\CWE-248\MissingASPNETGlobalErrorHandler.ql.
+Starting evaluation of codeql\csharp-queries\Security Features\CWE-285\MissingAccessControl.ql.
+[131/171 eval 5ms] Evaluation done; writing results to codeql\csharp-queries\Security Features\CWE-248\MissingASPNETGlobalErrorHandler.bqrs.
+[132/171 eval 502ms] Evaluation done; writing results to codeql\csharp-queries\Security Features\CWE-209\ExceptionInformationExposure.bqrs.
+Starting evaluation of codeql\csharp-queries\Security Features\CWE-312\CleartextStorage.ql.
+[133/171 eval 514ms] Evaluation done; writing results to codeql\csharp-queries\Security Features\CWE-285\MissingAccessControl.bqrs.
+Starting evaluation of codeql\csharp-queries\Security Features\CWE-327\InsecureSQLConnection.ql.
+[134/171 eval 45ms] Evaluation done; writing results to codeql\csharp-queries\Security Features\CWE-327\InsecureSQLConnection.bqrs.
+Starting evaluation of codeql\csharp-queries\Security Features\CWE-352\MissingAntiForgeryTokenValidation.ql.
+[135/171 eval 535ms] Evaluation done; writing results to codeql\csharp-queries\Security Features\CWE-352\MissingAntiForgeryTokenValidation.bqrs.
+Starting evaluation of codeql\csharp-queries\Security Features\CWE-359\ExposureOfPrivateInformation.ql.
+Starting evaluation of codeql\csharp-queries\Security Features\CWE-384\AbandonSession.ql.
+[136/171 eval 118ms] Evaluation done; writing results to codeql\csharp-queries\Security Features\CWE-359\ExposureOfPrivateInformation.bqrs.
+Starting evaluation of codeql\csharp-queries\Security Features\CWE-451\MissingXFrameOptions.ql.
+Starting evaluation of codeql\csharp-queries\Security Features\CWE-502\DeserializedDelegate.ql.
+[137/171 eval 22ms] Evaluation done; writing results to codeql\csharp-queries\Security Features\CWE-384\AbandonSession.bqrs.
+[138/171 eval 8ms] Evaluation done; writing results to codeql\csharp-queries\Security Features\CWE-451\MissingXFrameOptions.bqrs.
+[139/171 eval 1.5s] Evaluation done; writing results to codeql\csharp-queries\Security Features\CWE-312\CleartextStorage.bqrs.
+Starting evaluation of codeql\csharp-queries\Security Features\CWE-502\UnsafeDeserializationUntrustedInput.ql.
+[140/171 eval 357ms] Evaluation done; writing results to codeql\csharp-queries\Security Features\CWE-502\DeserializedDelegate.bqrs.
+Starting evaluation of codeql\csharp-queries\Security Features\CWE-548\ASPNetDirectoryListing.ql.
+Starting evaluation of codeql\csharp-queries\Security Features\CWE-601\UrlRedirect.ql.
+[141/171 eval 3ms] Evaluation done; writing results to codeql\csharp-queries\Security Features\CWE-548\ASPNetDirectoryListing.bqrs.
+[142/171 eval 721ms] Evaluation done; writing results to codeql\csharp-queries\Security Features\CWE-502\UnsafeDeserializationUntrustedInput.bqrs.
+Starting evaluation of codeql\csharp-queries\Security Features\CWE-611\UntrustedDataInsecureXml.ql.
+[143/171 eval 418ms] Evaluation done; writing results to codeql\csharp-queries\Security Features\CWE-601\UrlRedirect.bqrs.
+Starting evaluation of codeql\csharp-queries\Security Features\CWE-614\CookieWithoutSecure.ql.
+[144/171 eval 324ms] Evaluation done; writing results to codeql\csharp-queries\Security Features\CWE-611\UntrustedDataInsecureXml.bqrs.
+Starting evaluation of codeql\csharp-queries\Security Features\CWE-614\RequireSSL.ql.
+Starting evaluation of codeql\csharp-queries\Security Features\CWE-639\InsecureDirectObjectReference.ql.
+[145/171 eval 4ms] Evaluation done; writing results to codeql\csharp-queries\Security Features\CWE-614\RequireSSL.bqrs.
+[146/171 eval 291ms] Evaluation done; writing results to codeql\csharp-queries\Security Features\CWE-614\CookieWithoutSecure.bqrs.
+Starting evaluation of codeql\csharp-queries\Security Features\CWE-643\XPathInjection.ql.
+[147/171 eval 149ms] Evaluation done; writing results to codeql\csharp-queries\Security Features\CWE-643\XPathInjection.bqrs.
+Starting evaluation of codeql\csharp-queries\Security Features\CWE-730\ReDoS.ql.
+Starting evaluation of codeql\csharp-queries\Security Features\CWE-730\RegexInjection.ql.
+Starting evaluation of codeql\csharp-queries\Security Features\CWE-807\ConditionalBypass.ql.
+[148/171 eval 88ms] Evaluation done; writing results to codeql\csharp-queries\Security Features\CWE-730\ReDoS.bqrs.
+[149/171 eval 11ms] Evaluation done; writing results to codeql\csharp-queries\Security Features\CWE-730\RegexInjection.bqrs.
+[150/171 eval 359ms] Evaluation done; writing results to codeql\csharp-queries\Security Features\CWE-639\InsecureDirectObjectReference.bqrs.
+Starting evaluation of codeql\csharp-queries\Security Features\Encryption using ECB.ql.
+Starting evaluation of codeql\csharp-queries\Security Features\HeaderCheckingDisabled.ql.
+[151/171 eval 10ms] Evaluation done; writing results to codeql\csharp-queries\Security Features\Encryption using ECB.bqrs.
+[152/171 eval 6ms] Evaluation done; writing results to codeql\csharp-queries\Security Features\HeaderCheckingDisabled.bqrs.
+Starting evaluation of codeql\csharp-queries\Security Features\InadequateRSAPadding.ql.
+Starting evaluation of codeql\csharp-queries\Security Features\InsecureRandomness.ql.
+[153/171 eval 17ms] Evaluation done; writing results to codeql\csharp-queries\Security Features\InadequateRSAPadding.bqrs.
+[154/171 eval 2s] Evaluation done; writing results to codeql\csharp-queries\Security Features\CWE-807\ConditionalBypass.bqrs.
+Starting evaluation of codeql\csharp-queries\Security Features\InsufficientKeySize.ql.
+[155/171 eval 13ms] Evaluation done; writing results to codeql\csharp-queries\Security Features\InsufficientKeySize.bqrs.
+Starting evaluation of codeql\csharp-queries\Security Features\PersistentCookie.ql.
+Starting evaluation of codeql\csharp-queries\Security Features\WeakEncryption.ql.
+[156/171 eval 7ms] Evaluation done; writing results to codeql\csharp-queries\Security Features\PersistentCookie.bqrs.
+[157/171 eval 5ms] Evaluation done; writing results to codeql\csharp-queries\Security Features\WeakEncryption.bqrs.
+Starting evaluation of codeql\csharp-queries\Telemetry\DatabaseQualityDiagnostics.ql.
+[158/171 eval 1.9s] Evaluation done; writing results to codeql\csharp-queries\Security Features\InsecureRandomness.bqrs.
+Starting evaluation of codeql\csharp-queries\Telemetry\ExternalLibraryUsage.ql.
+Starting evaluation of codeql\csharp-queries\Telemetry\ExtractorInformation.ql.
+[159/171 eval 205ms] Evaluation done; writing results to codeql\csharp-queries\Telemetry\DatabaseQualityDiagnostics.bqrs.
+[160/171 eval 205ms] Evaluation done; writing results to codeql\csharp-queries\Telemetry\ExtractorInformation.bqrs.
+Starting evaluation of codeql\csharp-queries\Telemetry\SupportedExternalApis.ql.
+Starting evaluation of codeql\csharp-queries\Telemetry\SupportedExternalSinks.ql.
+[161/171 eval 394ms] Evaluation done; writing results to codeql\csharp-queries\Telemetry\ExternalLibraryUsage.bqrs.
+[162/171 eval 3.7s] Evaluation done; writing results to codeql\csharp-queries\Telemetry\SupportedExternalSinks.bqrs.
+Starting evaluation of codeql\csharp-queries\Telemetry\SupportedExternalSources.ql.
+Starting evaluation of codeql\csharp-queries\Telemetry\SupportedExternalTaint.ql.
+[163/171 eval 843ms] Evaluation done; writing results to codeql\csharp-queries\Telemetry\SupportedExternalSources.bqrs.
+[164/171 eval 6.3s] Evaluation done; writing results to codeql\csharp-queries\Telemetry\SupportedExternalApis.bqrs.
+Starting evaluation of codeql\csharp-queries\Telemetry\UnsupportedExternalAPIs.ql.
+[165/171 eval 57ms] Evaluation done; writing results to codeql\csharp-queries\Telemetry\UnsupportedExternalAPIs.bqrs.
+Starting evaluation of codeql\csharp-queries\Useless code\DefaultToString.ql.
+Starting evaluation of codeql\csharp-queries\Useless code\FutileConditional.ql.
+[166/171 eval 1.1s] Evaluation done; writing results to codeql\csharp-queries\Useless code\DefaultToString.bqrs.
+Starting evaluation of codeql\csharp-queries\Useless code\IntGetHashCode.ql.
+[167/171 eval 18ms] Evaluation done; writing results to codeql\csharp-queries\Useless code\FutileConditional.bqrs.
+Starting evaluation of codeql\csharp-queries\Useless code\RedundantToStringCall.ql.
+[168/171 eval 19ms] Evaluation done; writing results to codeql\csharp-queries\Useless code\IntGetHashCode.bqrs.
+Starting evaluation of codeql\csharp-queries\Useless code\UnusedLabel.ql.
+[169/171 eval 100ms] Evaluation done; writing results to codeql\csharp-queries\Useless code\RedundantToStringCall.bqrs.
+[170/171 eval 2ms] Evaluation done; writing results to codeql\csharp-queries\Useless code\UnusedLabel.bqrs.
+[171/171 eval 5s] Evaluation done; writing results to codeql\csharp-queries\Telemetry\SupportedExternalTaint.bqrs.
+Shutting down query evaluator.
+Interpreting results.
+Resolving extensions
+Interpreting C:\Users\VssAdministrator\.codeql\packages\codeql\csharp-queries\1.7.2\Input Validation\UseOfFileUpload.ql...
+Interpreting C:\Users\VssAdministrator\.codeql\packages\codeql\csharp-queries\1.7.2\Security Features\CookieWithOverlyBroadDomain.ql...
+Interpreting C:\Users\VssAdministrator\.codeql\packages\codeql\csharp-queries\1.7.2\Security Features\CookieWithOverlyBroadPath.ql...
+Interpreting C:\Users\VssAdministrator\.codeql\packages\codeql\csharp-queries\1.7.2\Security Features\CWE-011\ASPNetDebug.ql...
+Interpreting C:\Users\VssAdministrator\.codeql\packages\codeql\csharp-queries\1.7.2\Security Features\CWE-016\ASPNetPagesValidateRequest.ql...
+Interpreting C:\Users\VssAdministrator\.codeql\packages\codeql\csharp-queries\1.7.2\Security Features\CWE-022\TaintedPath.ql...
+Interpreting C:\Users\VssAdministrator\.codeql\packages\codeql\csharp-queries\1.7.2\Security Features\CWE-022\ZipSlip.ql...
+Interpreting C:\Users\VssAdministrator\.codeql\packages\codeql\csharp-queries\1.7.2\Security Features\CWE-078\CommandInjection.ql...
+Interpreting C:\Users\VssAdministrator\.codeql\packages\codeql\csharp-queries\1.7.2\Security Features\CWE-079\XSS.ql...
+Interpreting C:\Users\VssAdministrator\.codeql\packages\codeql\csharp-queries\1.7.2\Security Features\CWE-089\SqlInjection.ql...
+Interpreting C:\Users\VssAdministrator\.codeql\packages\codeql\csharp-queries\1.7.2\Security Features\CWE-090\LDAPInjection.ql...
+Interpreting C:\Users\VssAdministrator\.codeql\packages\codeql\csharp-queries\1.7.2\Security Features\CWE-091\XMLInjection.ql...
+Interpreting C:\Users\VssAdministrator\.codeql\packages\codeql\csharp-queries\1.7.2\Security Features\CWE-094\CodeInjection.ql...
+Interpreting C:\Users\VssAdministrator\.codeql\packages\codeql\csharp-queries\1.7.2\Security Features\CWE-099\ResourceInjection.ql...
+Interpreting C:\Users\VssAdministrator\.codeql\packages\codeql\csharp-queries\1.7.2\Security Features\CWE-1004\CookieWithoutHttpOnly.ql...
+Interpreting C:\Users\VssAdministrator\.codeql\packages\codeql\csharp-queries\1.7.2\Security Features\CWE-112\MissingXMLValidation.ql...
+Interpreting C:\Users\VssAdministrator\.codeql\packages\codeql\csharp-queries\1.7.2\Security Features\CWE-114\AssemblyPathInjection.ql...
+Interpreting C:\Users\VssAdministrator\.codeql\packages\codeql\csharp-queries\1.7.2\Security Features\CWE-117\LogForging.ql...
+Interpreting C:\Users\VssAdministrator\.codeql\packages\codeql\csharp-queries\1.7.2\Security Features\CWE-119\LocalUnvalidatedArithmetic.ql...
+Interpreting C:\Users\VssAdministrator\.codeql\packages\codeql\csharp-queries\1.7.2\Security Features\CWE-134\UncontrolledFormatString.ql...
+Interpreting C:\Users\VssAdministrator\.codeql\packages\codeql\csharp-queries\1.7.2\Security Features\CWE-201\ExposureInTransmittedData.ql...
+Interpreting C:\Users\VssAdministrator\.codeql\packages\codeql\csharp-queries\1.7.2\Security Features\CWE-209\ExceptionInformationExposure.ql...
+Interpreting C:\Users\VssAdministrator\.codeql\packages\codeql\csharp-queries\1.7.2\Security Features\CWE-248\MissingASPNETGlobalErrorHandler.ql...
+Interpreting C:\Users\VssAdministrator\.codeql\packages\codeql\csharp-queries\1.7.2\Security Features\CWE-312\CleartextStorage.ql...
+Interpreting C:\Users\VssAdministrator\.codeql\packages\codeql\csharp-queries\1.7.2\Security Features\CWE-352\MissingAntiForgeryTokenValidation.ql...
+Interpreting C:\Users\VssAdministrator\.codeql\packages\codeql\csharp-queries\1.7.2\Security Features\CWE-359\ExposureOfPrivateInformation.ql...
+Interpreting C:\Users\VssAdministrator\.codeql\packages\codeql\csharp-queries\1.7.2\Security Features\CWE-384\AbandonSession.ql...
+Interpreting C:\Users\VssAdministrator\.codeql\packages\codeql\csharp-queries\1.7.2\Security Features\CWE-451\MissingXFrameOptions.ql...
+Interpreting C:\Users\VssAdministrator\.codeql\packages\codeql\csharp-queries\1.7.2\Security Features\CWE-502\DeserializedDelegate.ql...
+Interpreting C:\Users\VssAdministrator\.codeql\packages\codeql\csharp-queries\1.7.2\Security Features\CWE-502\UnsafeDeserializationUntrustedInput.ql...
+Interpreting C:\Users\VssAdministrator\.codeql\packages\codeql\csharp-queries\1.7.2\Security Features\CWE-548\ASPNetDirectoryListing.ql...
+Interpreting C:\Users\VssAdministrator\.codeql\packages\codeql\csharp-queries\1.7.2\Security Features\CWE-601\UrlRedirect.ql...
+Interpreting C:\Users\VssAdministrator\.codeql\packages\codeql\csharp-queries\1.7.2\Security Features\CWE-611\UntrustedDataInsecureXml.ql...
+Interpreting C:\Users\VssAdministrator\.codeql\packages\codeql\csharp-queries\1.7.2\Security Features\CWE-614\CookieWithoutSecure.ql...
+Interpreting C:\Users\VssAdministrator\.codeql\packages\codeql\csharp-queries\1.7.2\Security Features\CWE-614\RequireSSL.ql...
+Interpreting C:\Users\VssAdministrator\.codeql\packages\codeql\csharp-queries\1.7.2\Security Features\CWE-643\XPathInjection.ql...
+Interpreting C:\Users\VssAdministrator\.codeql\packages\codeql\csharp-queries\1.7.2\Security Features\CWE-730\ReDoS.ql...
+Interpreting C:\Users\VssAdministrator\.codeql\packages\codeql\csharp-queries\1.7.2\Security Features\CWE-730\RegexInjection.ql...
+Interpreting C:\Users\VssAdministrator\.codeql\packages\codeql\csharp-queries\1.7.2\Security Features\CWE-807\ConditionalBypass.ql...
+Interpreting C:\Users\VssAdministrator\.codeql\packages\codeql\csharp-queries\1.7.2\Security Features\Encryption using ECB.ql...
+Interpreting C:\Users\VssAdministrator\.codeql\packages\codeql\csharp-queries\1.7.2\Security Features\HeaderCheckingDisabled.ql...
+Interpreting C:\Users\VssAdministrator\.codeql\packages\codeql\csharp-queries\1.7.2\Security Features\InadequateRSAPadding.ql...
+Interpreting C:\Users\VssAdministrator\.codeql\packages\codeql\csharp-queries\1.7.2\Security Features\InsecureRandomness.ql...
+Interpreting C:\Users\VssAdministrator\.codeql\packages\codeql\csharp-queries\1.7.2\Security Features\InsufficientKeySize.ql...
+Interpreting C:\Users\VssAdministrator\.codeql\packages\codeql\csharp-queries\1.7.2\Security Features\PersistentCookie.ql...
+Interpreting C:\Users\VssAdministrator\.codeql\packages\codeql\csharp-queries\1.7.2\Security Features\WeakEncryption.ql...
+Interpreting C:\Users\VssAdministrator\.codeql\packages\codeql\csharp-queries\1.7.2\Configuration\EmptyPasswordInConfigurationFile.ql...
+Interpreting C:\Users\VssAdministrator\.codeql\packages\codeql\csharp-queries\1.7.2\Input Validation\ValueShadowing.ql...
+Interpreting C:\Users\VssAdministrator\.codeql\packages\codeql\csharp-queries\1.7.2\Input Validation\ValueShadowingServerVariable.ql...
+Interpreting C:\Users\VssAdministrator\.codeql\packages\codeql\csharp-queries\1.7.2\Likely Bugs\ThreadUnsafeICryptoTransform.ql...
+Interpreting C:\Users\VssAdministrator\.codeql\packages\codeql\csharp-queries\1.7.2\Likely Bugs\ThreadUnsafeICryptoTransformLambda.ql...
+Interpreting C:\Users\VssAdministrator\.codeql\packages\codeql\csharp-queries\1.7.2\Security Features\CWE-020\RuntimeChecksBypass.ql...
+Interpreting C:\Users\VssAdministrator\.codeql\packages\codeql\csharp-queries\1.7.2\Security Features\CWE-285\MissingAccessControl.ql...
+Interpreting C:\Users\VssAdministrator\.codeql\packages\codeql\csharp-queries\1.7.2\Security Features\CWE-327\InsecureSQLConnection.ql...
+Interpreting C:\Users\VssAdministrator\.codeql\packages\codeql\csharp-queries\1.7.2\Security Features\CWE-639\InsecureDirectObjectReference.ql...
+Interpreting C:\Users\VssAdministrator\.codeql\packages\codeql\csharp-queries\1.7.2\Diagnostics\CompilerError.ql...
+Interpreting C:\Users\VssAdministrator\.codeql\packages\codeql\csharp-queries\1.7.2\Diagnostics\CompilerMessage.ql...
+Interpreting C:\Users\VssAdministrator\.codeql\packages\codeql\csharp-queries\1.7.2\Diagnostics\DiagnosticExtractionErrors.ql...
+Interpreting C:\Users\VssAdministrator\.codeql\packages\codeql\csharp-queries\1.7.2\Diagnostics\ExtractedFiles.ql...
+Interpreting C:\Users\VssAdministrator\.codeql\packages\codeql\csharp-queries\1.7.2\Diagnostics\ExtractorError.ql...
+Interpreting C:\Users\VssAdministrator\.codeql\packages\codeql\csharp-queries\1.7.2\Diagnostics\ExtractorMessage.ql...
+Interpreting C:\Users\VssAdministrator\.codeql\packages\codeql\csharp-queries\1.7.2\Telemetry\DatabaseQualityDiagnostics.ql...
+Interpreting C:\Users\VssAdministrator\.codeql\packages\codeql\csharp-queries\1.7.2\Metrics\Summaries\LinesOfCode.ql...
+Interpreting C:\Users\VssAdministrator\.codeql\packages\codeql\csharp-queries\1.7.2\Telemetry\ExternalLibraryUsage.ql...
+Interpreting C:\Users\VssAdministrator\.codeql\packages\codeql\csharp-queries\1.7.2\Telemetry\ExtractorInformation.ql...
+Interpreting C:\Users\VssAdministrator\.codeql\packages\codeql\csharp-queries\1.7.2\Telemetry\SupportedExternalApis.ql...
+Interpreting C:\Users\VssAdministrator\.codeql\packages\codeql\csharp-queries\1.7.2\Telemetry\SupportedExternalSinks.ql...
+Interpreting C:\Users\VssAdministrator\.codeql\packages\codeql\csharp-queries\1.7.2\Telemetry\SupportedExternalSources.ql...
+Interpreting C:\Users\VssAdministrator\.codeql\packages\codeql\csharp-queries\1.7.2\Telemetry\SupportedExternalTaint.ql...
+Interpreting C:\Users\VssAdministrator\.codeql\packages\codeql\csharp-queries\1.7.2\Telemetry\UnsupportedExternalAPIs.ql...
+Interpreting C:\Users\VssAdministrator\.codeql\packages\codeql\csharp-queries\1.7.2\API Abuse\CallToGCCollect.ql...
+Interpreting C:\Users\VssAdministrator\.codeql\packages\codeql\csharp-queries\1.7.2\API Abuse\CallToObsoleteMethod.ql...
+Interpreting C:\Users\VssAdministrator\.codeql\packages\codeql\csharp-queries\1.7.2\API Abuse\ClassDoesNotImplementEquals.ql...
+Interpreting C:\Users\VssAdministrator\.codeql\packages\codeql\csharp-queries\1.7.2\API Abuse\ClassImplementsICloneable.ql...
+Interpreting C:\Users\VssAdministrator\.codeql\packages\codeql\csharp-queries\1.7.2\API Abuse\DisposeNotCalledOnException.ql...
+Interpreting C:\Users\VssAdministrator\.codeql\packages\codeql\csharp-queries\1.7.2\API Abuse\FormatInvalid.ql...
+Interpreting C:\Users\VssAdministrator\.codeql\packages\codeql\csharp-queries\1.7.2\API Abuse\InconsistentEqualsGetHashCode.ql...
+Interpreting C:\Users\VssAdministrator\.codeql\packages\codeql\csharp-queries\1.7.2\API Abuse\IncorrectCompareToSignature.ql...
+Interpreting C:\Users\VssAdministrator\.codeql\packages\codeql\csharp-queries\1.7.2\API Abuse\IncorrectEqualsSignature.ql...
+Interpreting C:\Users\VssAdministrator\.codeql\packages\codeql\csharp-queries\1.7.2\API Abuse\NoDisposeCallOnLocalIDisposable.ql...
+Interpreting C:\Users\VssAdministrator\.codeql\packages\codeql\csharp-queries\1.7.2\API Abuse\NullArgumentToEquals.ql...
+Interpreting C:\Users\VssAdministrator\.codeql\packages\codeql\csharp-queries\1.7.2\Architecture\Refactoring Opportunities\InappropriateIntimacy.ql...
+Interpreting C:\Users\VssAdministrator\.codeql\packages\codeql\csharp-queries\1.7.2\ASP\BlockCodeResponseWrite.ql...
+Interpreting C:\Users\VssAdministrator\.codeql\packages\codeql\csharp-queries\1.7.2\Bad Practices\CallsUnmanagedCode.ql...
+Interpreting C:\Users\VssAdministrator\.codeql\packages\codeql\csharp-queries\1.7.2\Bad Practices\CatchOfNullReferenceException.ql...
+Interpreting C:\Users\VssAdministrator\.codeql\packages\codeql\csharp-queries\1.7.2\Bad Practices\Control-Flow\ConstantCondition.ql...
+Interpreting C:\Users\VssAdministrator\.codeql\packages\codeql\csharp-queries\1.7.2\Bad Practices\Declarations\LocalScopeVariableShadowsMember.ql...
+Interpreting C:\Users\VssAdministrator\.codeql\packages\codeql\csharp-queries\1.7.2\Bad Practices\Declarations\TooManyRefParameters.ql...
+Interpreting C:\Users\VssAdministrator\.codeql\packages\codeql\csharp-queries\1.7.2\Bad Practices\EmptyCatchBlock.ql...
+Interpreting C:\Users\VssAdministrator\.codeql\packages\codeql\csharp-queries\1.7.2\Bad Practices\ErroneousClassCompare.ql...
+Interpreting C:\Users\VssAdministrator\.codeql\packages\codeql\csharp-queries\1.7.2\Bad Practices\Implementation Hiding\AbstractToConcreteCollection.ql...
+Interpreting C:\Users\VssAdministrator\.codeql\packages\codeql\csharp-queries\1.7.2\Bad Practices\Implementation Hiding\ExposeRepresentation.ql...
+Interpreting C:\Users\VssAdministrator\.codeql\packages\codeql\csharp-queries\1.7.2\Bad Practices\Naming Conventions\FieldMasksSuperField.ql...
+Interpreting C:\Users\VssAdministrator\.codeql\packages\codeql\csharp-queries\1.7.2\Bad Practices\Naming Conventions\SameNameAsSuper.ql...
+Interpreting C:\Users\VssAdministrator\.codeql\packages\codeql\csharp-queries\1.7.2\Bad Practices\PathCombine.ql...
+Interpreting C:\Users\VssAdministrator\.codeql\packages\codeql\csharp-queries\1.7.2\Bad Practices\UnmanagedCodeCheck.ql...
+Interpreting C:\Users\VssAdministrator\.codeql\packages\codeql\csharp-queries\1.7.2\Bad Practices\VirtualCallInConstructorOrDestructor.ql...
+Interpreting C:\Users\VssAdministrator\.codeql\packages\codeql\csharp-queries\1.7.2\Complexity\BlockWithTooManyStatements.ql...
+Interpreting C:\Users\VssAdministrator\.codeql\packages\codeql\csharp-queries\1.7.2\Complexity\ComplexCondition.ql...
+Interpreting C:\Users\VssAdministrator\.codeql\packages\codeql\csharp-queries\1.7.2\Concurrency\FutileSyncOnField.ql...
+Interpreting C:\Users\VssAdministrator\.codeql\packages\codeql\csharp-queries\1.7.2\Concurrency\LockedWait.ql...
+Interpreting C:\Users\VssAdministrator\.codeql\packages\codeql\csharp-queries\1.7.2\Concurrency\LockOrder.ql...
+Interpreting C:\Users\VssAdministrator\.codeql\packages\codeql\csharp-queries\1.7.2\Concurrency\LockThis.ql...
+Interpreting C:\Users\VssAdministrator\.codeql\packages\codeql\csharp-queries\1.7.2\Concurrency\SynchSetUnsynchGet.ql...
+Interpreting C:\Users\VssAdministrator\.codeql\packages\codeql\csharp-queries\1.7.2\Concurrency\UnsafeLazyInitialization.ql...
+Interpreting C:\Users\VssAdministrator\.codeql\packages\codeql\csharp-queries\1.7.2\Concurrency\UnsynchronizedStaticAccess.ql...
+Interpreting C:\Users\VssAdministrator\.codeql\packages\codeql\csharp-queries\1.7.2\CSI\CompareIdenticalValues.ql...
+Interpreting C:\Users\VssAdministrator\.codeql\packages\codeql\csharp-queries\1.7.2\CSI\NullAlways.ql...
+Interpreting C:\Users\VssAdministrator\.codeql\packages\codeql\csharp-queries\1.7.2\CSI\NullMaybe.ql...
+Interpreting C:\Users\VssAdministrator\.codeql\packages\codeql\csharp-queries\1.7.2\Dead Code\DeadStoreOfLocal.ql...
+Interpreting C:\Users\VssAdministrator\.codeql\packages\codeql\csharp-queries\1.7.2\Documentation\XmldocMissingSummary.ql...
+Interpreting C:\Users\VssAdministrator\.codeql\packages\codeql\csharp-queries\1.7.2\Language Abuse\CastThisToTypeParameter.ql...
+Interpreting C:\Users\VssAdministrator\.codeql\packages\codeql\csharp-queries\1.7.2\Language Abuse\CatchOfGenericException.ql...
+Interpreting C:\Users\VssAdministrator\.codeql\packages\codeql\csharp-queries\1.7.2\Language Abuse\ChainedIs.ql...
+Interpreting C:\Users\VssAdministrator\.codeql\packages\codeql\csharp-queries\1.7.2\Language Abuse\DubiousDowncastOfThis.ql...
+Interpreting C:\Users\VssAdministrator\.codeql\packages\codeql\csharp-queries\1.7.2\Language Abuse\DubiousTypeTestOfThis.ql...
+Interpreting C:\Users\VssAdministrator\.codeql\packages\codeql\csharp-queries\1.7.2\Language Abuse\MissedReadonlyOpportunity.ql...
+Interpreting C:\Users\VssAdministrator\.codeql\packages\codeql\csharp-queries\1.7.2\Language Abuse\MissedTernaryOpportunity.ql...
+Interpreting C:\Users\VssAdministrator\.codeql\packages\codeql\csharp-queries\1.7.2\Language Abuse\MissedUsingOpportunity.ql...
+Interpreting C:\Users\VssAdministrator\.codeql\packages\codeql\csharp-queries\1.7.2\Language Abuse\NestedIf.ql...
+Interpreting C:\Users\VssAdministrator\.codeql\packages\codeql\csharp-queries\1.7.2\Language Abuse\RethrowException.ql...
+Interpreting C:\Users\VssAdministrator\.codeql\packages\codeql\csharp-queries\1.7.2\Language Abuse\SimplifyBoolExpr.ql...
+Interpreting C:\Users\VssAdministrator\.codeql\packages\codeql\csharp-queries\1.7.2\Language Abuse\UnusedPropertyValue.ql...
+Interpreting C:\Users\VssAdministrator\.codeql\packages\codeql\csharp-queries\1.7.2\Language Abuse\UselessCastToSelf.ql...
+Interpreting C:\Users\VssAdministrator\.codeql\packages\codeql\csharp-queries\1.7.2\Language Abuse\UselessNullCoalescingExpression.ql...
+Interpreting C:\Users\VssAdministrator\.codeql\packages\codeql\csharp-queries\1.7.2\Language Abuse\UselessTypeTest.ql...
+Interpreting C:\Users\VssAdministrator\.codeql\packages\codeql\csharp-queries\1.7.2\Language Abuse\UselessUpcast.ql...
+Interpreting C:\Users\VssAdministrator\.codeql\packages\codeql\csharp-queries\1.7.2\Likely Bugs\Collections\ContainerLengthCmpOffByOne.ql...
+Interpreting C:\Users\VssAdministrator\.codeql\packages\codeql\csharp-queries\1.7.2\Likely Bugs\Collections\ContainerSizeCmpZero.ql...
+Interpreting C:\Users\VssAdministrator\.codeql\packages\codeql\csharp-queries\1.7.2\Likely Bugs\Collections\ReadOnlyContainer.ql...
+Interpreting C:\Users\VssAdministrator\.codeql\packages\codeql\csharp-queries\1.7.2\Likely Bugs\Collections\WriteOnlyContainer.ql...
+Interpreting C:\Users\VssAdministrator\.codeql\packages\codeql\csharp-queries\1.7.2\Likely Bugs\DangerousNonShortCircuitLogic.ql...
+Interpreting C:\Users\VssAdministrator\.codeql\packages\codeql\csharp-queries\1.7.2\Likely Bugs\Dynamic\BadDynamicCall.ql...
+Interpreting C:\Users\VssAdministrator\.codeql\packages\codeql\csharp-queries\1.7.2\Likely Bugs\EqualityCheckOnFloats.ql...
+Interpreting C:\Users\VssAdministrator\.codeql\packages\codeql\csharp-queries\1.7.2\Likely Bugs\EqualsArray.ql...
+Interpreting C:\Users\VssAdministrator\.codeql\packages\codeql\csharp-queries\1.7.2\Likely Bugs\EqualsUsesAs.ql...
+Interpreting C:\Users\VssAdministrator\.codeql\packages\codeql\csharp-queries\1.7.2\Likely Bugs\EqualsUsesIs.ql...
+Interpreting C:\Users\VssAdministrator\.codeql\packages\codeql\csharp-queries\1.7.2\Likely Bugs\HashedButNoHash.ql...
+Interpreting C:\Users\VssAdministrator\.codeql\packages\codeql\csharp-queries\1.7.2\Likely Bugs\ImpossibleArrayCast.ql...
+Interpreting C:\Users\VssAdministrator\.codeql\packages\codeql\csharp-queries\1.7.2\Likely Bugs\IncomparableEquals.ql...
+Interpreting C:\Users\VssAdministrator\.codeql\packages\codeql\csharp-queries\1.7.2\Likely Bugs\InconsistentCompareTo.ql...
+Interpreting C:\Users\VssAdministrator\.codeql\packages\codeql\csharp-queries\1.7.2\Likely Bugs\LeapYear\UnsafeYearConstruction.ql...
+Interpreting C:\Users\VssAdministrator\.codeql\packages\codeql\csharp-queries\1.7.2\Likely Bugs\MishandlingJapaneseEra.ql...
+Interpreting C:\Users\VssAdministrator\.codeql\packages\codeql\csharp-queries\1.7.2\Likely Bugs\NestedLoopsSameVariable.ql...
+Interpreting C:\Users\VssAdministrator\.codeql\packages\codeql\csharp-queries\1.7.2\Likely Bugs\ObjectComparison.ql...
+Interpreting C:\Users\VssAdministrator\.codeql\packages\codeql\csharp-queries\1.7.2\Likely Bugs\PossibleLossOfPrecision.ql...
+Interpreting C:\Users\VssAdministrator\.codeql\packages\codeql\csharp-queries\1.7.2\Likely Bugs\RecursiveEquals.ql...
+Interpreting C:\Users\VssAdministrator\.codeql\packages\codeql\csharp-queries\1.7.2\Likely Bugs\RecursiveOperatorEquals.ql...
+Interpreting C:\Users\VssAdministrator\.codeql\packages\codeql\csharp-queries\1.7.2\Likely Bugs\ReferenceEqualsOnValueTypes.ql...
+Interpreting C:\Users\VssAdministrator\.codeql\packages\codeql\csharp-queries\1.7.2\Likely Bugs\SelfAssignment.ql...
+Interpreting C:\Users\VssAdministrator\.codeql\packages\codeql\csharp-queries\1.7.2\Likely Bugs\Statements\EmptyBlock.ql...
+Interpreting C:\Users\VssAdministrator\.codeql\packages\codeql\csharp-queries\1.7.2\Likely Bugs\Statements\EmptyLockStatement.ql...
+Interpreting C:\Users\VssAdministrator\.codeql\packages\codeql\csharp-queries\1.7.2\Likely Bugs\Statements\UseBraces.ql...
+Interpreting C:\Users\VssAdministrator\.codeql\packages\codeql\csharp-queries\1.7.2\Likely Bugs\StaticFieldWrittenByInstance.ql...
+Interpreting C:\Users\VssAdministrator\.codeql\packages\codeql\csharp-queries\1.7.2\Likely Bugs\StringBuilderCharInit.ql...
+Interpreting C:\Users\VssAdministrator\.codeql\packages\codeql\csharp-queries\1.7.2\Likely Bugs\UncheckedCastInEquals.ql...
+Interpreting C:\Users\VssAdministrator\.codeql\packages\codeql\csharp-queries\1.7.2\Linq\BadMultipleIteration.ql...
+Interpreting C:\Users\VssAdministrator\.codeql\packages\codeql\csharp-queries\1.7.2\Linq\MissedAllOpportunity.ql...
+Interpreting C:\Users\VssAdministrator\.codeql\packages\codeql\csharp-queries\1.7.2\Linq\MissedCastOpportunity.ql...
+Interpreting C:\Users\VssAdministrator\.codeql\packages\codeql\csharp-queries\1.7.2\Linq\MissedOfTypeOpportunity.ql...
+Interpreting C:\Users\VssAdministrator\.codeql\packages\codeql\csharp-queries\1.7.2\Linq\MissedSelectOpportunity.ql...
+Interpreting C:\Users\VssAdministrator\.codeql\packages\codeql\csharp-queries\1.7.2\Linq\MissedWhereOpportunity.ql...
+Interpreting C:\Users\VssAdministrator\.codeql\packages\codeql\csharp-queries\1.7.2\Linq\RedundantSelect.ql...
+Interpreting C:\Users\VssAdministrator\.codeql\packages\codeql\csharp-queries\1.7.2\Performance\StringBuilderInLoop.ql...
+Interpreting C:\Users\VssAdministrator\.codeql\packages\codeql\csharp-queries\1.7.2\Performance\StringConcatenationInLoop.ql...
+Interpreting C:\Users\VssAdministrator\.codeql\packages\codeql\csharp-queries\1.7.2\Performance\UseTryGetValue.ql...
+Interpreting C:\Users\VssAdministrator\.codeql\packages\codeql\csharp-queries\1.7.2\Useless code\DefaultToString.ql...
+Interpreting C:\Users\VssAdministrator\.codeql\packages\codeql\csharp-queries\1.7.2\Useless code\FutileConditional.ql...
+Interpreting C:\Users\VssAdministrator\.codeql\packages\codeql\csharp-queries\1.7.2\Useless code\IntGetHashCode.ql...
+Interpreting C:\Users\VssAdministrator\.codeql\packages\codeql\csharp-queries\1.7.2\Useless code\RedundantToStringCall.ql...
+Interpreting C:\Users\VssAdministrator\.codeql\packages\codeql\csharp-queries\1.7.2\Useless code\UnusedLabel.ql...
+Reading source archive D:\a\1\security-runtime\codeql-db\src.zip
+CodeQL scanned 134 out of 134 C# files in this invocation. Typically CodeQL is configured to analyze a single CodeQL language per invocation, so check other invocations to determine overall coverage information.
+Analysis produced the following diagnostic information:
+  - C# analysis with build-mode 'none' completed (1 result):
+    * C# analysis with build-mode 'none' completed.
+
+  - C# was extracted with build-mode set to 'none' (1 result):
+    * C# was extracted with build-mode set to 'none'. This means that all C# source in the working directory will be scanned, with build tools, such as NuGet and dotnet CLIs, only contributing information about external dependencies.
+
+Exporting results to SARIF...
+Exported results to SARIF (1.1s).

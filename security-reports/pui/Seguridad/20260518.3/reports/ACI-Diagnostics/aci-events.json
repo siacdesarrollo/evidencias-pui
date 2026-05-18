@@ -1,0 +1,38 @@
+[
+  {
+    "scope": "container:pui-zap-security",
+    "name": "Pulling",
+    "type": "Normal",
+    "count": 1,
+    "firstTimestamp": "05/18/2026 22:59:32",
+    "lastTimestamp": "05/18/2026 22:59:32",
+    "message": "pulling image \"siacacr-h6c7ekdph3h2fhgb.azurecr.io/security/zaproxy@sha256:c0c1477512485fd1a39bf50f6085ca951073036e7506a38dfb5ac414053dbd8e\""
+  },
+  {
+    "scope": "container:pui-zap-security",
+    "name": "Pulled",
+    "type": "Normal",
+    "count": 1,
+    "firstTimestamp": "05/18/2026 23:00:14",
+    "lastTimestamp": "05/18/2026 23:00:14",
+    "message": "Successfully pulled image \"siacacr-h6c7ekdph3h2fhgb.azurecr.io/security/zaproxy@sha256:c0c1477512485fd1a39bf50f6085ca951073036e7506a38dfb5ac414053dbd8e\""
+  },
+  {
+    "scope": "container:pui-zap-security",
+    "name": "Started",
+    "type": "Normal",
+    "count": 1,
+    "firstTimestamp": "05/18/2026 23:00:25",
+    "lastTimestamp": "05/18/2026 23:00:25",
+    "message": "Started container"
+  },
+  {
+    "scope": "container:pui-zap-security",
+    "name": "Failed",
+    "type": "Warning",
+    "count": 1,
+    "firstTimestamp": "05/18/2026 23:02:39",
+    "lastTimestamp": "05/18/2026 23:02:39",
+    "message": "Readiness probe failed:   File \"<string>\", line 7\n    query urllib.parse.urlencode({\"apikey\": os.environ.get(\"ZAP_API_KEY\"\n                                                            ^\nSyntaxError: '(' was never closed"
+  }
+]
