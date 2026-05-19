@@ -1,0 +1,463 @@
+{
+  "tool": "ACI-ReadyCheck",
+  "executedAt": "2026-05-19T00:48:06.4391282+00:00",
+  "operationalFailure": true,
+  "blockingFindings": false,
+  "outcome": "operational_failure",
+  "readinessMode": "aci_state_observation_public_http_confirmation",
+  "probeTransport": "public_http",
+  "probeTarget": "public_aci_endpoint",
+  "probePath": "/JSON/core/view/version/",
+  "probeAuthentication": "api_key",
+  "probeUrl": "http://pui-zap-security-eoqgw0uuoo.mexicocentral.azurecontainer.io:8080/JSON/core/view/version/?***",
+  "resourceGroupName": "PUI",
+  "containerGroupName": "pui-zap-security",
+  "containerName": "pui-zap-security",
+  "timeoutSeconds": 300,
+  "pollIntervalSeconds": 10,
+  "requestTimeoutSeconds": 10,
+  "deploymentStatusFile": "D:\\a\\1\\a\\security-status\\aci-deployment.json",
+  "deploymentContext": {
+    "zapBaseUrl": "http://pui-zap-security-eoqgw0uuoo.mexicocentral.azurecontainer.io:8080",
+    "fqdn": "pui-zap-security-eOqgW0UuoO.mexicocentral.azurecontainer.io",
+    "ipAddress": "158.23.38.46",
+    "endpointSourcePath": "properties.ipAddress"
+  },
+  "clientDiagnostics": {
+    "powerShellVersion": "7.4.15",
+    "dotNetEnvironmentVersion": "8.0.26",
+    "proxyEnvironment": {
+      "uppercase": {
+        "HTTP_PROXY": false,
+        "HTTPS_PROXY": false,
+        "ALL_PROXY": false,
+        "NO_PROXY": false
+      },
+      "lowercase": {
+        "http_proxy": false,
+        "https_proxy": false,
+        "all_proxy": false,
+        "no_proxy": false
+      }
+    }
+  },
+  "version": null,
+  "pollCount": 13,
+  "firstAttemptAt": "2026-05-19T00:48:06.4636839+00:00",
+  "lastAttemptAt": "2026-05-19T00:53:00.2035963+00:00",
+  "deadlineAt": "2026-05-19T00:53:06.4562340+00:00",
+  "elapsedSeconds": 318,
+  "lastHttpStatusCode": null,
+  "lastError": "The request was canceled due to the configured HttpClient.Timeout of 10 seconds elapsing.",
+  "lastResponse": "",
+  "lastFailureCategory": "request_exception",
+  "lastKnownContainerState": {
+    "provisioningState": "Succeeded",
+    "groupState": "Running",
+    "container": {
+      "state": "Running",
+      "detailStatus": "",
+      "exitCode": null,
+      "startTime": "05/19/2026 00:47:18"
+    },
+    "recentEvents": [
+      {
+        "scope": "container",
+        "name": "Pulling",
+        "type": "Normal",
+        "message": "pulling image \"siacacr-h6c7ekdph3h2fhgb.azurecr.io/security/zaproxy@sha256:c0c1477512485fd1a39bf50f6085ca951073036e7506a38dfb5ac414053dbd8e\"",
+        "count": 1,
+        "firstTimestamp": "05/19/2026 00:46:28",
+        "lastTimestamp": "05/19/2026 00:46:28"
+      },
+      {
+        "scope": "container",
+        "name": "Pulled",
+        "type": "Normal",
+        "message": "Successfully pulled image \"siacacr-h6c7ekdph3h2fhgb.azurecr.io/security/zaproxy@sha256:c0c1477512485fd1a39bf50f6085ca951073036e7506a38dfb5ac414053dbd8e\"",
+        "count": 1,
+        "firstTimestamp": "05/19/2026 00:47:10",
+        "lastTimestamp": "05/19/2026 00:47:10"
+      },
+      {
+        "scope": "container",
+        "name": "Started",
+        "type": "Normal",
+        "message": "Started container",
+        "count": 1,
+        "firstTimestamp": "05/19/2026 00:47:18",
+        "lastTimestamp": "05/19/2026 00:47:18"
+      },
+      {
+        "scope": "container",
+        "name": "Failed",
+        "type": "Warning",
+        "message": "Readiness probe failed:   File \"<string>\", line 7\n    query urllib.parse.urlencode({\"apikey\": os.environ.get(\"ZAP_API_KEY\"\n                                                            ^\nSyntaxError: '(' was never closed",
+        "count": 1,
+        "firstTimestamp": "05/19/2026 00:49:33",
+        "lastTimestamp": "05/19/2026 00:49:33"
+      }
+    ]
+  },
+  "recentProbeResults": [
+    {
+      "attempt": 9,
+      "attemptedAt": "2026-05-19T00:51:23.2276694+00:00",
+      "outcome": "retry",
+      "httpStatusCode": null,
+      "failureCategory": "request_exception",
+      "version": "",
+      "response": "",
+      "error": "The request was canceled due to the configured HttpClient.Timeout of 10 seconds elapsing.",
+      "detail": "The request was canceled due to the configured HttpClient.Timeout of 10 seconds elapsing.",
+      "publicVersionUri": "http://pui-zap-security-eoqgw0uuoo.mexicocentral.azurecontainer.io:8080/JSON/core/view/version/?***",
+      "containerState": {
+        "provisioningState": "Succeeded",
+        "groupState": "Running",
+        "container": {
+          "state": "Running",
+          "detailStatus": "",
+          "exitCode": null,
+          "startTime": "05/19/2026 00:47:18"
+        },
+        "recentEvents": [
+          {
+            "scope": "container",
+            "name": "Pulling",
+            "type": "Normal",
+            "message": "pulling image \"siacacr-h6c7ekdph3h2fhgb.azurecr.io/security/zaproxy@sha256:c0c1477512485fd1a39bf50f6085ca951073036e7506a38dfb5ac414053dbd8e\"",
+            "count": 1,
+            "firstTimestamp": "05/19/2026 00:46:28",
+            "lastTimestamp": "05/19/2026 00:46:28"
+          },
+          {
+            "scope": "container",
+            "name": "Pulled",
+            "type": "Normal",
+            "message": "Successfully pulled image \"siacacr-h6c7ekdph3h2fhgb.azurecr.io/security/zaproxy@sha256:c0c1477512485fd1a39bf50f6085ca951073036e7506a38dfb5ac414053dbd8e\"",
+            "count": 1,
+            "firstTimestamp": "05/19/2026 00:47:10",
+            "lastTimestamp": "05/19/2026 00:47:10"
+          },
+          {
+            "scope": "container",
+            "name": "Started",
+            "type": "Normal",
+            "message": "Started container",
+            "count": 1,
+            "firstTimestamp": "05/19/2026 00:47:18",
+            "lastTimestamp": "05/19/2026 00:47:18"
+          },
+          {
+            "scope": "container",
+            "name": "Failed",
+            "type": "Warning",
+            "message": "Readiness probe failed:   File \"<string>\", line 7\n    query urllib.parse.urlencode({\"apikey\": os.environ.get(\"ZAP_API_KEY\"\n                                                            ^\nSyntaxError: '(' was never closed",
+            "count": 1,
+            "firstTimestamp": "05/19/2026 00:49:33",
+            "lastTimestamp": "05/19/2026 00:49:33"
+          }
+        ]
+      }
+    },
+    {
+      "attempt": 10,
+      "attemptedAt": "2026-05-19T00:51:47.5833941+00:00",
+      "outcome": "retry",
+      "httpStatusCode": null,
+      "failureCategory": "request_exception",
+      "version": "",
+      "response": "",
+      "error": "The request was canceled due to the configured HttpClient.Timeout of 10 seconds elapsing.",
+      "detail": "The request was canceled due to the configured HttpClient.Timeout of 10 seconds elapsing.",
+      "publicVersionUri": "http://pui-zap-security-eoqgw0uuoo.mexicocentral.azurecontainer.io:8080/JSON/core/view/version/?***",
+      "containerState": {
+        "provisioningState": "Succeeded",
+        "groupState": "Running",
+        "container": {
+          "state": "Running",
+          "detailStatus": "",
+          "exitCode": null,
+          "startTime": "05/19/2026 00:47:18"
+        },
+        "recentEvents": [
+          {
+            "scope": "container",
+            "name": "Pulling",
+            "type": "Normal",
+            "message": "pulling image \"siacacr-h6c7ekdph3h2fhgb.azurecr.io/security/zaproxy@sha256:c0c1477512485fd1a39bf50f6085ca951073036e7506a38dfb5ac414053dbd8e\"",
+            "count": 1,
+            "firstTimestamp": "05/19/2026 00:46:28",
+            "lastTimestamp": "05/19/2026 00:46:28"
+          },
+          {
+            "scope": "container",
+            "name": "Pulled",
+            "type": "Normal",
+            "message": "Successfully pulled image \"siacacr-h6c7ekdph3h2fhgb.azurecr.io/security/zaproxy@sha256:c0c1477512485fd1a39bf50f6085ca951073036e7506a38dfb5ac414053dbd8e\"",
+            "count": 1,
+            "firstTimestamp": "05/19/2026 00:47:10",
+            "lastTimestamp": "05/19/2026 00:47:10"
+          },
+          {
+            "scope": "container",
+            "name": "Started",
+            "type": "Normal",
+            "message": "Started container",
+            "count": 1,
+            "firstTimestamp": "05/19/2026 00:47:18",
+            "lastTimestamp": "05/19/2026 00:47:18"
+          },
+          {
+            "scope": "container",
+            "name": "Failed",
+            "type": "Warning",
+            "message": "Readiness probe failed:   File \"<string>\", line 7\n    query urllib.parse.urlencode({\"apikey\": os.environ.get(\"ZAP_API_KEY\"\n                                                            ^\nSyntaxError: '(' was never closed",
+            "count": 1,
+            "firstTimestamp": "05/19/2026 00:49:33",
+            "lastTimestamp": "05/19/2026 00:49:33"
+          }
+        ]
+      }
+    },
+    {
+      "attempt": 11,
+      "attemptedAt": "2026-05-19T00:52:11.7733300+00:00",
+      "outcome": "retry",
+      "httpStatusCode": null,
+      "failureCategory": "request_exception",
+      "version": "",
+      "response": "",
+      "error": "The request was canceled due to the configured HttpClient.Timeout of 10 seconds elapsing.",
+      "detail": "The request was canceled due to the configured HttpClient.Timeout of 10 seconds elapsing.",
+      "publicVersionUri": "http://pui-zap-security-eoqgw0uuoo.mexicocentral.azurecontainer.io:8080/JSON/core/view/version/?***",
+      "containerState": {
+        "provisioningState": "Succeeded",
+        "groupState": "Running",
+        "container": {
+          "state": "Running",
+          "detailStatus": "",
+          "exitCode": null,
+          "startTime": "05/19/2026 00:47:18"
+        },
+        "recentEvents": [
+          {
+            "scope": "container",
+            "name": "Pulling",
+            "type": "Normal",
+            "message": "pulling image \"siacacr-h6c7ekdph3h2fhgb.azurecr.io/security/zaproxy@sha256:c0c1477512485fd1a39bf50f6085ca951073036e7506a38dfb5ac414053dbd8e\"",
+            "count": 1,
+            "firstTimestamp": "05/19/2026 00:46:28",
+            "lastTimestamp": "05/19/2026 00:46:28"
+          },
+          {
+            "scope": "container",
+            "name": "Pulled",
+            "type": "Normal",
+            "message": "Successfully pulled image \"siacacr-h6c7ekdph3h2fhgb.azurecr.io/security/zaproxy@sha256:c0c1477512485fd1a39bf50f6085ca951073036e7506a38dfb5ac414053dbd8e\"",
+            "count": 1,
+            "firstTimestamp": "05/19/2026 00:47:10",
+            "lastTimestamp": "05/19/2026 00:47:10"
+          },
+          {
+            "scope": "container",
+            "name": "Started",
+            "type": "Normal",
+            "message": "Started container",
+            "count": 1,
+            "firstTimestamp": "05/19/2026 00:47:18",
+            "lastTimestamp": "05/19/2026 00:47:18"
+          },
+          {
+            "scope": "container",
+            "name": "Failed",
+            "type": "Warning",
+            "message": "Readiness probe failed:   File \"<string>\", line 7\n    query urllib.parse.urlencode({\"apikey\": os.environ.get(\"ZAP_API_KEY\"\n                                                            ^\nSyntaxError: '(' was never closed",
+            "count": 1,
+            "firstTimestamp": "05/19/2026 00:49:33",
+            "lastTimestamp": "05/19/2026 00:49:33"
+          }
+        ]
+      }
+    },
+    {
+      "attempt": 12,
+      "attemptedAt": "2026-05-19T00:52:36.0123665+00:00",
+      "outcome": "retry",
+      "httpStatusCode": null,
+      "failureCategory": "request_exception",
+      "version": "",
+      "response": "",
+      "error": "The request was canceled due to the configured HttpClient.Timeout of 10 seconds elapsing.",
+      "detail": "The request was canceled due to the configured HttpClient.Timeout of 10 seconds elapsing.",
+      "publicVersionUri": "http://pui-zap-security-eoqgw0uuoo.mexicocentral.azurecontainer.io:8080/JSON/core/view/version/?***",
+      "containerState": {
+        "provisioningState": "Succeeded",
+        "groupState": "Running",
+        "container": {
+          "state": "Running",
+          "detailStatus": "",
+          "exitCode": null,
+          "startTime": "05/19/2026 00:47:18"
+        },
+        "recentEvents": [
+          {
+            "scope": "container",
+            "name": "Pulling",
+            "type": "Normal",
+            "message": "pulling image \"siacacr-h6c7ekdph3h2fhgb.azurecr.io/security/zaproxy@sha256:c0c1477512485fd1a39bf50f6085ca951073036e7506a38dfb5ac414053dbd8e\"",
+            "count": 1,
+            "firstTimestamp": "05/19/2026 00:46:28",
+            "lastTimestamp": "05/19/2026 00:46:28"
+          },
+          {
+            "scope": "container",
+            "name": "Pulled",
+            "type": "Normal",
+            "message": "Successfully pulled image \"siacacr-h6c7ekdph3h2fhgb.azurecr.io/security/zaproxy@sha256:c0c1477512485fd1a39bf50f6085ca951073036e7506a38dfb5ac414053dbd8e\"",
+            "count": 1,
+            "firstTimestamp": "05/19/2026 00:47:10",
+            "lastTimestamp": "05/19/2026 00:47:10"
+          },
+          {
+            "scope": "container",
+            "name": "Started",
+            "type": "Normal",
+            "message": "Started container",
+            "count": 1,
+            "firstTimestamp": "05/19/2026 00:47:18",
+            "lastTimestamp": "05/19/2026 00:47:18"
+          },
+          {
+            "scope": "container",
+            "name": "Failed",
+            "type": "Warning",
+            "message": "Readiness probe failed:   File \"<string>\", line 7\n    query urllib.parse.urlencode({\"apikey\": os.environ.get(\"ZAP_API_KEY\"\n                                                            ^\nSyntaxError: '(' was never closed",
+            "count": 1,
+            "firstTimestamp": "05/19/2026 00:49:33",
+            "lastTimestamp": "05/19/2026 00:49:33"
+          }
+        ]
+      }
+    },
+    {
+      "attempt": 13,
+      "attemptedAt": "2026-05-19T00:53:00.2035963+00:00",
+      "outcome": "retry",
+      "httpStatusCode": null,
+      "failureCategory": "request_exception",
+      "version": "",
+      "response": "",
+      "error": "The request was canceled due to the configured HttpClient.Timeout of 10 seconds elapsing.",
+      "detail": "The request was canceled due to the configured HttpClient.Timeout of 10 seconds elapsing.",
+      "publicVersionUri": "http://pui-zap-security-eoqgw0uuoo.mexicocentral.azurecontainer.io:8080/JSON/core/view/version/?***",
+      "containerState": {
+        "provisioningState": "Succeeded",
+        "groupState": "Running",
+        "container": {
+          "state": "Running",
+          "detailStatus": "",
+          "exitCode": null,
+          "startTime": "05/19/2026 00:47:18"
+        },
+        "recentEvents": [
+          {
+            "scope": "container",
+            "name": "Pulling",
+            "type": "Normal",
+            "message": "pulling image \"siacacr-h6c7ekdph3h2fhgb.azurecr.io/security/zaproxy@sha256:c0c1477512485fd1a39bf50f6085ca951073036e7506a38dfb5ac414053dbd8e\"",
+            "count": 1,
+            "firstTimestamp": "05/19/2026 00:46:28",
+            "lastTimestamp": "05/19/2026 00:46:28"
+          },
+          {
+            "scope": "container",
+            "name": "Pulled",
+            "type": "Normal",
+            "message": "Successfully pulled image \"siacacr-h6c7ekdph3h2fhgb.azurecr.io/security/zaproxy@sha256:c0c1477512485fd1a39bf50f6085ca951073036e7506a38dfb5ac414053dbd8e\"",
+            "count": 1,
+            "firstTimestamp": "05/19/2026 00:47:10",
+            "lastTimestamp": "05/19/2026 00:47:10"
+          },
+          {
+            "scope": "container",
+            "name": "Started",
+            "type": "Normal",
+            "message": "Started container",
+            "count": 1,
+            "firstTimestamp": "05/19/2026 00:47:18",
+            "lastTimestamp": "05/19/2026 00:47:18"
+          },
+          {
+            "scope": "container",
+            "name": "Failed",
+            "type": "Warning",
+            "message": "Readiness probe failed:   File \"<string>\", line 7\n    query urllib.parse.urlencode({\"apikey\": os.environ.get(\"ZAP_API_KEY\"\n                                                            ^\nSyntaxError: '(' was never closed",
+            "count": 1,
+            "firstTimestamp": "05/19/2026 00:49:33",
+            "lastTimestamp": "05/19/2026 00:49:33"
+          }
+        ]
+      }
+    }
+  ],
+  "lastRawTcpProbe": {
+    "attempt": 13,
+    "attemptedAt": "2026-05-19T00:53:00.2035963+00:00",
+    "success": false,
+    "statusCode": null,
+    "statusLine": "",
+    "failureCategory": "empty_response",
+    "version": "",
+    "requestTarget": "/JSON/core/view/version/?***",
+    "headers": "",
+    "body": "",
+    "error": ""
+  },
+  "rawTcpProbeResults": [
+    {
+      "attempt": 11,
+      "attemptedAt": "2026-05-19T00:52:11.7733300+00:00",
+      "success": false,
+      "statusCode": null,
+      "statusLine": "",
+      "failureCategory": "empty_response",
+      "version": "",
+      "requestTarget": "/JSON/core/view/version/?***",
+      "headers": "",
+      "body": "",
+      "error": ""
+    },
+    {
+      "attempt": 12,
+      "attemptedAt": "2026-05-19T00:52:36.0123665+00:00",
+      "success": false,
+      "statusCode": null,
+      "statusLine": "",
+      "failureCategory": "empty_response",
+      "version": "",
+      "requestTarget": "/JSON/core/view/version/?***",
+      "headers": "",
+      "body": "",
+      "error": ""
+    },
+    {
+      "attempt": 13,
+      "attemptedAt": "2026-05-19T00:53:00.2035963+00:00",
+      "success": false,
+      "statusCode": null,
+      "statusLine": "",
+      "failureCategory": "empty_response",
+      "version": "",
+      "requestTarget": "/JSON/core/view/version/?***",
+      "headers": "",
+      "body": "",
+      "error": ""
+    }
+  ],
+  "failureReasons": [
+    "zap_readiness_timeout"
+  ],
+  "error": "ZAP no respondió al endpoint público de versión dentro del timeout. readinessMode=aci_state_observation_public_http_confirmation; resourceGroupName=PUI; containerGroupName=pui-zap-security; containerName=pui-zap-security; probeUrl=http://pui-zap-security-eoqgw0uuoo.mexicocentral.azurecontainer.io:8080/JSON/core/view/version/?***; timeoutSeconds=300; pollIntervalSeconds=10; requestTimeoutSeconds=10; lastHttpStatusCode=sin HTTP status; lastError=The request was canceled due to the configured HttpClient.Timeout of 10 seconds elapsing.",
+  "message": "ZAP no alcanzó readiness vía confirmación HTTP pública dentro del timeout configurado."
+}

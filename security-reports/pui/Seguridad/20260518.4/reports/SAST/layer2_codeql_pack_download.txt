@@ -1,0 +1,7 @@
+CodeQL query pack strategy: pre_download
+CodeQL query pack: codeql/csharp-queries
+CodeQL query pack command root: D:\a\1\s
+CodeQL pack download arguments: codeql pack download codeql/csharp-queries
+Package specifications to check for download: codeql/csharp-queries
+Package install location: C:\Users\VssAdministrator\.codeql\packages
+Installed fresh codeql/csharp-queries@1.7.2

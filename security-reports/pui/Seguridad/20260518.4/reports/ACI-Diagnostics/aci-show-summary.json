@@ -1,0 +1,31 @@
+{
+  "resourceGroupName": "PUI",
+  "containerGroupName": "pui-zap-security",
+  "id": "/subscriptions/ce46d502-a4e7-49cc-885f-4ca618e51016/resourceGroups/PUI/providers/Microsoft.ContainerInstance/containerGroups/pui-zap-security",
+  "location": "mexicocentral",
+  "provisioningState": "Succeeded",
+  "runtimeState": "Running",
+  "fqdn": "pui-zap-security-eOqgW0UuoO.mexicocentral.azurecontainer.io",
+  "ipAddress": "158.23.38.46",
+  "endpointSourcePath": "ipAddress",
+  "osType": "Linux",
+  "restartPolicy": "Always",
+  "readinessCommand": {
+    "sha256": "",
+    "preview": []
+  },
+  "deploymentReadinessCommandSha256": "9040ebc5d2ffdb9b3fc748d96d7d786a635ffd779bcaec9b9ae4a5e107f5ff9c",
+  "readinessCommandDigestMatchesDeployment": null,
+  "containers": [
+    {
+      "name": "pui-zap-security",
+      "image": "siacacr-h6c7ekdph3h2fhgb.azurecr.io/security/zaproxy:2.17.0",
+      "currentState": "Running",
+      "currentStateDetail": "",
+      "currentStateStartedAt": "05/19/2026 00:47:18",
+      "previousState": "",
+      "previousStateDetail": "",
+      "restartCount": 0
+    }
+  ]
+}
